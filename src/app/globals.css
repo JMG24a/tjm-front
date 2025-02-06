@@ -1,42 +1,13 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+:root{
+    --box-shadow-1: 0 15px 35px rgba(0, 0, 0, 0.185);
+    --background-1: rgba(255, 255, 255, 0.5);
+    --background-2: rgba(255, 255, 255, 0.2);
+    --padding-item: 40px 60px;
+    --border-radius-item: 20px;
+    --basic-color: #000;
+    --basic-color-2: #fff;
+    --primary-color: #f4e7a0;
+    --secondary-color: #77a0c8;
+    --border-color: rgba(0, 0, 0, 0.25);
+    --color-background: linear-gradient(#f4e7a0, #8f5023);
 }
