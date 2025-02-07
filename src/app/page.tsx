@@ -109,18 +109,18 @@ export default function Home() {
                 <img src="/slider-4.jpg" alt="Image 4" id="slider-4"/>
             </div>
             <div className="slider-nav">
-                <a href="#slider-1"></a>
-                <a href="#slider-2"></a>
-                <a href="#slider-3"></a>
-                <a href="#slider-4"></a>
+                <Link href="#slider-1"></Link>
+                <Link href="#slider-2"></Link>
+                <Link href="#slider-3"></Link>
+                <Link href="#slider-4"></Link>
             </div>
         </div>
         <footer className="footer">
             <div className="footer_content">
                 <section className="footer_main">
-                    <a href="" className="footer__logo">
+                    <Link href="/" className="footer__logo">
                         <img src="/Logo-2.png" alt="Logo" className="logo__footer"/>
-                    </a>
+                    </Link>
                     <article className="footer__contact">
                         <h4>Contactanos al:</h4>
                         <p>Telefono: 04120521922</p>
@@ -130,12 +130,12 @@ export default function Home() {
                         <p>Yaracuy: San pablo Av.Panamericana</p>
                     </article>
                     <nav className="footer__social">
-                        <a href="" className="footer__social-links">
+                        <Link href="" className="footer__social-links">
                             <Image src="/whatsapp_icon.png" alt="" className="footer__media" width={15} height={15}/>
-                        </a>
-                        <a href="" className="footer__social-links">
+                        </Link>
+                        <Link href="" className="footer__social-links">
                             <Image src="/instagram_icon.png" alt="" className="footer__media" width={20} height={20}/>
-                        </a>
+                        </Link>
     
                     </nav>
                 </section>

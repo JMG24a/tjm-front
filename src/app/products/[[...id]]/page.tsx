@@ -35,7 +35,7 @@ export default async function items(props: itemsProps) {
             <div className="bubble bubble-1"></div>
             <div className="bubble bubble-2"></div>
             <header id="navbar">
-                <a href="/" className="logo"><img src="/Tio-Jaime.png" alt=""/></a>
+                <Link href="/" className="logo"><img src="/Tio-Jaime.png" alt=""/></Link>
                 <NavBar/>
             </header>
 
@@ -56,6 +56,7 @@ export default async function items(props: itemsProps) {
                                 className="item-container" 
                                 style={{  gridColumn: `${gc}`, gridRow: `${gr1}/${gr2}`}} 
                                 href={`${myAppApi}/details/${item.id}`}
+                                key={count}
                             >
                                     <img src={`${item.image}`} alt="Item Image"/>
                                     <div className="details">
@@ -69,6 +70,7 @@ export default async function items(props: itemsProps) {
                             <Link 
                                 className="item-container"
                                 href={`${myAppApi}/details/${item.id}`}
+                                key={count}
                             >
                                 <img src={`${item.image}`} alt="Item Image"/>
                                 <div className="details">

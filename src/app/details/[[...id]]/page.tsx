@@ -116,6 +116,7 @@ export default async function items(props: itemsProps) {
                                 className="item-container" 
                                 style={{  gridColumn: `${gc}`, gridRow: `${gr1}/${gr2}`}} 
                                 href={`${myAppApi}/details/${item.suggest.id}`}
+                                key={count}
                             >
                                     <img src={`${item.suggest.image}`} alt="Item Image"/>
                                     <div className="details">
@@ -129,6 +130,7 @@ export default async function items(props: itemsProps) {
                             <Link 
                                 className="item-container"
                                 href={`${myAppApi}/details/${item.suggest.id}`}
+                                key={count}
                             >
                                 <img src={`${item.suggest.image}`} alt="Item Image"/>
                                 <div className="details">
