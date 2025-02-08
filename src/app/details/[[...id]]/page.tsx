@@ -1,12 +1,13 @@
 import Link from "next/link";
 import './style.css'
 import BackPage from '../../../components/BackPage';
+import Image from "next/image";
 
-interface itemsProps{
-    params:{
-        id: string
-    }
-}
+// interface itemsProps{
+//     params:{
+//         id: string
+//     }
+// }
 
 const getImages = async (id: string) => {
     const secretKey = process.env.API_SECRET_KEY;
@@ -56,8 +57,8 @@ const getSuggest  = async (id: string) => {
     return data;
 }
 
-
-export default async function items(props: itemsProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const { id } = (await props.params)
     const product = await getProduct(id);
@@ -76,9 +77,35 @@ export default async function items(props: itemsProps) {
 
                 <div className="carousel">
                     <div className="carousel-inner">
-                        <img src={product.image} alt=""/>   
-                        {images.map((item: any) => (
-                            <img src={item.image} alt=""/>
+                        <Image
+                            src={product.image}
+                            alt="Imagen personalizada"
+                            width={500}
+                            height={300}
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                objectFit: 'cover',
+                                flex: '1 0 100%',
+                                scrollSnapAlign: 'start',
+                            }}
+                        />   
+                        { // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        images.map((item: any, count: number) => (
+                            <Image 
+                                src={item.image}
+                                key={count}
+                                alt="Imagen personalizada"
+                                width={500}
+                                height={300}
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    objectFit: 'cover',
+                                    flex: '1 0 100%',
+                                    scrollSnapAlign: 'start',
+                                }}
+                            />
                         ))}
                     </div>
                 </div>
@@ -100,7 +127,8 @@ export default async function items(props: itemsProps) {
     <h3>mas para explorar</h3>
 
     <div className="grid-container">
-                {suggestions.map((item: any, count: number)=>{
+                { // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                suggestions.map((item: any, count: number)=>{
                     const number = count + 1;
                     if(number % 2 !== 0 && number !== 1){
                         if(gc == 1){
@@ -118,7 +146,20 @@ export default async function items(props: itemsProps) {
                                 href={`${myAppApi}/details/${item.suggest.id}`}
                                 key={count}
                             >
-                                    <img src={`${item.suggest.image}`} alt="Item Image"/>
+                                    <Image 
+                                        src={`${item.suggest.image}`} 
+                                        key={count}
+                                        alt="Imagen personalizada"
+                                        width={500}
+                                        height={300}
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover',
+                                            borderRadius: '8px',
+                                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                                        }}
+                                    />
                                     <div className="details">
                                         <div className="name">{item.suggest.name}</div>
                                         <div className="price">{item.suggest.price}$</div>
@@ -132,7 +173,20 @@ export default async function items(props: itemsProps) {
                                 href={`${myAppApi}/details/${item.suggest.id}`}
                                 key={count}
                             >
-                                <img src={`${item.suggest.image}`} alt="Item Image"/>
+                                <Image 
+                                    src={`${item.suggest.image}`} 
+                                    key={count}
+                                    alt="Imagen personalizada"
+                                    width={500}
+                                    height={300}
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover',
+                                        borderRadius: '8px',
+                                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                                    }}
+                                />
                                 <div className="details">
                                     <div className="name">{`${item.suggest.name}`}</div>
                                     <div className="price">{item.suggest.price}$</div>

@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const BackPage = () => {
@@ -14,9 +15,11 @@ const BackPage = () => {
   
 
   return (
-    <img 
+    <Image 
         src="/arrow-left.png" 
         alt="volver"
+        width={50}
+        height={50}
         onClick={() => handleBack()}
     />
   );

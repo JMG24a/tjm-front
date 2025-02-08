@@ -2,10 +2,12 @@
 "use client"
 import { useEffect } from 'react';
 
-const ScrollAnimation = ({ children }) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ScrollAnimation = ({ children }: any) => {
   useEffect(() => {
     const scrollElements = document.querySelectorAll('.scroll-up');
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const elementInView = (el: any, percentageScroll = 100) => {
       const elementTop = el.getBoundingClientRect().top;
       return (
@@ -14,11 +16,12 @@ const ScrollAnimation = ({ children }) => {
           (percentageScroll / 100)
       );
     };
-
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const displayScrollElement = (element: any) => {
       element.classList.add('visible');
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const hideScrollElement = (element: any) => {
       element.classList.remove('visible');
     };

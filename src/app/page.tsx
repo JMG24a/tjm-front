@@ -12,7 +12,14 @@ export default function Home() {
         <section>
             <div className="container">
                 <header id="navbar">
-                        <Link href={'/'} className="logo"><img src="/Tio-Jaime.png" alt=""/></Link>
+                        <Link href={'/'} className="logo">
+                            <Image 
+                                src="/Tio-Jaime.png" 
+                                alt=""
+                                width={'220'}
+                                height={'60'}                                
+                            />
+                        </Link>
 
                         <NavBar/>
                 </header>
@@ -103,10 +110,34 @@ export default function Home() {
     
         <div className="carousel">
             <div className="carousel-inner">
-                <img src="/slider-1.jpg" alt="Image 1" id="slider-1"/>
-                <img src="/slider-3.jpg" alt="Image 3" id="slider-2"/>
-                <img src="/slider-2.jpg" alt="Image 2" id="slider-3"/>
-                <img src="/slider-4.jpg" alt="Image 4" id="slider-4"/>
+                <Image src="/slider-1.jpg" alt="Image 1" id="slider-1" width={500} height={300} style={{
+                        width: '100%',
+                        height: 'auto',
+                        flex: '1 0 100%',
+                        scrollSnapAlign: 'start',
+                        objectFit: 'cover',
+                }}/>
+                <Image src="/slider-3.jpg" alt="Image 3" id="slider-2" width={500} height={300} style={{
+                        width: '100%',
+                        height: 'auto',
+                        flex: '1 0 100%',
+                        scrollSnapAlign: 'start',
+                        objectFit: 'cover',
+                }}/>
+                <Image src="/slider-2.jpg" alt="Image 2" id="slider-3" width={500} height={300} style={{
+                        width: '100%',
+                        height: 'auto',
+                        flex: '1 0 100%',
+                        scrollSnapAlign: 'start',
+                        objectFit: 'cover',
+                }}/>
+                <Image src="/slider-4.jpg" alt="Image 4" id="slider-4" width={500} height={300} style={{
+                        width: '100%',
+                        height: 'auto',
+                        flex: '1 0 100%',
+                        scrollSnapAlign: 'start',
+                        objectFit: 'cover',
+                }}/>
             </div>
             <div className="slider-nav">
                 <Link href="#slider-1"></Link>
@@ -119,7 +150,16 @@ export default function Home() {
             <div className="footer_content">
                 <section className="footer_main">
                     <Link href="/" className="footer__logo">
-                        <img src="/Logo-2.png" alt="Logo" className="logo__footer"/>
+                        <Image 
+                            src="/Logo-2.png" 
+                            alt="Logo" 
+                            className="logo__footer"
+                            width={500}
+                            height={300}
+                            style={{
+
+                            }}
+                        />
                     </Link>
                     <article className="footer__contact">
                         <h4>Contactanos al:</h4>
