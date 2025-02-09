@@ -30,14 +30,12 @@ export default async function items(props: any) {
     const products = await getProducts(id);
     let gr1 = -1, gr2 = 1, gc = 1;
 
-    console.log('props', id)
-    console.log(products)
     return (
         <body>
             <div className="bubble bubble-1"></div>
             <div className="bubble bubble-2"></div>
             <header id="navbar">
-                <Link href="/" className="logo">
+                <Link href={`${myAppApi}`} className="logo">
                     <Image 
                         src="/Tio-Jaime.png" 
                         alt="" 

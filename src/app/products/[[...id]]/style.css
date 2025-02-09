@@ -209,7 +209,10 @@ header ul .nav-a:hover{
     height: 50px;
     }
 
-
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
   }
   
   @media (max-width: 425px) {
@@ -238,6 +241,10 @@ header ul .nav-a:hover{
       margin-left: 135px;
   }
 
+  header ul{
+    margin: 0 auto;
+  }
+
 
   .text-content{
     font-size: 8px;
@@ -259,7 +266,11 @@ header ul .nav-a:hover{
 
     header ul li a{
       padding: 5px 10px;
-  }
+    }
+
+    header ul{
+      margin: 0 auto;
+    }
 
   header .logo img{
       margin-left: 10px;
@@ -299,13 +310,13 @@ body {
 }
 
 .grid-container {
-  margin-top: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 100px;
   gap: 10px;
   width: 90%;
   max-width: 1000px;
+  margin-top: 110px;
 }
 
 .grid-container .item-container {

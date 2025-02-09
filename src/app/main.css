@@ -405,6 +405,10 @@ header ul .nav-a:hover{
         padding: 5px 15px;
     }
 
+    header ul{
+        margin: 0 auto;
+    }
+
     .container header .logo img{
         width: 160px;
         height: 45px;
