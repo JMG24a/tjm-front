@@ -29,13 +29,13 @@ export default async function items(props: any) {
     const { id } = (await props.params)
     const products = await getProducts(id);
     let gr1 = -1, gr2 = 1, gc = 1;
-
+   
     return (
         <body>
             <div className="bubble bubble-1"></div>
             <div className="bubble bubble-2"></div>
             <header id="navbar">
-                <Link href={`${myAppApi}`} className="logo">
+                <Link href={'/'} className="logo">
                     <Image 
                         src="/Tio-Jaime.png" 
                         alt="" 

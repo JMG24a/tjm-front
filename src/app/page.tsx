@@ -12,16 +12,15 @@ export default function Home() {
         <section>
             <div className="container">
                 <header id="navbar">
-                        <Link href={'/'} className="logo">
-                            <Image 
-                                src="/Tio-Jaime.png" 
-                                alt=""
-                                width={'220'}
-                                height={'60'}                                
-                            />
-                        </Link>
-
-                        <NavBar/>
+                    <Link href={'/'} className="logo">
+                        <Image 
+                            src="/Tio-Jaime.png" 
+                            alt=""
+                            width={'220'}
+                            height={'60'}                                
+                        />
+                    </Link>
+                    <NavBar/>
                 </header>
                     <div className="content">
                         <h2>Tio Jaime</h2>

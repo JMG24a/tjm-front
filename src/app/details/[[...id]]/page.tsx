@@ -71,7 +71,13 @@ export default async function items(props: any) {
     
     <div className="container">
         <div className="arrow">
-            <BackPage/>
+            <BackPage
+                src={'/arrow-left.png'}
+                alt={'volver'}
+                width={50}
+                height={50}
+                type={`/products/${product.category}`}
+            />
         </div>
         <div className="container-items">
 

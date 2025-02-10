@@ -2,12 +2,26 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-const BackPage = () => {
+interface propsBack{
+  src: string,
+  alt: string,
+  width: number,
+  height: number,
+  type: string
+} 
+
+const BackPage = ({
+  src,
+  alt,
+  width,
+  height,
+  type
+}: propsBack) => {
   const router = useRouter();
 
   const handleBack = () => {
     if (window.history.length > 1) {
-      router.back();
+      router.push(type);
     } else {
       router.push('/'); // Redirige a la página principal si no hay historial
     }
@@ -16,10 +30,10 @@ const BackPage = () => {
 
   return (
     <Image 
-        src="/arrow-left.png" 
-        alt="volver"
-        width={50}
-        height={50}
+        src={src} 
+        alt={alt}
+        width={width}
+        height={height}
         onClick={() => handleBack()}
     />
   );
