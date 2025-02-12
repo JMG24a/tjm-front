@@ -295,7 +295,7 @@ header ul .nav-a:hover{
   }
 
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -307,7 +307,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f0f0f0;
-}
+} */
 
 .grid-container {
   display: grid;
@@ -316,6 +316,7 @@ body {
   gap: 10px;
   width: 90%;
   max-width: 1000px;
+  margin: 0 auto;
   margin-top: 110px;
 }
 
