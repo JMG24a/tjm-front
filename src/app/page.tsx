@@ -48,7 +48,7 @@ export default function Home() {
             <div className="home">
                 <h2>Equipa tu hogar</h2>
                 <div className="container-cards">
-                    <div className="card scroll-up">
+                    <div className="cardHome scroll-up">
                         <img src="/comedor.jpg" alt=""/>
                         <h3>Cocina</h3>
                         <p>Haz de tu cocina un lugar lleno de estilo y 
@@ -62,7 +62,7 @@ export default function Home() {
                            o compartiendo con los tuyos.
                         </p>
                     </div>
-                    <div className="card scroll-up">
+                    <div className="cardHome scroll-up">
                         <img src="/cama.jpg" alt=""/>
                         <h3>habitaciones</h3>
                         <p>Crea el refugio perfecto para descansar y relajarte
@@ -75,7 +75,7 @@ export default function Home() {
                            armonioso que invite al descanso y al bienestar.
                         </p>
                     </div>
-                    <div className="card scroll-up">
+                    <div className="cardHome scroll-up">
                         <img src="/EuroStyle.jpg" alt=""/>
                         <h3>Sala</h3>
                         <p>Convierte tu sala de estar en el centro de 
@@ -89,7 +89,7 @@ export default function Home() {
                            inolvidables con familia y amigos.
                         </p>
                     </div>
-                    <div className="card scroll-up">
+                    <div className="cardHome scroll-up">
                         <img src="/oficina.jpg" alt=""/>
                         <h3>Oficina</h3>
                         <p>Convierte tu sala de estar en el centro de 
