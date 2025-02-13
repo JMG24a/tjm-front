@@ -209,7 +209,7 @@ header ul .nav-a:hover{
     height: 50px;
     }
 
-    .grid-container {
+    .product_grid-container {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     
@@ -294,7 +294,7 @@ header ul .nav-a:hover{
 
   }
 
-.grid-container {
+.product_grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 100px;
@@ -305,7 +305,7 @@ header ul .nav-a:hover{
   margin-top: 110px;
 }
 
-.grid-container .item-container {
+.product_grid-container .item-container {
   position: relative;
 }
 

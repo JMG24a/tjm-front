@@ -63,7 +63,7 @@ export default async function items(props: any) {
     return (
 <body>
     
-    <div className="container">
+    <div className="details_container">
         <div className="arrow">
             <BackPage
                 src={'/arrow-left.png'}
@@ -75,8 +75,8 @@ export default async function items(props: any) {
         </div>
         <div className="container-items">
 
-                <div className="carousel">
-                    <div className="carousel-inner">
+                <div className="details_carousel">
+                    <div className="details_carousel-inner">
                         <Image
                             src={product.image}
                             alt="Imagen personalizada"

@@ -21,7 +21,7 @@ body{
     display: none; /* Oculta la barra de scroll en navegadores WebKit */
   }
 
-.container{
+.details_container{
     height: auto;
     width: 100%;
     display: flex;
@@ -300,7 +300,7 @@ body{
 
  @media (max-width: 425px){
 
-    .container{
+    .details_container{
         width: 100%;
     }
 
@@ -380,15 +380,15 @@ body{
   }
 
 
-  .carousel{
+  .details_carousel{
     position: relative;
     width: 100%;
     margin: 0 0 0 0;
   }
 
-  .carousel-inner{
+  .details_carousel-inner{
     display: flex;
-    aspect-ratio: 18 / 9;
+    aspect-ratio: 12 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -396,7 +396,7 @@ body{
     border-radius: 0.5rem;
   }
 
-  .carousel-inner .Image{
+  .details_carousel-inner .Image{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;

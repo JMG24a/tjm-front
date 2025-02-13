@@ -46,7 +46,7 @@ export default async function items(props: any) {
                 <NavBar/>
             </header>
 
-            <div className="grid-container">
+            <div className="product_grid-container">
                 { // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 products.map((item: any, count: number)=>{
                     const number = count + 1;
