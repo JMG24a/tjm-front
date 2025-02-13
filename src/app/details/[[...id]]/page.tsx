@@ -3,12 +3,6 @@ import './style.css'
 import BackPage from '../../../components/BackPage';
 import Image from "next/image";
 
-// interface itemsProps{
-//     params:{
-//         id: string
-//     }
-// }
-
 const getImages = async (id: string) => {
     const secretKey = process.env.API_SECRET_KEY;
     const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
