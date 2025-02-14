@@ -12,7 +12,7 @@ export default function Home() {
         <section>
             <div className="container">
                 <header id="navbar">
-                    <Link href={'/'} className="logo">
+                    <Link href={'/'} className="main_logo">
                         <Image 
                             src="/Tio-Jaime.png" 
                             alt=""
