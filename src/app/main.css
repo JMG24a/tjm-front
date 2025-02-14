@@ -330,8 +330,8 @@ header ul .nav-a:hover{
 
 
     .container header .main_logo img{
-    width: 160px;
-    height: 50px;
+        width: 160px;
+        height: 50px;
     }
 
     .container{
@@ -412,7 +412,7 @@ header ul .nav-a:hover{
     .container header .main_logo img{
         width: 160px;
         height: 45px;
-        margin-left: 135px;
+        margin: 0 auto;
     }
 
     .content{
@@ -443,7 +443,7 @@ header ul .nav-a:hover{
     }
 
     .container header .main_logo img{
-        margin-left: 110px;
+        margin: 0 auto;
     }
 
     .carousel-inner{
@@ -465,7 +465,7 @@ header ul .nav-a:hover{
 
 
     .container header .main_logo img{
-        margin-left: 80px;
+        margin: 0 auto;
     }
 
     header ul li{
@@ -482,4 +482,8 @@ header ul .nav-a:hover{
         width: 320px;
     }
 
+}
+
+.main_logo{
+    margin: 0 auto;
 }
