@@ -1,9 +1,8 @@
 "use client"
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Login = () => {
-    const myAppApi = process.env.NEXT_PUBLIC_API_URL;
+    // const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     
   return (
     <div className='login'>
