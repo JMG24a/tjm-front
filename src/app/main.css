@@ -487,3 +487,10 @@ header ul .nav-a:hover{
 .main_logo{
     margin: 0 auto;
 }
+
+.login{
+    position: fixed;
+    z-index: 730;
+    bottom: 10px;
+    right: 10px;
+}
