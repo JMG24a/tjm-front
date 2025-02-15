@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <body>
+        <body className="body">
     
         <section>
             <div className="container">

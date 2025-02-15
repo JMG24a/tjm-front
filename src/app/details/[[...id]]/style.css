@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: var(--color-background);
     overflow: auto; /* Habilita el desplazamiento */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE y Edge */
