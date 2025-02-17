@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 
 
 const Login = () => {
