@@ -7,6 +7,21 @@ const Login = () => {
     // const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const [flat, setFlat] = useState<boolean>(false);
 
+    const handlerClickSend = async () => {
+        const secretKey = process.env.API_SECRET_KEY;
+        const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+        const response = await fetch(`${backApi}/api/v1/auth/login`,
+            {
+                method: 'POST', 
+                headers: {
+                    'Content-Type': 'application/json',
+                    'api': `${secretKey}`, 
+                },
+            }
+        );
+        const data = await response.json();
+        console.log(data);
+    }
 
     const handlerClick = () => {
         setFlat(!flat);
@@ -27,7 +42,7 @@ const Login = () => {
                     <input type="password" className='login_content--input'/>
                     <button
                         className="close-btn--send"
-                        onClick={handlerClick}
+                        onClick={handlerClickSend}
                     >Enviar
                     </button>
                     <button 

@@ -152,6 +152,7 @@ body{
     gap: 20px;
     padding: 0 1.25rem 1.25rem 1.25rem;
     max-width: 1200px;
+    min-height: 1000px;
     margin: 0 auto;
   }
 
