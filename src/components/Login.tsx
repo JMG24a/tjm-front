@@ -14,7 +14,8 @@ const Login = () => {
         try{
             const response = await fetch(`${backApi}/api/v1/auth/login`,
                 {
-                    method: 'POST', 
+                    method: 'POST',
+                    credentials: 'include',
                     headers: {
                         'Content-Type': 'application/json',
                         'api': `${secretKey}`, 
@@ -24,7 +25,7 @@ const Login = () => {
             const data = await response.json();
             alert("data")
         }catch(error){
-            alert("error")
+            setFlat(!flat);
         }
     }
 
