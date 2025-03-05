@@ -2,6 +2,7 @@ import './style.css'
 import NavBar from "../../../components/NavBar";
 import Link from 'next/link';
 import Image from 'next/image';
+import AddProduct from 'app/components/AddProduct';
 
 // interface itemsProps{
 //     params:{
@@ -32,6 +33,7 @@ export default async function items(props: any) {
    
     return (
         <body>
+            <AddProduct/>
             <div className="bubble bubble-1"></div>
             <div className="bubble bubble-2"></div>
             <header id="navbar">

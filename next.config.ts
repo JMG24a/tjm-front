@@ -12,8 +12,18 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*", // Todas las solicitudes a /api serán redirigidas
+        destination: "https://tjm-back.vercel.app/api/:path*", // URL de tu backend
+      },
+    ];
   },
 };
 

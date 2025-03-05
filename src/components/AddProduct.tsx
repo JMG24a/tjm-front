@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from "react";
 
 
-const Login = () => {
+const AddProduct = () => {
     // const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const [formState, setFormState] = useState({});
     const [flat, setFlat] = useState<boolean>(false);
@@ -55,22 +55,27 @@ const Login = () => {
     };
 
     const handlerClick = () => {
+        console.log("SSS")
         setFlat(!flat);
     }
     
-    if(!flat && !login){
+    if(login && !flat){
         return (
           <div className='login--button' onClick={handlerClick}>
-              <Image src="/login.svg" alt="" width={30} height={30}/>
+              <Image src="/plus.png" alt="" width={30} height={30}/>
           </div>
         );
-    }else if(!login){
-        return (
+    }else if(flat){
+        return(
             <div className='login_container'>
                 <div className='login_content'>
                     <p>Login</p>
-                    <input type="text" className='login_content--input' name='email' onChange={handleInput}/>
-                    <input type="password" className='login_content--input' name='password' onChange={handleInput}/>
+                    <input type="text" className='login_content--input' name='name' onChange={handleInput}/>
+                    <input type="text" className='login_content--input' name='price' onChange={handleInput}/>
+                    <input type="text" className='login_content--input' name='image' onChange={handleInput}/>
+                    <input type="text" className='login_content--input' name='size' onChange={handleInput}/>
+                    <input type="text" className='login_content--input' name='category' onChange={handleInput}/>
+                    <input type="text" className='login_content--input' name='description' onChange={handleInput}/>
                     <button
                         className="close-btn--send"
                         onClick={handlerClickSend}
@@ -88,4 +93,4 @@ const Login = () => {
     }
 };
 
-export default Login;
+export default AddProduct;
