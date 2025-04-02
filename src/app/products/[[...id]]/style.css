@@ -352,7 +352,7 @@ header ul .nav-a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 50;
+  z-index: 104;
 }
 
 .login_content{
@@ -395,6 +395,30 @@ header ul .nav-a:hover{
 .close-btn:hover {
   background: darkred;
 }
+
+.login_content{
+  height: 90vh;
+  overflow: overlay;
+}
+
+.body_add_product{
+  text-align: start;
+  font-size: x-small;
+}
+
+.form-group{
+  margin-bottom: 10px;
+}
+
+.form-group textarea{
+  width: 100%;
+}
+
+.form-group--env{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 /* Estilos adicionales para destacar elementos específicos */
 
