@@ -27,7 +27,7 @@ const Login = () => {
                     headers: {
                       'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ ...formState }),
+                    body: JSON.stringify(formState),
                     credentials: 'include' // Permite enviar cookies si las hubiera
                 }
             );
