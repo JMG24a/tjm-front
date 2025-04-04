@@ -1,24 +1,27 @@
 "use client"
 import Image from 'next/image';
-import { useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 
 
 const Login = () => {
     // const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const [formState, setFormState] = useState({});
     const [flat, setFlat] = useState<boolean>(false);
-    const [login, setLogin] = useState<boolean>(()=>{
-        const login = localStorage.getItem("token")
-        if(!login){
-            return false;
-        }
-        return true
-    });
+    const [login, setLogin] = useState<boolean>(false);
     const [token, setToken] = useState<string | null>(null);
     const [error, setError] = useState<string | null>(null);
 
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        const savedToken = localStorage.getItem('token');
+        if(savedToken != null){
+            setLogin(true)
+        }
+        setToken(savedToken);
+      }
+    }, []);
+
     const handlerClickSend = async () => {
-        const secretKey = process.env.API_SECRET_KEY;
         const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
         try{
             const response = await fetch(`${backApi}/api/v1/auth/login`,
@@ -36,7 +39,7 @@ const Login = () => {
                 localStorage.setItem("token", data.auth);
                 setToken(data.auth);
                 setFlat(!flat);
-                setLogin(true)
+                setLogin(true);
             }else{
                 setError("password or user incorrect");
             }
@@ -45,8 +48,14 @@ const Login = () => {
         }
     }
 
+    const handlerLogout = () => {
+        localStorage.removeItem("token");
+        setToken(null);
+        setLogin(false);
+    }
 
-    const handleInput = (e: any) => {
+
+    const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
       const { name, value } = e.target;
       setFormState((prevState) => ({
         ...prevState,
@@ -83,6 +92,12 @@ const Login = () => {
                     </button>
                     {error? <p> {error} </p>: <p></p>}
                 </div>
+            </div>
+        )
+    }else if(login && token){
+        return(
+            <div className='logout--button' onClick={handlerLogout}>
+                <Image src="/mono-logout.png" alt="" width={30} height={30}/>
             </div>
         )
     }

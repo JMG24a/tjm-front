@@ -499,6 +499,17 @@ header ul .nav-a:hover{
     border-radius: 100%;
 }
 
+.logout--button{
+    position: fixed;
+    z-index: 730;
+    bottom: 15px;
+    right: 10px;
+    background-color: rgb(221, 221, 221);
+    margin: 5px;
+    padding: 5px 5px 0px;
+    border-radius: 100%;
+}
+
 .login_container{
     position: fixed;
     top: 0;
@@ -518,6 +529,7 @@ header ul .nav-a:hover{
     border-radius: 8px;
     text-align: center;
     width: 300px;
+    height: 40vh;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
