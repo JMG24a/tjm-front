@@ -32,7 +32,7 @@ export default async function items(props: any) {
     let gr1 = -1, gr2 = 1, gc = 1;
    
     return (
-        <body>
+        <div>
             <AddProduct/>
             <div className="bubble bubble-1"></div>
             <div className="bubble bubble-2"></div>
@@ -116,6 +116,6 @@ export default async function items(props: any) {
                     }
                 })}
             </div>
-        </body>
+        </div>
     )
 }

@@ -61,19 +61,19 @@ export default async function items(props: any) {
     let gr1 = -1, gr2 = 1, gc = 1;
 
     return (
-<body>
+    <div>
     
-    <div className="details_container">
-        <div className="arrow">
-            <BackPage
-                src={'/arrow-left.png'}
-                alt={'volver'}
-                width={50}
-                height={50}
-                type={`/products/${product.category}`}
-            />
-        </div>
-        <div className="container-items">
+        <div className="details_container">
+            <div className="arrow">
+                <BackPage
+                    src={'/arrow-left.png'}
+                    alt={'volver'}
+                    width={50}
+                    height={50}
+                    type={`/products/${product.category}`}
+                />
+            </div>
+            <div className="container-items">
 
                 <div className="details_carousel">
                     <div className="details_carousel-inner">
@@ -115,18 +115,18 @@ export default async function items(props: any) {
                     <button id="next"> {'>'} </button>
                 </div>
 
-            <div className="container-content">
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <p>cm {product.size}</p>
-                <p>{product.price}$</p>
+                <div className="container-content">
+                    <h3>{product.name}</h3>
+                    <p>{product.description}</p>
+                    <p>cm {product.size}</p>
+                    <p>{product.price}$</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <h3>mas para explorar</h3>
+        <h3 style={{ textAlign: "center" }}>mas para explorar</h3>
 
-    <div className="grid-container">
+        <div className="grid-container">
                 { // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 suggestions.map((item: any, count: number)=>{
                     const number = count + 1;
@@ -196,6 +196,6 @@ export default async function items(props: any) {
                     }
                 })}
             </div>
-    </body>
+    </div>
     )
 }
