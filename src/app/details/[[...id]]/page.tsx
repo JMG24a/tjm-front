@@ -2,6 +2,7 @@ import Link from "next/link";
 import './style.css'
 import BackPage from '../../../components/BackPage';
 import Image from "next/image";
+import ConfigProduct from "app/components/ConfigProduct";
 
 const getImages = async (id: string) => {
     const secretKey = process.env.API_SECRET_KEY;
@@ -74,7 +75,6 @@ export default async function items(props: any) {
                 />
             </div>
             <div className="container-items">
-
                 <div className="details_carousel">
                     <div className="details_carousel-inner">
                         <Image
@@ -108,6 +108,7 @@ export default async function items(props: any) {
                             />
                         ))}
                     </div>
+                    <ConfigProduct/>
                 </div>
 
                 <div className="duttons">
