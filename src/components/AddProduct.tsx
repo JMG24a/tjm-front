@@ -25,8 +25,6 @@ const AddProduct = () => {
 
     const handlerClickSend = async () => {
         const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
-        console.log("formState", formState)
-        
         try {
             const formData = new FormData();
             Object.keys(formState).forEach(key => {

@@ -445,14 +445,43 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
+    align-content: center;
     background-color: rgba(0, 0, 0, 0.600);
+  }
+
+  .form_edit_product{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-background);
+  }
+
+  .form_edit_product input{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  } 
+
+  .form_edit_product .image_container{
+    position: relative;
+    height: 50vh;
+  } 
+
+  .form_edit_product--actions{
+    display: flex;
+    width: 60%;
+    margin: 50px auto;
+    justify-content: space-between;
   }
 
   .product_menu_button--option{
     display: flex;
     flex-direction: column;
-    background-color: rgb(101, 94, 94);
+    background-color: rgb(128 126 126);
     width: 70%;
     margin: 15px auto;
   }

@@ -108,7 +108,12 @@ export default async function items(props: any) {
                             />
                         ))}
                     </div>
-                    <ConfigProduct/>
+
+                    <ConfigProduct 
+                        id={id} 
+                        type={`/products/${product.category}`}
+                    />
+                    
                 </div>
 
                 <div className="duttons">
