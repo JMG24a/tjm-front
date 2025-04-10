@@ -2,7 +2,7 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import { FormProduct } from "./formProduct";
+import { FormProductEdit } from "./formProductEdit";
 
 
 interface propsBack{
@@ -227,15 +227,13 @@ const ExpandableButton = ({id, type}:propsBack) => {
                 </button>
             </div>
             {editConfirm && (
-              <div className="container_form_edit">
-                <FormProduct
-                    image={image}
-                    handleInput={handleInput}
-                    handleImageChange={handleImageChange}
-                    handlerClick={handleEditConfirm}
-                    handlerClickSend={handlerClickSend}
-                />
-              </div>
+              <FormProductEdit
+                  image={image}
+                  handleInput={handleInput}
+                  handleImageChange={handleImageChange}
+                  handlerClick={handleEditConfirm}
+                  handlerClickSend={handlerClickSend}
+              />
             )}
           </div>
         </div>

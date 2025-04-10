@@ -486,11 +486,75 @@ body {
     margin: 15px auto;
   }
 
-  .container_form_edit{
+
+  .edit_container{
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     width: 100%;
-    background: gray;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 104;
+  }
+  
+  .edit_content{
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    height: inherit;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .body_edit_product{
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .form-group{
+    margin-bottom: 10px;
+  }
+  
+  .form-group textarea{
+    width: 100%;
+  }
+  
+  .form-group--image{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+    position: relative;
+    border: solid gray 1px;
+  }
+  
+  .form-group--image input{
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+  }
+  
+  .form-group--env{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .form-group--name--price{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .form-group--name--price div{
+    width: 40%;
+  }
+
+  .form-group--name--price input{
+    width: 100%;
   }
