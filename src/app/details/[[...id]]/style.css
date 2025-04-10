@@ -485,3 +485,12 @@ body {
     width: 70%;
     margin: 15px auto;
   }
+
+  .container_form_edit{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: gray;
+  }

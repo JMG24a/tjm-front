@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, ChangeEvent, useEffect } from "react";
+import { FormProduct } from './formProduct';
 
 interface FormState {
   [key: string]: string | File;
@@ -99,57 +100,13 @@ const AddProduct = () => {
         );
     } else if (flat) {
         return (
-            <div className='add_container'>
-                <div className='add_content'>
-                    <div className='body_add_product'>
-                        <div className="form-container">
-                            <div>
-                                <div className="form-group">
-                                    <label>Nombre:</label>
-                                    <input type="text" id="name" name="name" required onChange={handleInput}/>
-                                </div>
-                                <div className="form-group">
-                                    <label>Precio:</label>
-                                    <input type="number" id="price" name="price" required onChange={handleInput}/>
-                                </div>
-                                <div className="form-group--image">
-                                    {image && <Image src={image} alt="Vista previa" width={180} height={170}  style={{ display: "block", width: "100%" }} />}
-                                    <input
-                                        type="file"
-                                        name="image"
-                                        accept="image/*"
-                                        onChange={handleImageChange}
-                                        id="image"
-                                    />
-                                    <br />
-                                </div>
-                                <div className="form-group">
-                                    <label>Tamaño:</label>
-                                    <input type="text" id="size" name="size" onChange={handleInput}/>
-                                </div>
-                                <div className="form-group">
-                                    <label>Categoría:</label>
-                                    <select id="category" name="category" onChange={handleInput}>
-                                        <option value="">select</option>
-                                        <option value="comedor">Comedores</option>
-                                        <option value="dormitorio">Dormitorios</option>
-                                        <option value="multimueble">Multimuebles</option>
-                                        <option value="sofa">Sofas</option>
-                                    </select>
-                                </div>
-                                <div className="form-group">
-                                    <label>Descripción:</label>
-                                    <textarea id="description" name="description" onChange={handleInput}></textarea>
-                                </div>
-                                <div className="form-group--env">
-                                    <button type="button" onClick={handlerClickSend}>Enviar</button>
-                                    <button type="button" onClick={handlerClick}>Cancelar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
+            <FormProduct
+                image={image}
+                handleInput={handleInput}
+                handleImageChange={handleImageChange}
+                handlerClick={handlerClick}
+                handlerClickSend={handlerClickSend}
+            />
         );
     }
 };

@@ -2,6 +2,7 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
+import { FormProduct } from "./formProduct";
 
 
 interface propsBack{
@@ -17,6 +18,7 @@ const ExpandableButton = ({id, type}:propsBack) => {
   const [isOpen, setIsOpen] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [editConfirm, setEditConfirm] = useState(false);
+  const [pictureConfirm, setPictureConfirm] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
   const [token, setToken] = useState<string | null>(null);
   const [image, setImage] = useState<string | null>(null);
@@ -42,6 +44,10 @@ const ExpandableButton = ({id, type}:propsBack) => {
 
   const handleEditConfirm = () =>{
     setEditConfirm(!editConfirm)
+  }
+
+  const addPictureConfirm = () => {
+    setPictureConfirm(!pictureConfirm)
   }
 
   const handleDeleteClick = () => {
@@ -136,6 +142,33 @@ const ExpandableButton = ({id, type}:propsBack) => {
     }
   }
 
+  const handlerClickSend = async () => {
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    try {
+        const formData = new FormData();
+        Object.keys(formState).forEach(key => {
+            const value = formState[key];
+            if (value !== undefined) {
+                formData.append(key, value);
+            }
+        });
+
+        const response = await fetch(`${backApi}/api/v1/products`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
+            body: formData,
+            credentials: 'include'
+        });
+
+        const data = await response.json();
+        console.log(data)
+    } catch (error) {
+        console.error("Error:", error);
+    }
+};
+
   return (
     <div className="container_button--config">
       <button
@@ -163,12 +196,12 @@ const ExpandableButton = ({id, type}:propsBack) => {
 
               <div className="product_menu_button--option">
                 <label htmlFor="">Agregar otra imagen</label>
-                <button className="buttons_edit_menu--config" onClick={handleEditConfirm}>
+                <button className="buttons_edit_menu--config" onClick={addPictureConfirm}>
                   <Image src={"/plus.png"} alt="button config" width={25} height={25}/>
                 </button>
               </div>
 
-              {editConfirm && (
+              {pictureConfirm && (
                 <div className="form_edit_product">
                   <div className="image_container">
                     {image && <Image src={image} alt="Vista previa" width={400} height={300}  style={{ display: "block", width: "100%" }} />}
@@ -182,17 +215,28 @@ const ExpandableButton = ({id, type}:propsBack) => {
                   </div>
                   <div className="form_edit_product--actions">
                     <button onClick={handlerAddPictureSend}>Enviar</button>
-                    <button onClick={handleEditConfirm}>Cancelar</button>
+                    <button onClick={addPictureConfirm}>Cancelar</button>
                   </div>
                 </div>
               )}
 
             <div className="product_menu_button--option">
                 <label htmlFor="">Editar producto</label>
-                <button className="buttons_edit_menu--config">
+                <button className="buttons_edit_menu--config" onClick={handleEditConfirm}> 
                   <Image src={"/edit.webp"} alt="button config" width={25} height={25}/>
                 </button>
             </div>
+            {editConfirm && (
+              <div className="container_form_edit">
+                <FormProduct
+                    image={image}
+                    handleInput={handleInput}
+                    handleImageChange={handleImageChange}
+                    handlerClick={handleEditConfirm}
+                    handlerClickSend={handlerClickSend}
+                />
+              </div>
+            )}
           </div>
         </div>
       )}
