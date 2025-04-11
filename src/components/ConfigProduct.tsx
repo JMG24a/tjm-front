@@ -16,7 +16,10 @@ interface propsBack{
     category: string,
     image: string
   },
-  images: []
+  images: [{
+    image: string,
+    id: string
+  }]
 }
 
 interface FormState {
@@ -257,7 +260,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
                         id="image"
                     />
                     <div className="details_carousel-inner">
-                      {!image && images.map((item: any, count: number) => (
+                      {!image && images.map((item, count: number) => (
                         <div className="container_add_image" key={count}>
                           <Image
                             src={item.image}
