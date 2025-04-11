@@ -7,14 +7,22 @@ import { FormProductEdit } from "./formProductEdit";
 
 interface propsBack{
   id: string,
-  type: string
+  type: string,
+  info: {
+    name: string,
+    price: string,
+    description: string,
+    size: string
+    category: string,
+    image: string
+  }
 } 
 
 interface FormState {
   [key: string]: string | File;
 }
 
-const ExpandableButton = ({id, type}:propsBack) => {
+const ExpandableButton = ({id, type, info}:propsBack) => {
   const [isOpen, setIsOpen] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [editConfirm, setEditConfirm] = useState(false);
@@ -32,6 +40,15 @@ const ExpandableButton = ({id, type}:propsBack) => {
       const savedToken = localStorage.getItem('token');
       setToken(savedToken);
     }
+
+    setImage(info.image)
+    setFormState({
+      name: info.name,
+      price: info.price,
+      description: info.description,
+      size: info.size,
+      category: info.category
+    })
   }, []);
 
   const toggleButtons = () => {
@@ -64,7 +81,6 @@ const ExpandableButton = ({id, type}:propsBack) => {
 
   const handleInput = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    console.log("🚀 ~ handleInput ~ name:", name)
 
     if (e.target instanceof HTMLInputElement && e.target.type === "file") {
         const fileInput = e.target as HTMLInputElement;
@@ -145,6 +161,8 @@ const ExpandableButton = ({id, type}:propsBack) => {
   const handlerClickSend = async () => {
     const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
     try {
+      console.log("formState", formState)
+
         const formData = new FormData();
         Object.keys(formState).forEach(key => {
             const value = formState[key];
@@ -153,8 +171,8 @@ const ExpandableButton = ({id, type}:propsBack) => {
             }
         });
 
-        const response = await fetch(`${backApi}/api/v1/products`, {
-            method: 'POST',
+        const response = await fetch(`${backApi}/api/v1/products/${id}`, {
+            method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${token}`,
             },
@@ -233,9 +251,17 @@ const ExpandableButton = ({id, type}:propsBack) => {
                   handleImageChange={handleImageChange}
                   handlerClick={handleEditConfirm}
                   handlerClickSend={handlerClickSend}
+                  info={info}
               />
             )}
           </div>
+
+          <button
+            onClick={handleEditClick}
+            className="config_button--cancel"
+          >
+            <Image src={"/cancel.png"} alt="button config" width={25} height={25}/>
+          </button>
         </div>
       )}
 

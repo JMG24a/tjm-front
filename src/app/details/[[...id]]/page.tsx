@@ -112,8 +112,9 @@ export default async function items(props: any) {
                     <ConfigProduct 
                         id={id} 
                         type={`/products/${product.category}`}
+                        info={product}
                     />
-                    
+
                 </div>
 
                 <div className="duttons">
