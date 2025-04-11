@@ -113,6 +113,7 @@ export default async function items(props: any) {
                         id={id} 
                         type={`/products/${product.category}`}
                         info={product}
+                        images={images}
                     />
 
                 </div>

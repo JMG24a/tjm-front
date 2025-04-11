@@ -378,6 +378,7 @@ body {
   }
 
   .details_carousel-inner{
+    position: relative;
     display: flex;
     aspect-ratio: 12 / 9;
     overflow-x: auto;
@@ -387,12 +388,14 @@ body {
     border-radius: 0.5rem;
   }
 
-  .details_carousel-inner .Image{
+  .container_add_image{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    height: 50%;
     flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
   }
-
 
   .container_button--config{
     display: flex;
@@ -451,7 +454,8 @@ body {
     background-color: rgba(0, 0, 0, 0.600);
   }
 
-  .form_edit_product{ 
+  .form_edit_product{
+    z-index: 1;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -478,6 +482,10 @@ body {
     justify-content: space-between;
   }
 
+  .form_edit_product--actions button{
+    z-index: 2;
+  }
+  
   .product_menu_button--option{
     display: flex;
     flex-direction: column;
@@ -567,4 +575,22 @@ body {
     border-radius: 100%;
     border-style: none;
     margin-right: 5px;
+  }
+
+  .add_delete_image_container{
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    height: 50%;
+    background-color: #070707ab;
+  }
+
+  .add_delete_image_container button{
+    z-index: 2;
+    width: 50%;
+    margin: -10px auto 20px;
   }

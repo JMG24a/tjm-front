@@ -15,26 +15,29 @@ interface propsBack{
     size: string
     category: string,
     image: string
-  }
-} 
+  },
+  images: []
+}
 
 interface FormState {
   [key: string]: string | File;
 }
 
-const ExpandableButton = ({id, type, info}:propsBack) => {
+const ExpandableButton = ({id, type, info, images}:propsBack) => {
   const [isOpen, setIsOpen] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [editConfirm, setEditConfirm] = useState(false);
   const [pictureConfirm, setPictureConfirm] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
+  const [deleteConfirm, setDeleteConfirm] = useState(false);
+  const [addImageId, setAddImageId] = useState<string>("null");
   const [token, setToken] = useState<string | null>(null);
   const [image, setImage] = useState<string | null>(null);
   const [formState, setFormState] = useState<FormState>({});
-  
+
 
   const router = useRouter();
-  
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const savedToken = localStorage.getItem('token');
@@ -47,7 +50,7 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
       price: info.price,
       description: info.description,
       size: info.size,
-      category: info.category
+      category: info.category,
     })
   }, []);
 
@@ -60,15 +63,22 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
   }
 
   const handleEditConfirm = () =>{
-    setEditConfirm(!editConfirm)
+    setEditConfirm(!editConfirm);
+    setImage(info.image);
   }
 
   const addPictureConfirm = () => {
     setPictureConfirm(!pictureConfirm)
+    setImage(null)
   }
 
   const handleDeleteClick = () => {
     setDeleteModal(!deleteModal)
+  }
+
+  const handleDeleteConfirm = (id:string) =>{
+    setDeleteConfirm(!deleteConfirm);
+    setAddImageId(id);
   }
 
   const handleBack = () => {
@@ -142,7 +152,7 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
 
   const handleDeleteAction = async () => {
     const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
-    
+
     try {
         await fetch(`${backApi}/api/v1/products/${id}`, {
           method: 'DELETE',
@@ -158,11 +168,27 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
     }
   }
 
+  const deleteAddAction = async () => {
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    try {
+        const response = await fetch(`${backApi}/api/v1/images/${addImageId}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
+            credentials: 'include'
+        });
+
+        await response.json();
+        handleBack()
+    } catch (error) {
+        console.error("Error:", error);
+    }
+  }
+
   const handlerClickSend = async () => {
     const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
     try {
-      console.log("formState", formState)
-
         const formData = new FormData();
         Object.keys(formState).forEach(key => {
             const value = formState[key];
@@ -180,8 +206,8 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
             credentials: 'include'
         });
 
-        const data = await response.json();
-        console.log(data)
+        await response.json();
+        handleBack()
     } catch (error) {
         console.error("Error:", error);
     }
@@ -230,6 +256,38 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
                         onChange={handleImageChange}
                         id="image"
                     />
+                    <div className="details_carousel-inner">
+                      {!image && images.map((item: any, count: number) => (
+                        <div className="container_add_image" key={count}>
+                          <Image
+                            src={item.image}
+                            alt="Imagen personalizada"
+                            width={400}
+                            height={300}
+                            style={{
+                              width: '100%',
+                              height: 'auto',
+                              objectFit: 'cover',
+                              flex: '1 0 100%',
+                              scrollSnapAlign: 'start',
+                            }}
+                          />
+                          <button
+                            onClick={()=>handleDeleteConfirm(item.id)}
+                            className="config_button--cancel"
+                          >
+                            <Image src={"/dash.png"} alt="button config" width={25} height={25}/>
+                          </button>
+                          {deleteConfirm && (
+                            <div className="add_delete_image_container">
+                                <h4>Quieres eliminar la imagen?</h4>
+                                <button onClick={deleteAddAction}>Si</button>
+                                <button onClick={()=>handleDeleteConfirm("null")}>No</button>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                   <div className="form_edit_product--actions">
                     <button onClick={handlerAddPictureSend}>Enviar</button>
@@ -240,7 +298,7 @@ const ExpandableButton = ({id, type, info}:propsBack) => {
 
             <div className="product_menu_button--option">
                 <label htmlFor="">Editar producto</label>
-                <button className="buttons_edit_menu--config" onClick={handleEditConfirm}> 
+                <button className="buttons_edit_menu--config" onClick={handleEditConfirm}>
                   <Image src={"/edit.webp"} alt="button config" width={25} height={25}/>
                 </button>
             </div>
