@@ -216,6 +216,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
     }
 };
 
+if(token){
   return (
     <div className="container_button--config">
       <button
@@ -224,7 +225,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
       >
         <Image src={"/config.png"} alt="button config" width={25} height={25}/>
       </button>
-
+  
       {isOpen && (
         <div className="absolute top-12 left-0 flex flex-col space-y-2">
           <button className="buttons--config" onClick={handleEditClick}>
@@ -235,7 +236,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
           </button>
         </div>
       )}
-
+  
       {editModal && (
         <div className="product_menu--edit">
           <div>
@@ -247,7 +248,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
                   <Image src={"/plus.png"} alt="button config" width={25} height={25}/>
                 </button>
               </div>
-
+  
               {pictureConfirm && (
                 <div className="form_edit_product">
                   <div className="image_container">
@@ -292,62 +293,65 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
                       ))}
                     </div>
                   </div>
-                  <div className="form_edit_product--actions">
-                    <button onClick={handlerAddPictureSend}>Enviar</button>
-                    <button onClick={addPictureConfirm}>Cancelar</button>
+                    <div className="form_edit_product--actions">
+                      <button onClick={handlerAddPictureSend}>Enviar</button>
+                      <button onClick={addPictureConfirm}>Cancelar</button>
+                    </div>
                   </div>
-                </div>
+                )}
+  
+              <div className="product_menu_button--option">
+                  <label htmlFor="">Editar producto</label>
+                  <button className="buttons_edit_menu--config" onClick={handleEditConfirm}>
+                    <Image src={"/edit.webp"} alt="button config" width={25} height={25}/>
+                  </button>
+              </div>
+              {editConfirm && (
+                <FormProductEdit
+                    image={image}
+                    handleInput={handleInput}
+                    handleImageChange={handleImageChange}
+                    handlerClick={handleEditConfirm}
+                    handlerClickSend={handlerClickSend}
+                    info={info}
+                />
               )}
-
-            <div className="product_menu_button--option">
-                <label htmlFor="">Editar producto</label>
-                <button className="buttons_edit_menu--config" onClick={handleEditConfirm}>
-                  <Image src={"/edit.webp"} alt="button config" width={25} height={25}/>
+            </div>
+  
+            <button
+              onClick={handleEditClick}
+              className="config_button--cancel"
+            >
+              <Image src={"/cancel.png"} alt="button config" width={25} height={25}/>
+            </button>
+          </div>
+        )}
+  
+        {deleteModal && (
+          <div className="product_menu--edit">
+            <div>
+              <h3>Estas seguro que quieres eliminar el Producto?</h3>
+  
+              <div className="product_menu_button--option">
+                <button className="buttons_edit_menu--config" onClick={handleDeleteAction}>
+                  <Image src={"/dash.png"} alt="button config" width={25} height={25}/>
                 </button>
-            </div>
-            {editConfirm && (
-              <FormProductEdit
-                  image={image}
-                  handleInput={handleInput}
-                  handleImageChange={handleImageChange}
-                  handlerClick={handleEditConfirm}
-                  handlerClickSend={handlerClickSend}
-                  info={info}
-              />
-            )}
-          </div>
-
-          <button
-            onClick={handleEditClick}
-            className="config_button--cancel"
-          >
-            <Image src={"/cancel.png"} alt="button config" width={25} height={25}/>
-          </button>
-        </div>
-      )}
-
-      {deleteModal && (
-        <div className="product_menu--edit">
-          <div>
-            <h3>Estas seguro que quieres eliminar el Producto?</h3>
-
-            <div className="product_menu_button--option">
-              <button className="buttons_edit_menu--config" onClick={handleDeleteAction}>
-                <Image src={"/dash.png"} alt="button config" width={25} height={25}/>
-              </button>
-            </div>
-
-            <div className="product_menu_button--option" onClick={handleDeleteClick}>
-              <label htmlFor="">Cancelar</label>
-              <button className="buttons_edit_menu--config">
-              </button>
+              </div>
+  
+              <div className="product_menu_button--option" onClick={handleDeleteClick}>
+                <label htmlFor="">Cancelar</label>
+                <button className="buttons_edit_menu--config">
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-
-    </div>
-  );
+        )}
+  
+      </div>
+    )
+  }else{
+    <></>
+  }
 };
 
 export default ExpandableButton;

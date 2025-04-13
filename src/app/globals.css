@@ -9,5 +9,6 @@
     --primary-color: #f4e7a0;
     --secondary-color: #77a0c8;
     --border-color: rgba(0, 0, 0, 0.25);
-    --color-background: linear-gradient(#f4e7a0, #8f5023);
+    --color-background2: linear-gradient(#ffffff, #b1c6cd);
+    --color-background: linear-gradient(#ffffff, #76a4b4);
 }

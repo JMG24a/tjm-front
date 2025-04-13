@@ -3,6 +3,7 @@ import './style.css'
 import BackPage from '../../../components/BackPage';
 import Image from "next/image";
 import ConfigProduct from "app/components/ConfigProduct";
+import { AddSuggest } from "app/components/AddSuggest";
 
 const getImages = async (id: string) => {
     const secretKey = process.env.API_SECRET_KEY;
@@ -52,11 +53,26 @@ const getSuggest  = async (id: string) => {
     return data;
 }
 
+const getProducts  = async (category: string) => {
+    const secretKey = process.env.API_SECRET_KEY;
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    const response = await fetch(`${backApi}/api/v1/products?category=${category}`,{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json',
+            'api': `${secretKey}`, 
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const { id } = (await props.params)
     const product = await getProduct(id);
+    const products = await getProducts(product.category);
     const images = await getImages(id);
     const suggestions = await getSuggest(id);
     let gr1 = -1, gr2 = 1, gc = 1;
@@ -108,7 +124,7 @@ export default async function items(props: any) {
                             />
                         ))}
                     </div>
-
+                    
                     <ConfigProduct 
                         id={id} 
                         type={`/products/${product.category}`}
@@ -203,6 +219,7 @@ export default async function items(props: any) {
                         )
                     }
                 })}
+                <AddSuggest products={products} id={id} type={`/products/${product.category}`}/>
             </div>
     </div>
     )
