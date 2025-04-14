@@ -19,7 +19,14 @@ interface propsInterface {
         category: string
     },
     myAppApi: string,
-    suggestions: [{}],
+    suggestions: [{
+        suggest:{
+            id: number,
+			name: string,
+			price: string,
+			image: string
+        }
+    }],
     dollar: {
         monitors: {
             usd: {
