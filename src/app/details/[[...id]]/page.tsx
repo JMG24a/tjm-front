@@ -1,9 +1,9 @@
-import Link from "next/link";
 import './style.css'
 import BackPage from '../../../components/BackPage';
 import Image from "next/image";
 import ConfigProduct from "app/components/ConfigProduct";
-import { AddSuggest } from "app/components/AddSuggest";
+import { DetailsContext } from "app/components/DetailsContext";
+import { GridComponents } from "app/components/GridComponents";
 
 const getImages = async (id: string) => {
     const secretKey = process.env.API_SECRET_KEY;
@@ -67,6 +67,17 @@ const getProducts  = async (category: string) => {
     return data;
 }
 
+const getDollar  = async () => {
+    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json'
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
@@ -75,7 +86,7 @@ export default async function items(props: any) {
     const products = await getProducts(product.category);
     const images = await getImages(id);
     const suggestions = await getSuggest(id);
-    let gr1 = -1, gr2 = 1, gc = 1;
+    const dollar = await getDollar()
 
     return (
     <div>
@@ -139,88 +150,23 @@ export default async function items(props: any) {
                     <button id="next"> {'>'} </button>
                 </div>
 
-                <div className="container-content">
-                    <h3>{product.name}</h3>
-                    <p>{product.description}</p>
-                    <p>cm {product.size}</p>
-                    <p>{product.price}$</p>
-                </div>
+                <DetailsContext
+                    product={product}
+                    dollar={dollar}
+                />
             </div>
         </div>
 
         <h3 style={{ textAlign: "center" }}>mas para explorar</h3>
 
-        <div className="grid-container">
-                { // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                suggestions.map((item: any, count: number)=>{
-                    const number = count + 1;
-                    if(number % 2 !== 0 && number !== 1){
-                        if(gc == 1){
-                            gc = 2
-                        }else{
-                            gc = 1
-                        }
-                        gr1 = gr1 + 2;
-                        gr2 = gr2 + 2; 
-
-                        return(
-                            <Link 
-                                className="item-container" 
-                                style={{  gridColumn: `${gc}`, gridRow: `${gr1}/${gr2}`}} 
-                                href={`${myAppApi}/details/${item.suggest.id}`}
-                                key={count}
-                            >
-                                    <Image 
-                                        src={`${item.suggest.image}`} 
-                                        key={count}
-                                        alt="Imagen personalizada"
-                                        width={500}
-                                        height={300}
-                                        style={{
-                                            width: '100%',
-                                            height: '100%',
-                                            objectFit: 'cover',
-                                            borderRadius: '8px',
-                                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                        }}
-                                    />
-                                    <div className="details">
-                                        <div className="name">{item.suggest.name}</div>
-                                        <div className="price">{item.suggest.price}$</div>
-                                    </div>
-                            </Link>
-                        )
-                    }else{
-                        return(
-                            <Link 
-                                className="item-container"
-                                href={`${myAppApi}/details/${item.suggest.id}`}
-                                key={count}
-                            >
-                                <Image 
-                                    src={`${item.suggest.image}`} 
-                                    key={count}
-                                    alt="Imagen personalizada"
-                                    width={500}
-                                    height={300}
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        borderRadius: '8px',
-                                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                    }}
-                                />
-                                <div className="details">
-                                    <div className="name">{`${item.suggest.name}`}</div>
-                                    <div className="price">{item.suggest.price}$</div>
-                                </div>
-                            </Link>
-                        )
-                    }
-                })}
-                <AddSuggest products={products} id={id} type={`/products/${product.category}`}/>
-            </div>
+        <GridComponents
+            dollar={dollar}
+            myAppApi={`${myAppApi}`}
+            product={product}
+            suggestions={suggestions}
+            products={products}
+            id={id}
+        />
     </div>
     )
 }

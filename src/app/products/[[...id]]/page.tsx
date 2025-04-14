@@ -3,12 +3,24 @@ import NavBar from "../../../components/NavBar";
 import Link from 'next/link';
 import Image from 'next/image';
 import AddProduct from 'app/components/AddProduct';
+import { GridComponentsProducts } from 'app/components/GridComponentsProducts';
 
 // interface itemsProps{
 //     params:{
 //         id: string
 //     }
 // }
+
+const getDollar  = async () => {
+    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json'
+          },
+    });
+    const data = await response.json();
+    return data;
+}
 
 const getProducts  = async (category: string) => {
     const secretKey = process.env.API_SECRET_KEY;
@@ -29,7 +41,7 @@ export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const { id } = (await props.params)
     const products = await getProducts(id);
-    let gr1 = -1, gr2 = 1, gc = 1;
+    const dollar = await getDollar()
    
     return (
         <div>
@@ -48,74 +60,11 @@ export default async function items(props: any) {
                 <NavBar/>
             </header>
 
-            <div className="product_grid-container">
-                { // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                products.map((item: any, count: number)=>{
-                    const number = count + 1;
-                    if(number % 2 !== 0 && number !== 1){
-                        if(gc == 1){
-                            gc = 2
-                        }else{
-                            gc = 1
-                        }
-                        gr1 = gr1 + 2;
-                        gr2 = gr2 + 2; 
-
-                        return(
-                            <Link 
-                                className="item-container" 
-                                style={{  gridColumn: `${gc}`, gridRow: `${gr1}/${gr2}`}} 
-                                href={`${myAppApi}/details/${item.id}`}
-                                key={count}
-                            >
-                                    <Image 
-                                        src={`${item.image}`} 
-                                        alt="Item Image"
-                                        width={500}
-                                        height={300}
-                                        style={{
-                                            width: '100%',
-                                            height: '100%',
-                                            objectFit: 'cover',
-                                            borderRadius: '8px',
-                                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                        }}
-                                    />
-                                    <div className="details">
-                                        <div className="name">{item.name}</div>
-                                        <div className="price">{item.price}$</div>
-                                    </div>
-                            </Link>
-                        )
-                    }else{
-                        return(
-                            <Link 
-                                className="item-container"
-                                href={`${myAppApi}/details/${item.id}`}
-                                key={count}
-                            >
-                                <Image 
-                                    src={`${item.image}`} 
-                                    alt="Item Image"
-                                    width={500}
-                                    height={300}
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        borderRadius: '8px',
-                                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                    }}
-                                />
-                                <div className="details">
-                                    <div className="name">{`${item.name}`}</div>
-                                    <div className="price">{item.price}$</div>
-                                </div>
-                            </Link>
-                        )
-                    }
-                })}
-            </div>
+            <GridComponentsProducts
+                dollar={dollar}
+                myAppApi={`${myAppApi}`}
+                products={products}
+            />
         </div>
     )
 }

@@ -176,7 +176,3 @@ export const AddSuggest = ({products, id, type}:propsType) => {
         )
     }
 }
-
-
-
-
