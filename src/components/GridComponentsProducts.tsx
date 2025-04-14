@@ -13,6 +13,7 @@ interface propsInterface {
     dollar: {
         monitors: {
             usd: {
+                price: number,
                 price_old: number
             }
         }
@@ -23,7 +24,7 @@ export const GridComponentsProducts = ({dollar, products, myAppApi}: propsInterf
     let gr1 = -1, gr2 = 1, gc = 1;
 
     const onChangeDollar = (price: number):string => {
-        const result = dollar.monitors.usd.price_old * price;
+        const result = dollar.monitors.usd.price * price;
         const formatted = new Intl.NumberFormat('es-VE', {
         style: 'currency',
         currency: 'VES',

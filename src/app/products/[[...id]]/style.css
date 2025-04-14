@@ -356,7 +356,7 @@ header ul .nav-a:hover{
 }
 
 .add_content{
-  background: white;
+  background: var(--color-background);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -428,6 +428,14 @@ header ul .nav-a:hover{
 .form-group--env{
   display: flex;
   justify-content: space-evenly;
+}
+
+.form-group--env button{
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #0000007d;
 }
 
 

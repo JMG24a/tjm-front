@@ -10,6 +10,7 @@ interface propsInterface {
     dollar: {
         monitors: {
             usd: {
+                price: number
                 price_old: number
             }
         }
@@ -19,7 +20,7 @@ interface propsInterface {
 export const DetailsContext = ({product, dollar}: propsInterface) => {
 
     const onChangeDollar = (price: number):string => {
-        const result = dollar.monitors.usd.price_old * price;
+        const result = dollar.monitors.usd.price * price;
         const formatted = new Intl.NumberFormat('es-VE', {
         style: 'currency',
         currency: 'VES',
