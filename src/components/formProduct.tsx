@@ -22,6 +22,7 @@ export const FormProduct = ({
             <div className='body_add_product'>
                 <div className="form-container">
                     <div>
+                        <h3 style={{textAlign: "center"}}>Agregar Producto</h3>
                         <div className="form-group">
                             <label>Nombre:</label>
                             <input type="text" id="name" name="name" required onChange={handleInput}/>

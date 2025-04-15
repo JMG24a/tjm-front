@@ -21,9 +21,13 @@ interface propsInterface {
 }
 
 export const GridComponentsProducts = ({dollar, products, myAppApi}: propsInterface) => {
-    let gr1 = -1, gr2 = 1, gc = 1;
+    let count = 0;
+    let rs=0, rf=3
+    let flat = false;
+    let col = true;
 
     const onChangeDollar = (price: number):string => {
+        console.log("🚀 ~ onChangeDollar ~ dollar.monitors.usd.price:", dollar.monitors.usd.price)
         const result = dollar.monitors.usd.price * price;
         const formatted = new Intl.NumberFormat('es-VE', {
         style: 'currency',
@@ -31,81 +35,243 @@ export const GridComponentsProducts = ({dollar, products, myAppApi}: propsInterf
         minimumFractionDigits: 2
         }).format(result);
 
-        console.log("formatted", formatted); // "Bs. 2.500,00"
-
         return formatted;
     }
 
     return(
         <div className="product_grid-container">
             { // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                products.map((item: any, count: number) => {
-                    const number = count + 1;
-                    if (number % 2 !== 0 && number !== 1) {
-                        if (gc == 1) {
-                            gc = 2
-                        } else {
-                            gc = 1
-                        }
-                        gr1 = gr1 + 2;
-                        gr2 = gr2 + 2;
+products.map((item: any, key: number)=>{
+    const column = col ? 1 : 2;
+    if(count === 0){
+        count++
+        col = false;
+        flat = !flat;
+        rs++;
+        return (
+            <Link
+            className="item-container"
+            style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+            href={`${myAppApi}/details/${item.id}`}
+            key={key}
+        >
+            <Image
+                src={`${item.image}`}
+                alt="Item Image"
+                width={500}
+                height={300}
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                }}
+            />
+            <div className="details">
+                <div className="name">{item.name}</div>
+                <div className="price">{onChangeDollar(item.price)}</div>
+            </div>
+        </Link>
+        )
+    }
+    
+    if(count < 3 && !col){
+        if(flat){
+            rf--;
+            flat = !flat;
+            count++
+            console.log("col 2", `${rs}/${rf}`);
+            return (
+                <Link
+                    className="item-container"
+                    style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+                    href={`${myAppApi}/details/${item.id}`}
+                    key={key}
+                >
+                    <Image
+                        src={`${item.image}`}
+                        alt="Item Image"
+                        width={500}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                    />
+                    <div className="details">
+                        <div className="name">{item.name}</div>
+                        <div className="price">{onChangeDollar(item.price)}</div>
+                    </div>
+                </Link>
+            );
+        }
+        rf++;
+        rs++;
+        console.log("col 2", `${rs}/${rf}`);
+        count++
+        return (
+            <Link
+                className="item-container"
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+                href={`${myAppApi}/details/${item.id}`}
+                key={key}
+            >
+                <Image
+                    src={`${item.image}`}
+                    alt="Item Image"
+                    width={500}
+                    height={300}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        borderRadius: '8px',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                    }}
+                />
+                <div className="details">
+                    <div className="name">{item.name}</div>
+                    <div className="price">{onChangeDollar(item.price)}</div>
+                </div>
+            </Link>
+        );
+    }else if(!col){
+        rf = rf + 2;
+        rs++;
+        console.log("col 2", `${rs}/${rf}`);
+        count = 1;
+        col = !col
+        flat = !flat;
+        return (
+            <Link
+                className="item-container"
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+                href={`${myAppApi}/details/${item.id}`}
+                key={key}
+            >
+                <Image
+                    src={`${item.image}`}
+                    alt="Item Image"
+                    width={500}
+                    height={300}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        borderRadius: '8px',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                    }}
+                />
+                <div className="details">
+                    <div className="name">{item.name}</div>
+                    <div className="price">{onChangeDollar(item.price)}</div>
+                </div>
+            </Link>
+        );
+    }
 
-                        return (
-                            <Link
-                                className="item-container"
-                                style={{ gridColumn: `${gc}`, gridRow: `${gr1}/${gr2}` }}
-                                href={`${myAppApi}/details/${item.id}`}
-                                key={count}
-                            >
-                                <Image
-                                    src={`${item.image}`}
-                                    alt="Item Image"
-                                    width={500}
-                                    height={300}
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        borderRadius: '8px',
-                                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                    }}
-                                />
-                                <div className="details">
-                                    <div className="name">{item.name}</div>
-                                    <div className="price">{onChangeDollar(item.price)}</div>
-                                </div>
-                            </Link>
-                        )
-                    } else {
-                        return (
-                            <Link
-                                className="item-container"
-                                href={`${myAppApi}/details/${item.id}`}
-                                key={count}
-                            >
-                                <Image
-                                    src={`${item.image}`}
-                                    alt="Item Image"
-                                    width={500}
-                                    height={300}
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        borderRadius: '8px',
-                                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                    }}
-                                />
-                                <div className="details">
-                                    <div className="name">{`${item.name}`}</div>
-                                    <div className="price">{onChangeDollar(item.price)}</div>
-                                </div>
-                            </Link>
-                        )
-                    }
-                })}
+    if(count < 3 && col){
+        if(flat){
+            rf--;
+            flat = !flat;
+            count++
+            console.log("col 1", `${rs}/${rf}`);
+            return (
+                <Link
+                    className="item-container"
+                    style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+                    href={`${myAppApi}/details/${item.id}`}
+                    key={key}
+                >
+                    <Image
+                        src={`${item.image}`}
+                        alt="Item Image"
+                        width={500}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                    />
+                    <div className="details">
+                        <div className="name">{item.name}</div>
+                        <div className="price">{onChangeDollar(item.price)}</div>
+                    </div>
+                </Link>
+            );
+        }
+        rf++;
+        rs++;
+        console.log("col 1", `${rs}/${rf}`);
+        count++
+        return (
+            <Link
+                className="item-container"
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+                href={`${myAppApi}/details/${item.id}`}
+                key={key}
+            >
+                <Image
+                    src={`${item.image}`}
+                    alt="Item Image"
+                    width={500}
+                    height={300}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        borderRadius: '8px',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                    }}
+                />
+                <div className="details">
+                    <div className="name">{item.name}</div>
+                    <div className="price">{onChangeDollar(item.price)}</div>
+                </div>
+            </Link>
+        );
+    }else if(col){
+        rf = rf + 2;
+        rs++;
+        console.log("col 1", `${rs}/${rf}`);
+        count = 1;
+        col = !col;
+        flat = !flat;
+        return (
+            <Link
+                className="item-container"
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }}
+                href={`${myAppApi}/details/${item.id}`}
+                key={key}
+            >
+                <Image
+                    src={`${item.image}`}
+                    alt="Item Image"
+                    width={500}
+                    height={300}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        borderRadius: '8px',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                    }}
+                />
+                <div className="details">
+                    <div className="name">{item.name}</div>
+                    <div className="price">{onChangeDollar(item.price)}</div>
+                </div>
+            </Link>
+        );
+    }
+})}
         </div>
     )
 }
-
-

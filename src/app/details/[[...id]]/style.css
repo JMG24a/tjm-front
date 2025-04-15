@@ -560,11 +560,11 @@ body {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin: 10px;
+    margin: 10px 0px;
   }
 
   .form-group--name--price div{
-    width: 40%;
+    width: 47%;
   }
 
   .form-group--name--price input{
