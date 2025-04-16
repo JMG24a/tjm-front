@@ -1,9 +1,9 @@
 @import url(./globals.css);
 
 *{
-    padding: 0;
+    /* padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins' sans-serif; */
 }
 
 body{
@@ -110,7 +110,7 @@ header ul .nav-a:hover{
 }
 
 .content p{
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: var(--color);
 }
 

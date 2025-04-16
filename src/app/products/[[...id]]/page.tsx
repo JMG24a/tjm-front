@@ -55,6 +55,7 @@ export default async function items(props: any) {
                         alt="" 
                         width={'220'}
                         height={'60'}
+                        style={{margin: "0 auto"}}
                     />
                 </Link>
                 <NavBar/>
