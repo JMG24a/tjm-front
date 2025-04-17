@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
         </section>
     
-        <div className="carousel">
+        {/* <div className="carousel">
             <div className="carousel-inner">
                 <Image src="/slider-1.jpg" alt="Image 1" id="slider-1" width={500} height={300} style={{
                         width: '100%',
@@ -147,7 +147,7 @@ export default function Home() {
                 <Link href="#slider-3"></Link>
                 <Link href="#slider-4"></Link>
             </div>
-        </div>
+        </div> */}
         <footer className="footer">
             <div className="footer_content">
                 <section className="footer_main">
