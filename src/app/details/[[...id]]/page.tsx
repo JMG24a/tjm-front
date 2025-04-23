@@ -67,6 +67,20 @@ const getProducts  = async (category: string) => {
     return data;
 }
 
+const getGlobalPrice  = async () => {
+    const secretKey = process.env.API_SECRET_KEY;
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    const response = await fetch(`${backApi}/api/v1/products?category=global`,{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json',
+            'api': `${secretKey}`, 
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
 const getDollar  = async () => {
     const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
         method: 'GET', 
@@ -86,7 +100,8 @@ export default async function items(props: any) {
     const products = await getProducts(product.category);
     const images = await getImages(id);
     const suggestions = await getSuggest(id);
-    const dollar = await getDollar()
+    const dollar = await getDollar();
+    const price = await getGlobalPrice();
 
     return (
     <div>
@@ -157,7 +172,7 @@ export default async function items(props: any) {
             </div>
         </div>
 
-        <h3 style={{ textAlign: "center" }}>mas para explorar</h3>
+        <h3 style={{ textAlign: "center", marginBottom: "20px" }}>mas para explorar</h3>
 
         <GridComponents
             dollar={dollar}
@@ -166,6 +181,7 @@ export default async function items(props: any) {
             suggestions={suggestions}
             products={products}
             id={id}
+            priceGlobal={price[0].price}
         />
     </div>
     )

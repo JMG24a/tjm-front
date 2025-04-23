@@ -36,7 +36,7 @@ export const DetailsContext = ({product, dollar}: propsInterface) => {
         <div className="container-content">
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <p>cm {product.size}</p>
+            <p><b>Tamaño</b>: {product.size}</p>
             <p>{onChangeDollar(product.price)}</p>
         </div>
     )

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AddProduct from 'app/components/AddProduct';
 import { GridComponentsProducts } from 'app/components/GridComponentsProducts';
+import PriceGlobal  from 'app/components/PriceGlobal';
 
 // interface itemsProps{
 //     params:{
@@ -16,6 +17,20 @@ const getDollar  = async () => {
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json'
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
+const getGlobalPrice  = async () => {
+    const secretKey = process.env.API_SECRET_KEY;
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    const response = await fetch(`${backApi}/api/v1/products?category=global`,{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json',
+            'api': `${secretKey}`, 
           },
     });
     const data = await response.json();
@@ -41,11 +56,13 @@ export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const { id } = (await props.params)
     const products = await getProducts(id);
-    const dollar = await getDollar()
-   
+    const dollar = await getDollar();
+    const price = await getGlobalPrice();
+
     return (
         <div>
             <AddProduct/>
+            <PriceGlobal info={price}/>
             <div className="bubble bubble-1"></div>
             <div className="bubble bubble-2"></div>
             <header id="navbar">
@@ -65,6 +82,7 @@ export default async function items(props: any) {
                 dollar={dollar}
                 myAppApi={`${myAppApi}`}
                 products={products}
+                priceGlobal={price[0].price}
             />
         </div>
     )

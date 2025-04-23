@@ -34,10 +34,13 @@ interface propsInterface {
                 price_old: number
             }
         }
+    },
+    priceGlobal: {
+        price: number
     }
 }
 
-export const GridComponents = ({id, dollar, products, suggestions, product, myAppApi}: propsInterface) => {
+export const GridComponents = ({id, dollar, products, suggestions, product, myAppApi, priceGlobal}: propsInterface) => {
     let gr1 = -1, gr2 = 1, gc = 1;
 
     const onChangeDollar = (price: number):string => {
@@ -48,9 +51,8 @@ export const GridComponents = ({id, dollar, products, suggestions, product, myAp
         minimumFractionDigits: 2
         }).format(result);
 
-        console.log("formatted", formatted); // "Bs. 2.500,00"
-
-        return formatted;
+        console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
+        return formatted + priceGlobal;
     }
 
     return(

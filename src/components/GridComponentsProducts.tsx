@@ -17,24 +17,28 @@ interface propsInterface {
                 price_old: number
             }
         }
+    },
+    priceGlobal: {
+        price: number
     }
 }
 
-export const GridComponentsProducts = ({dollar, products, myAppApi}: propsInterface) => {
+export const GridComponentsProducts = ({dollar, products, myAppApi, priceGlobal}: propsInterface) => {
     let count = 0;
     let rs=0, rf=3
     let flat = false;
     let col = true;
 
     const onChangeDollar = (price: number):string => {
-        console.log("🚀 ~ onChangeDollar ~ dollar.monitors.usd.price:", dollar.monitors.usd.price)
-        const result = dollar.monitors.usd.price * price;
+        const plusDollar = dollar.monitors.usd.price * price;
+        const result = plusDollar + + priceGlobal;
         const formatted = new Intl.NumberFormat('es-VE', {
         style: 'currency',
         currency: 'VES',
         minimumFractionDigits: 2
         }).format(result);
 
+        // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
         return formatted;
     }
 
@@ -81,7 +85,6 @@ products.map((item: any, key: number)=>{
             rf--;
             flat = !flat;
             count++
-            console.log("col 2", `${rs}/${rf}`);
             return (
                 <Link
                     className="item-container"
@@ -111,7 +114,6 @@ products.map((item: any, key: number)=>{
         }
         rf++;
         rs++;
-        console.log("col 2", `${rs}/${rf}`);
         count++
         return (
             <Link
@@ -142,7 +144,6 @@ products.map((item: any, key: number)=>{
     }else if(!col){
         rf = rf + 2;
         rs++;
-        console.log("col 2", `${rs}/${rf}`);
         count = 1;
         col = !col
         flat = !flat;
@@ -179,7 +180,6 @@ products.map((item: any, key: number)=>{
             rf--;
             flat = !flat;
             count++
-            console.log("col 1", `${rs}/${rf}`);
             return (
                 <Link
                     className="item-container"
@@ -209,7 +209,6 @@ products.map((item: any, key: number)=>{
         }
         rf++;
         rs++;
-        console.log("col 1", `${rs}/${rf}`);
         count++
         return (
             <Link
@@ -240,7 +239,6 @@ products.map((item: any, key: number)=>{
     }else if(col){
         rf = rf + 2;
         rs++;
-        console.log("col 1", `${rs}/${rf}`);
         count = 1;
         col = !col;
         flat = !flat;
