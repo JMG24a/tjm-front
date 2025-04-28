@@ -23,24 +23,24 @@ export const FormPriceGlobal = ({
 
     return(
         <div className='add_container'>
-        <div className='add_price_content'>
-            <div className='body_edit_product'>
-                <div className="form-container">
-                    <div>
+            <div className='add_price_content'>
+                <div className='body_edit_product'>
+                    <div className="form-container">
                         <div>
-                            <label>Precio Global Agregado:</label>
-                            <input type="number" id="price" name="price" required onChange={handleInput} placeholder={info[0].price}/>
-                        </div>
+                            <div>
+                                <label>Precio Global Agregado:</label>
+                                <input type="number" id="price" name="price" required onChange={handleInput} placeholder={info[0].price}/>
+                            </div>
 
-                        <div className="form-group_global--env">
-                            <button type="button" onClick={handlerClickSend}>Enviar</button>
-                            <button type="button" onClick={handlerClick}>Cancelar</button>
+                            <div className="form-group_global--env">
+                                <button type="button" onClick={handlerClickSend}>Enviar</button>
+                                <button type="button" onClick={handlerClick}>Cancelar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>    
-    </div>
+            </div>    
+        </div>
     )
 }
 

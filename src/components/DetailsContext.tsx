@@ -27,8 +27,6 @@ export const DetailsContext = ({product, dollar}: propsInterface) => {
         minimumFractionDigits: 2
         }).format(result);
 
-        console.log("formatted", formatted); // "Bs. 2.500,00"
-
         return formatted;
     }
 

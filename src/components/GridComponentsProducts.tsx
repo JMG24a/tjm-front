@@ -30,8 +30,10 @@ export const GridComponentsProducts = ({dollar, products, myAppApi, priceGlobal}
     let col = true;
 
     const onChangeDollar = (price: number):string => {
-        const plusDollar = dollar.monitors.usd.price * price;
-        const result = plusDollar + + priceGlobal;
+        const globalPriceNumber = Number(priceGlobal)
+        const priceNumber = Number(price)
+        const dollarWhitGlobal = priceNumber + globalPriceNumber;
+        const result = dollar.monitors.usd.price * dollarWhitGlobal;
         const formatted = new Intl.NumberFormat('es-VE', {
         style: 'currency',
         currency: 'VES',

@@ -15,7 +15,11 @@ interface propsType {
 
 export const AddSuggest = ({products, id, type}:propsType) => {
     const [token, setToken] = useState<string | null>(null);
-    let gr1 = -1, gr2 = 1, gc = 1;
+    let count = 0;
+    let rs=0, rf=3
+    let flat = false;
+    let col = true;
+
     const router = useRouter();
     const [modalState, setModalState] = useState<boolean>(false);
 
@@ -94,22 +98,55 @@ export const AddSuggest = ({products, id, type}:propsType) => {
                         <button onClick={addSuggestModal} className="add_suggest--button-cancel">X</button>
                         <h3 className="add_suggest--title">Agregar Sugerencia</h3>
                         <div className="add_grid_container--products">
-                            { // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                            products.map((item: any, count: number)=>{
-                                const number = count + 1;
-                                if(number % 2 !== 0 && number !== 1){
-                                    if(gc == 1){
-                                        gc = 2
-                                    }else{
-                                        gc = 1
-                                    }
-                                    gr1 = gr1 + 2;
-                                    gr2 = gr2 + 2; 
-
-                                    return(
+                        { // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                            products.map((item: any, key: number)=>{
+                            const column = col ? 1 : 2;
+                            if(count === 0){
+                                count++
+                                col = false;
+                                flat = !flat;
+                                rs++;
+                                return(
+                                    <div 
+                                        className="item-container" 
+                                        style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
+                                        key={count}
+                                    >
+                                            <Image 
+                                                src={`${item.image}`} 
+                                                alt="Item Image"
+                                                width={500}
+                                                height={300}
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    objectFit: 'cover',
+                                                    borderRadius: '8px',
+                                                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                                                }}
+                                            />
+                                            <div className="details" style={{textAlign: "center"}}>
+                                                <div className="name">{item.name}</div>
+                                                <div 
+                                                    className="name"
+                                                    onClick={()=>handleSuggest(item.id)}
+                                                >
+                                                    Agregar
+                                                </div>
+                                            </div>
+                                    </div>
+                                )
+                            }
+    
+                            if(count < 3 && !col){
+                                if(flat){
+                                    rf--;
+                                    flat = !flat;
+                                    count++
+                                    return (
                                         <div 
                                             className="item-container" 
-                                            style={{  gridColumn: `${gc}`, gridRow: `${gr1}/${gr2}`}} 
+                                            style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
                                             key={count}
                                         >
                                                 <Image 
@@ -135,40 +172,189 @@ export const AddSuggest = ({products, id, type}:propsType) => {
                                                     </div>
                                                 </div>
                                         </div>
-                                    )
-                                }else{
-                                    return(
-                                        <div 
-                                            onClick={()=>handleSuggest(item.id)}
-                                            className="item-container"
-                                            key={count}
-                                        >
-                                            <Image 
-                                                src={`${item.image}`} 
-                                                alt="Item Image"
-                                                width={500}
-                                                height={300}
-                                                style={{
-                                                    width: '100%',
-                                                    height: '100%',
-                                                    objectFit: 'cover',
-                                                    borderRadius: '8px',
-                                                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-                                                }}
-                                            />
-                                            <div className="details" style={{textAlign: "center"}}>
-                                                <div className="name">{item.name}</div>
-                                                <div 
-                                                    className="name"
-                                                    onClick={()=>handleSuggest(item.id)}
-                                                >
-                                                    Agregar
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
+                                    );
                                 }
-                            })}
+        rf++;
+        rs++;
+        count++
+        return (
+            <div 
+                className="item-container" 
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
+                key={count}
+            >
+                    <Image 
+                        src={`${item.image}`} 
+                        alt="Item Image"
+                        width={500}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                    />
+                    <div className="details" style={{textAlign: "center"}}>
+                        <div className="name">{item.name}</div>
+                        <div 
+                            className="name"
+                            onClick={()=>handleSuggest(item.id)}
+                        >
+                            Agregar
+                        </div>
+                    </div>
+            </div>
+        );
+    }else if(!col){
+        rf = rf + 2;
+        rs++;
+        console.log("col 2",col, `${rs}/${rf}`);
+        count = 1;
+        col = !col
+        flat = !flat;
+        return (
+            <div 
+                className="item-container" 
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
+                key={count}
+            >
+                    <Image 
+                        src={`${item.image}`} 
+                        alt="Item Image"
+                        width={500}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                    />
+                    <div className="details" style={{textAlign: "center"}}>
+                        <div className="name">{item.name}</div>
+                        <div 
+                            className="name"
+                            onClick={()=>handleSuggest(item.id)}
+                        >
+                            Agregar
+                        </div>
+                    </div>
+            </div>
+        );
+    }
+
+    if(count < 3 && col){
+        if(flat){
+            rf--;
+            flat = !flat;
+            count++
+            return (
+                <div 
+                    className="item-container" 
+                    style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
+                    key={count}
+                >
+                        <Image 
+                            src={`${item.image}`} 
+                            alt="Item Image"
+                            width={500}
+                            height={300}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                borderRadius: '8px',
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                            }}
+                        />
+                        <div className="details" style={{textAlign: "center"}}>
+                            <div className="name">{item.name}</div>
+                            <div 
+                                className="name"
+                                onClick={()=>handleSuggest(item.id)}
+                            >
+                                Agregar
+                            </div>
+                        </div>
+                </div>
+            );
+        }
+        rf++;
+        rs++;
+        console.log("col 1",col, `${rs}/${rf}`);
+        count++
+        return (
+            <div 
+                className="item-container" 
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
+                key={count}
+            >
+                    <Image 
+                        src={`${item.image}`} 
+                        alt="Item Image"
+                        width={500}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                    />
+                    <div className="details" style={{textAlign: "center"}}>
+                        <div className="name">{item.name}</div>
+                        <div 
+                            className="name"
+                            onClick={()=>handleSuggest(item.id)}
+                        >
+                            Agregar
+                        </div>
+                    </div>
+            </div>
+        );
+    }else if(col){
+        rf = rf + 2;
+        rs++;
+        console.log("col 1",col, `${rs}/${rf}`);
+        count = 1;
+        col = !col;
+        flat = !flat;
+        return (
+            <div 
+                className="item-container" 
+                style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
+                key={count}
+            >
+                    <Image 
+                        src={`${item.image}`} 
+                        alt="Item Image"
+                        width={500}
+                        height={300}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                    />
+                    <div className="details" style={{textAlign: "center"}}>
+                        <div className="name">{item.name}</div>
+                        <div 
+                            className="name"
+                            onClick={()=>handleSuggest(item.id)}
+                        >
+                            Agregar
+                        </div>
+                    </div>
+            </div>
+        );
+    }
+})}
                         </div>
                     </div>
                 )}

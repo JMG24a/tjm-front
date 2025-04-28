@@ -10,7 +10,12 @@ interface FormState {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const PriceGlobal = ({info}:any) => {
-    const [formState, setFormState] = useState<FormState>({});
+    const [formState, setFormState] = useState<FormState>({
+        name: "none",
+        size: "none",
+        category: "global",
+        description: "none"
+    });
     const [flat, setFlat] = useState<boolean>(false);
     const [token, setToken] = useState<string | null>(null);
 
@@ -34,8 +39,8 @@ const PriceGlobal = ({info}:any) => {
                 }
             });
 
-            const response = await fetch(`${backApi}/api/v1/products`, {
-                method: 'POST',
+            const response = await fetch(`${backApi}/api/v1/products/34`, {
+                method: 'PATCH',
                 headers: {
                     'Authorization': `Bearer ${token}`,
                 },
