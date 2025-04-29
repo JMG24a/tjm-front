@@ -421,8 +421,8 @@ body {
     display: flex;
     position: absolute;
     z-index: 730;
-    bottom: -11px;
-    left: -8px;
+    bottom: 5px;
+    left: 5px;
   }
 
   .config--button{
