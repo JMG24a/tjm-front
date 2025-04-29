@@ -3,6 +3,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { FormProductEdit } from "./formProductEdit";
+import Link from "next/link";
 
 
 interface propsBack{
@@ -216,7 +217,15 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
     }
 };
 
-if(token){
+if(!token){
+  return(
+    <div className="container_button--whats">
+      <Link href="https://wa.me/584120328399" className="footer__social-links" target="_blank">
+        <Image src="/whatsapp.webp" alt="" className="footer__media" width={60} height={60}/>
+      </Link>
+    </div>
+  )
+}else if(token){
   return (
     <div className="container_button--config">
       <button

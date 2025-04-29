@@ -172,10 +172,10 @@ export default function Home() {
                         <p>Yaracuy: San pablo Av.Panamericana</p>
                     </article>
                     <nav className="footer__social">
-                        <Link href="" className="footer__social-links">
-                            <Image src="/whatsapp_icon.png" alt="" className="footer__media" width={15} height={15}/>
+                        <Link href={"https://wa.me/584120213946"} target="_blank">
+                            <Image src="/whatsapp_icon.png" alt="" className="footer__media" width={30} height={30}/>
                         </Link>
-                        <Link href="" className="footer__social-links">
+                        <Link href="https://www.instagram.com/tiojaimemuebleria" className="footer__social-links" target="_blank">
                             <Image src="/instagram_icon.png" alt="" className="footer__media" width={20} height={20}/>
                         </Link>
     

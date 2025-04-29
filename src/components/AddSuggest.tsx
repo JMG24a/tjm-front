@@ -110,7 +110,7 @@ export const AddSuggest = ({products, id, type}:propsType) => {
                                     <div 
                                         className="item-container" 
                                         style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
-                                        key={count}
+                                        key={key}
                                     >
                                             <Image 
                                                 src={`${item.image}`} 
@@ -147,7 +147,7 @@ export const AddSuggest = ({products, id, type}:propsType) => {
                                         <div 
                                             className="item-container" 
                                             style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
-                                            key={count}
+                                            key={key}
                                         >
                                                 <Image 
                                                     src={`${item.image}`} 
@@ -181,7 +181,7 @@ export const AddSuggest = ({products, id, type}:propsType) => {
             <div 
                 className="item-container" 
                 style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
-                key={count}
+                key={key}
             >
                     <Image 
                         src={`${item.image}`} 
@@ -218,7 +218,7 @@ export const AddSuggest = ({products, id, type}:propsType) => {
             <div 
                 className="item-container" 
                 style={{ gridColumn: `${column}`, gridRow: `${rs}/${rf}` }} 
-                key={count}
+                key={key}
             >
                     <Image 
                         src={`${item.image}`} 
