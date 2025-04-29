@@ -221,7 +221,7 @@ if(!token){
   return(
     <div className="container_button--whats">
       <Link href="https://wa.me/584120328399" className="footer__social-links" target="_blank">
-        <Image src="/whatsapp.webp" alt="" className="footer__media" width={90} height={90}/>
+        <Image src="/whatsapp.webp" alt="" className="footer__media" width={60} height={60}/>
       </Link>
     </div>
   )
