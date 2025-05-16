@@ -54,10 +54,12 @@ const getProducts  = async (category: string) => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
-    const { id } = (await props.params)
-    const products = await getProducts(id);
-    const dollar = await getDollar();
-    const price = await getGlobalPrice();
+    const { id } = (await props.params);
+    const [products, dollar, price] = await Promise.all([
+        getProducts(id),
+        getDollar(),
+        getGlobalPrice()
+    ]);
 
     return (
         <div>

@@ -10,6 +10,7 @@ const NavBar = () => {
         <Link href={`${myAppApi}/products/dormitorio`} className="nav-a">Dormitorios</Link>
         <Link href={`${myAppApi}/products/multimueble`} className="nav-a">Multimuebles</Link>
         <Link href={`${myAppApi}/products/sofa`} className="nav-a">Sofas</Link>
+        <Link href={`${myAppApi}/products/colchones`} className="nav-a">Colchones</Link>
     </ul>
   );
 };

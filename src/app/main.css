@@ -100,10 +100,11 @@ header ul .nav-a{
 }
 
 header ul .nav-a{
+    font-size: 11px;
     text-decoration: none;
     font-weight: 500;
     color: var(--basic-color);
-    padding: 8px 5px;
+    padding: 8px 2px;
     border: 25px;
 }
 
