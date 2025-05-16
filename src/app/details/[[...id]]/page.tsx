@@ -97,11 +97,16 @@ export default async function items(props: any) {
     const myAppApi = process.env.NEXT_PUBLIC_API_URL;
     const { id } = (await props.params)
     const product = await getProduct(id);
-    const products = await getProducts(product.category);
-    const images = await getImages(id);
-    const suggestions = await getSuggest(id);
-    const dollar = await getDollar();
-    const price = await getGlobalPrice();
+
+    const [products, images, suggestions, dollar, price] = await Promise.all([
+        getProducts(product.category),
+        getImages(id),
+        getSuggest(id),
+        getDollar(),
+        getGlobalPrice()
+    ]);
+
+
 
     return (
     <div>
