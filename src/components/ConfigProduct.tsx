@@ -1,7 +1,7 @@
 "use client";
 import { ChangeEvent, useEffect, useState } from "react";
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { FormProductEdit } from "./formProductEdit";
 import Link from "next/link";
 
@@ -41,6 +41,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
 
 
   const router = useRouter();
+  const pathName = usePathname();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -220,7 +221,7 @@ const ExpandableButton = ({id, type, info, images}:propsBack) => {
 if(!token){
   return(
     <div className="container_button--whats">
-      <Link href="https://wa.me/584120213946" className="footer__social-links" target="_blank">
+      <Link href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${pathName}%0AHola%20quiero%20más%20información%20sobre%20este%20producto:%20${info.name}`}className="footer__social-links" target="_blank">
         <Image src="/whatsapp.webp" alt="" className="footer__media" width={60} height={60}/>
       </Link>
     </div>
