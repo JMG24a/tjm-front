@@ -1,5 +1,5 @@
 import './style.css'
-import NavBar from "../../../components/NavBar";
+import NavBar from "../../../src/components/NavBar";
 import Link from 'next/link';
 import Image from 'next/image';
 import AddProduct from 'app/components/AddProduct';

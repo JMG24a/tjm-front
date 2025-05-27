@@ -1,5 +1,5 @@
 import './style.css'
-import BackPage from '../../../components/BackPage';
+import BackPage from '../../../src/components/BackPage';
 import Image from "next/image";
 import ConfigProduct from "app/components/ConfigProduct";
 import { DetailsContext } from "app/components/DetailsContext";
