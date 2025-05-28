@@ -24,7 +24,7 @@ export default function HomePage({ searchParams }: any) {
 
       <Navbar />
 
-      <Products category={category || ""} />
+      <Products category={category || "sofa"} />
     </div>
   );
 }
