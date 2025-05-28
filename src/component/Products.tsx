@@ -62,7 +62,19 @@ const db = {
 //   return res.json();
 // };
 
+// const getDollar  = async () => {
+//     const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+//         method: 'GET', 
+//         headers: {
+//             'Content-Type': 'application/json'
+//           },
+//     });
+//     const data = await response.json();
+//     return data;
+// }
+
 export default async function Products() {
+    // const priceDollar = await getDollar() 
 //   const products = await getProducts(category);
 
   return (
