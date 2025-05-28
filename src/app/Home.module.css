@@ -89,7 +89,11 @@
 }
 
 .details .detailsNamePrice{
+  display: flex;
   width: 70%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .details img{
