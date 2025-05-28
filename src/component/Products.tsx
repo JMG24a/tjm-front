@@ -51,7 +51,7 @@ export default async function Products({ category }: typeProps) {
               <p className={styles.productName}>{product.name}</p>
               <p className={styles.productPrice}>{product.price}</p>
             </div>
-            <Image src={"/wp.png"} alt="WhatsApp" width={50} height={50} />
+            <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
           </div>
         </div>
       ))}
