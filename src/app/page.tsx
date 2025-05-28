@@ -6,9 +6,10 @@ import Navbar from "../component/navbar";
 import Products from "../component/Products";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function HomePage({ searchParams }: any) {
-  const category =
-    typeof searchParams?.category === "string" ? searchParams.category : undefined;
+export default function HomePage() {
+  // { searchParams }: any
+  // const category =
+  //   typeof searchParams?.category === "string" ? searchParams.category : undefined;
 
   return (
     <div>
@@ -24,7 +25,8 @@ export default function HomePage({ searchParams }: any) {
 
       <Navbar />
 
-      <Products category={category || "sofa"} />
+      {/* <Products category={category || "sofa"} /> */}
+      <Products></Products>
     </div>
   );
 }

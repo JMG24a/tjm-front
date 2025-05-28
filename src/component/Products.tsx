@@ -1,43 +1,74 @@
 import styles from "../app/Home.module.css";
 import Image from "next/image";
 
-interface typeProduct {
-  category: string;
-  createdAt: string;
-  description: string;
-  id: string;
-  image: string;
-  name: string;
-  price: string;
-  size: string;
-}
+// interface typeProduct {
+//   category: string;
+//   createdAt: string;
+//   description: string;
+//   id: string;
+//   image: string;
+//   name: string;
+//   price: string;
+//   size: string;
+// }
 
-interface typeProps {
-  category: string;
-}
+// interface typedb {
+//     id: number;
+//     name: string;
+//     price: string;
+//     image: string;
+// }
 
-const getProducts = async (category: string) => {
-  const secretKey = process.env.API_SECRET_KEY;
-  const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
-  const res = await fetch(`${backApi}/api/v1/products?category=${category}`, {
-    headers: {
-      "Content-Type": "application/json",
-      api: secretKey!,
+// interface typeProps {
+//   category: string;
+// }
+
+const db = {
+  sofa: [
+    {
+        id: 1,
+        name: "Zultan",
+        price: 780,
+        image: "zultan_3.PNG"
     },
-    next: { revalidate: 60 }, // ✅ ISR para evitar fetch en cada request
-  });
+    {
+        id: 2,
+        name: "Mueble L",
+        price: 460,
+        image: "mueblel.PNG"
+    },
+      {
+        id: 2,
+        name: "Zultan 2 Puestos",
+        price: 460,
+        image: "zultan2puestos.PNG"
+    }
+  ]
+}
 
-  if (!res.ok) throw new Error("Failed to fetch products");
+// const getProducts = async (category: string) => {
+//   const secretKey = process.env.API_SECRET_KEY;
+//   const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+//   const res = await fetch(`${backApi}/api/v1/products?category=${category}`, {
+//     headers: {
+//       "Content-Type": "application/json",
+//       api: secretKey!,
+//     },
+//     next: { revalidate: 60 }, // ✅ ISR para evitar fetch en cada request
+//   });
 
-  return res.json();
-};
+//   if (!res.ok) throw new Error("Failed to fetch products");
 
-export default async function Products({ category }: typeProps) {
-  const products = await getProducts(category);
+//   return res.json();
+// };
+
+export default async function Products() {
+//   const products = await getProducts(category);
 
   return (
     <div className={styles.productsGrid}>
-      {products.map((product: typeProduct) => (
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
+      {db.sofa.map((product: any) => (
         <div key={product.id} className={styles.productCard}>
           <Image
             src={product.image}
