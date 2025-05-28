@@ -47,7 +47,7 @@ export default async function Products({ category }: typeProps) {
             className={styles.productImage}
           />
           <div className={styles.details}>
-            <div>
+            <div className={styles.detailsNamePrice}>
               <p className={styles.productName}>{product.name}</p>
               <p className={styles.productPrice}>{product.price}</p>
             </div>

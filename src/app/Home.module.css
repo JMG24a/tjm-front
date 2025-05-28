@@ -72,20 +72,24 @@
 }
 
 .productPrice {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: bold;
   color: #232121; /* red-600 */
 }
 
 .productName {
   color: #1f2937; /* gray-800 */
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 
 .details {
   display: flex;
   justify-content: space-around;
+}
+
+.details .detailsNamePrice{
+  width: 70%;
 }
 
 .details img{
