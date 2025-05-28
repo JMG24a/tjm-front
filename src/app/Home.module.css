@@ -7,7 +7,7 @@
   white-space: nowrap;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #374151; /* text-gray-700 */
   scrollbar-width: none; /* Firefox */
@@ -18,13 +18,15 @@
   display: none; /* Chrome/Safari */
 }
 
-.navbar span {
+.navbar a {
   flex-shrink: 0;
   cursor: pointer;
   transition: color 0.2s ease;
+  text-decoration: none;
+  color: black;
 }
 
-.navbar span:hover {
+.navbar a:hover {
   color: #000;
 }
 
@@ -70,14 +72,14 @@
 }
 
 .productPrice {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   font-weight: bold;
   color: #dc2626; /* red-600 */
 }
 
 .productName {
   color: #1f2937; /* gray-800 */
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 

@@ -1,21 +1,61 @@
 import Image from "next/image";
 import styles from "./Home.module.css";
+import Navbar from "../component/navbar"
+import Products from "../component/Products"
 
-const products = Array(4).fill({
-  name: "Zultan 2 puestos",
-  price: "Bs 1500",
-  imageUrl: "/sofa.jpg",
-});
+type Props = {
+  searchParams: {
+    category: string;
+  };
+};
 
-const categories = [
-  "Sofas",
-  "Dormitorios",
-  "Colchones",
-  "Multimuebles",
-  "Comedores",
-];
+const getDollar  = async () => {
+    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json'
+          },
+    });
+    const data = await response.json();
+    return data;
+}
 
-export default function HomePage() {
+const getGlobalPrice  = async () => {
+    const secretKey = process.env.API_SECRET_KEY;
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    const response = await fetch(`${backApi}/api/v1/products?category=global`,{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json',
+            'api': `${secretKey}`, 
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
+const getProducts  = async (category: string) => {
+    const secretKey = process.env.API_SECRET_KEY;
+    const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
+    const response = await fetch(`${backApi}/api/v1/products?category=${category}`,{
+        method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json',
+            'api': `${secretKey}`, 
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
+export default async function HomePage({ searchParams }: Props) {
+
+    const [products, dollar, price] = await Promise.all([
+      getProducts(searchParams.category),
+      getDollar(),
+      getGlobalPrice()
+    ]);
+
   return (
     <div>
       {/* Imagen representativa */}
@@ -30,38 +70,12 @@ export default function HomePage() {
       </div>
 
       {/* Categorías navbar */}
-      <nav className={styles.navbar}>
-        {categories.map((cat) => (
-          <span key={cat}>{cat}</span>
-        ))}
-      </nav>
+      <Navbar/>
 
       {/* Rejilla de productos */}
-      <div className={styles.productsGrid}>
-        {products.map((product, idx) => (
-          <div key={idx} className={styles.productCard}>
-            <Image
-              src={'/09b153fe8ea49db5511267d4de977b6a.jpg'}
-              alt={product.name}
-              width={300}
-              height={200}
-              className={styles.productImage}
-            />
-            <div className={styles.details}>
-                <div>
-                    <p className={styles.productName}>{product.name}</p>
-                    <p className={styles.productPrice}>{product.price}</p>
-                </div>
-                <Image
-                    src={'/wp.png'}
-                    alt={product.name}
-                    width={50}
-                    height={50}
-                />
-            </div>
-          </div>
-        ))}
-      </div>
+      <Products
+        products={products}
+      />
     </div>
   );
 }
