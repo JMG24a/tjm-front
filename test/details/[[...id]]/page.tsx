@@ -1,9 +1,9 @@
 import './style.css'
-import BackPage from '../../../src/components/BackPage';
+import BackPage from '../../components/BackPage';
 import Image from "next/image";
-import ConfigProduct from "app/components/ConfigProduct";
-import { DetailsContext } from "app/components/DetailsContext";
-import { GridComponents } from "app/components/GridComponents";
+import ConfigProduct from "../../components/ConfigProduct";
+import { DetailsContext } from "../../components/DetailsContext";
+import { GridComponents } from "../../components/GridComponents";
 
 const getImages = async (id: string) => {
     const secretKey = process.env.API_SECRET_KEY;

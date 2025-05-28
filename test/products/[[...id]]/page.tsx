@@ -1,10 +1,10 @@
 import './style.css'
-import NavBar from "../../../src/components/NavBar";
+import NavBar from "../../components/NavBar";
 import Link from 'next/link';
 import Image from 'next/image';
-import AddProduct from 'app/components/AddProduct';
-import { GridComponentsProducts } from 'app/components/GridComponentsProducts';
-import PriceGlobal  from 'app/components/PriceGlobal';
+import AddProduct from '../../components/AddProduct';
+import { GridComponentsProducts } from '../../components/GridComponentsProducts';
+import PriceGlobal  from '../../components/PriceGlobal';
 
 // interface itemsProps{
 //     params:{

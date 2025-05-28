@@ -1,9 +1,9 @@
 import Image from "next/image";
 import './main.css'
-import ScrollAnimation from "app/components/scrollEffect";
-import NavBar from "app/components/NavBar";
+import ScrollAnimation from "./components/scrollEffect";
+import NavBar from "./components/NavBar";
 import Link from "next/link";
-import Login from "app/components/Login";
+import Login from "./components/Login";
 
 
 export default function Home() {

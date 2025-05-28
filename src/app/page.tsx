@@ -1,19 +1,17 @@
+// app/page.tsx
+
 import Image from "next/image";
 import styles from "./Home.module.css";
-import Navbar from "../component/navbar"
-import Products from "../component/Products"
+import Navbar from "../component/navbar";
+import Products from "../component/Products";
 
-type Props = {
-  searchParams: {
-    category?: string;
-  };
-};
-
-export default function HomePage({ searchParams }: Props) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function HomePage({ searchParams }: any) {
+  const category =
+    typeof searchParams?.category === "string" ? searchParams.category : undefined;
 
   return (
     <div>
-      {/* Imagen representativa */}
       <div className="w-full">
         <Image
           src="/started.jpg"
@@ -24,11 +22,9 @@ export default function HomePage({ searchParams }: Props) {
         />
       </div>
 
-      {/* Categorías navbar */}
-      <Navbar/>
+      <Navbar />
 
-      {/* Rejilla de productos */}
-      <Products />
+      <Products category={category || ""} />
     </div>
   );
 }
