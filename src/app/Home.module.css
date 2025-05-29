@@ -72,14 +72,17 @@
 }
 
 .productPrice {
-  font-size: 0.7rem;
-  font-weight: bold;
+  text-align: left;
+  width: 66%;
+  margin-left: 20px;
   color: #232121; /* red-600 */
 }
 
 .productName {
   color: #1f2937; /* gray-800 */
-  font-size: 0.7rem;
+  text-align: center;
+  font-size: 1.0rem;
+  font-weight: 600;
 }
 
 
@@ -88,11 +91,14 @@
   justify-content: space-around;
 }
 
+.details_container {
+  width: 100%;
+}
+
 .details .detailsNamePrice{
   display: flex;
-  width: 70%;
+  width: 100%;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
 }
 

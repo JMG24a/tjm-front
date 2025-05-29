@@ -19,33 +19,6 @@ import Image from "next/image";
 //     image: string;
 // }
 
-// interface typeProps {
-//   category: string;
-// }
-
-const db = {
-  sofa: [
-    {
-        id: 1,
-        name: "Zultan",
-        price: 780,
-        image: "zultan_3.PNG"
-    },
-    {
-        id: 2,
-        name: "Mueble L",
-        price: 460,
-        image: "mueblel.PNG"
-    },
-      {
-        id: 2,
-        name: "Zultan 2 Puestos",
-        price: 460,
-        image: "zultan2puestos.PNG"
-    }
-  ]
-}
-
 // const getProducts = async (category: string) => {
 //   const secretKey = process.env.API_SECRET_KEY;
 //   const backApi = process.env.NEXT_PUBLIC_API_BACK_URL;
@@ -73,14 +46,85 @@ const db = {
 //     return data;
 // }
 
-export default async function Products() {
+// Tipos de productos
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+};
+
+// Categorías válidas (clave del objeto `db`)
+type Category = keyof typeof db; // "sofa" | "dormitorio" | "multimueble" | "comedor" | "colchones"
+
+const db: Record<string, Product[]> = {
+  sofa: [
+    {
+        id: 1,
+        name: "Zultan",
+        price: 780,
+        image: "zultan_3.PNG"
+    },
+    {
+        id: 2,
+        name: "Mueble L",
+        price: 460,
+        image: "mueblel.PNG"
+    },
+      {
+        id: 3,
+        name: "Zultan 2 Puestos",
+        price: 460,
+        image: "zultan2puestos.PNG"
+    }
+  ],
+  dormitorio:[
+    {
+        id: 4,
+        name: "Zultan 2 Puestos",
+        price: 460,
+        image: "zultan2puestos.PNG"
+    }
+  ],
+  multimueble:[
+    {
+      id: 5,
+        name: "Zultan 2 Puestos",
+        price: 460,
+        image: "zultan2puestos.PNG"
+    }
+  ],
+    comedor:[
+    {
+      id: 5,
+        name: "Zultan 2 Puestos",
+        price: 460,
+        image: "zultan2puestos.PNG"
+    }
+  ],
+      colchones:[
+    {
+      id: 5,
+        name: "Zultan 2 Puestos",
+        price: 460,
+        image: "zultan2puestos.PNG"
+    }
+  ]
+}
+
+type typeProps = {
+  category?: Category;
+};
+
+export default async function Products({category}:typeProps) {
+  const categories: Category = (category && category in db ? category : "sofa") as Category;
     // const priceDollar = await getDollar() 
-//   const products = await getProducts(category);
+    //   const products = await getProducts(category);
 
   return (
     <div className={styles.productsGrid}>
-        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
-      {db.sofa.map((product: any) => (
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
+      {db[categories].map((product) => (
         <div key={product.id} className={styles.productCard}>
           <Image
             src={product.image}
@@ -90,11 +134,13 @@ export default async function Products() {
             className={styles.productImage}
           />
           <div className={styles.details}>
-            <div className={styles.detailsNamePrice}>
+            <div className={styles.details_container}>
               <p className={styles.productName}>{product.name}</p>
-              <p className={styles.productPrice}>{product.price}</p>
+              <div className={styles.detailsNamePrice}>
+                <p className={styles.productPrice}>${product.price}</p>
+                <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
+              </div>
             </div>
-            <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
           </div>
         </div>
       ))}
