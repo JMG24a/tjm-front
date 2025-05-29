@@ -14,7 +14,7 @@ export default function HomePage({ searchParams }: any) {
     <div>
       <div className="w-full">
         <Image
-          src="/started.jpg"
+          src="/banner.jpeg"
           alt="Imagen representativa del negocio"
           width={900}
           height={200}

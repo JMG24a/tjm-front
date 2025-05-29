@@ -73,14 +73,26 @@ const db: Record<string, Product[]> = {
     },
       {
         id: 3,
-        name: "Zultan 2 Puestos",
+        name: "Juego Zuisa",
         price: 460,
         image: "zultan2puestos.PNG"
+    },
+    {
+        id: 5,
+        name: "Fenix",
+        price: 460,
+        image: "fenix.PNG"
+    },
+    {
+      id: 6,
+      name: "Roma",
+      price: 1400,
+      image: "Roma.PNG"
     }
   ],
   dormitorio:[
     {
-        id: 4,
+        id: 101,
         name: "Zultan 2 Puestos",
         price: 460,
         image: "zultan2puestos.PNG"
@@ -88,7 +100,7 @@ const db: Record<string, Product[]> = {
   ],
   multimueble:[
     {
-      id: 5,
+      id: 201,
         name: "Zultan 2 Puestos",
         price: 460,
         image: "zultan2puestos.PNG"
@@ -96,7 +108,7 @@ const db: Record<string, Product[]> = {
   ],
     comedor:[
     {
-      id: 5,
+      id: 301,
         name: "Zultan 2 Puestos",
         price: 460,
         image: "zultan2puestos.PNG"
@@ -104,7 +116,7 @@ const db: Record<string, Product[]> = {
   ],
       colchones:[
     {
-      id: 5,
+      id: 401,
         name: "Zultan 2 Puestos",
         price: 460,
         image: "zultan2puestos.PNG"
