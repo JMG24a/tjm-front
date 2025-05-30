@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./Home.module.css";
-import Navbar from "../component/navbar";
+import Navbar from "../component/Navbar";
 import Products from "../component/Products";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

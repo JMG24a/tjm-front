@@ -1,0 +1,46 @@
+.carousel-manual {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-manual::-webkit-scrollbar {
+  display: none; /* Oculta scrollbar en navegadores Webkit */
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d1d5db; /* gray-300 */
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #2563eb; /* blue-600 */
+}

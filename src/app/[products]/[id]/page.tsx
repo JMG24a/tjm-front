@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./styles.css";
 import {db, Product} from "../../db";
+import Banner from "../../../component/Banner";
 
 type Producto = {
   id: number;
@@ -54,12 +55,13 @@ export default async function Page({ params }: any) {
 
   return (
     <main className="main">
-      <div className="carousel">
+      <Banner></Banner>
+      {/* <div className="carousel">
         <div className="carousel-track">
           <img src="/zultan_1.PNG" alt="foto 1" />
           <img src="/zultan_3.PNG" alt="foto 2" />
         </div>
-      </div>
+      </div> */}
 
       <div className="container">
         <div className="container_main-product">
@@ -69,7 +71,7 @@ export default async function Page({ params }: any) {
 
           <div className="whatsapp-link">
             <a
-              href="https://wa.me/584120213946?text=https://tjm-front.vercel.app"
+              href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${producto.category}/${producto.id}`}
               target="_blank"
               rel="noopener noreferrer"
             >
