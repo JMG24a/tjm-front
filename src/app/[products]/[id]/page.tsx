@@ -2,24 +2,40 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./styles.css";
+import {db, Product} from "../../db";
 
 type Producto = {
-  id: string;
+  id: number;
   price: number;
-  nombre: string;
+  name: string;
   category: string;
-  descripcion: string;
-  imagenUrl: string;
+  description: string;
+  image: string;
 };
 
-async function obtenerProducto(id: string, category: string): Promise<Producto> {
-  return {
-    id,
+async function obtenerProducto(id: number, category: string): Promise<Producto> {
+  let product: Product = {
+    id: 4,
     price: 780,
-    nombre: "Zapato",
+    name: "Zapato",
     category: category,
-    descripcion: "Zapatos ligeros, cómodos y duraderos para correr.",
-    imagenUrl: "/zultan_1.PNG",
+    description: "Zapatos ligeros, cómodos y duraderos para correr.",
+    image: `/zultan_1.PNG`,
+  }
+
+  db[category].map((item)=>{
+    if(item.id == id){
+      product = item;
+    }
+  })
+
+  return {
+    id: product.id,
+    price: product.price,
+    name: product.name,
+    category: category,
+    description: "Zapatos ligeros, cómodos y duraderos para correr.",
+    image: `/zultan_1.PNG`,
   };
 }
 
@@ -27,8 +43,8 @@ async function obtenerProducto(id: string, category: string): Promise<Producto> 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const producto = await obtenerProducto(params.id, params.products);
   return {
-    title: producto.nombre,
-    description: producto.descripcion,
+    title: producto.name,
+    description: producto.description,
   };
 }
 
@@ -47,13 +63,13 @@ export default async function Page({ params }: any) {
 
       <div className="container">
         <div className="container_main-product">
-          <h2 className="title">{producto.nombre}</h2>
-          <p className="description">{producto.descripcion}</p>
+          <h2 className="title">{producto.name}</h2>
+          <p className="description">{producto.description}</p>
           <p className="description">${producto.price}</p>
 
           <div className="whatsapp-link">
             <a
-              href="https://wa.me/00000000000"
+              href="https://wa.me/584120213946?text=https://tjm-front.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +83,7 @@ export default async function Page({ params }: any) {
             <Link href="/">
               <Image
                 src="/maya.PNG"
-                alt={producto.nombre}
+                alt={producto.name}
                 width={200}
                 height={200}
                 className="productImage"
@@ -75,7 +91,7 @@ export default async function Page({ params }: any) {
             </Link>
             <div className="details">
               <div className="details_container">
-                <p className="productName">{producto.nombre}</p>
+                <p className="productName">{producto.name}</p>
                 <div className="detailsNamePrice">
                   <p className="productPrice">${producto.price}</p>
                   <Image
