@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
       url: `https://tjm-front.vercel.app/${producto.category}/${producto.id}`,
       images: [
         {
-          url: `https://tjm-front.vercel.app${producto.image}`, // asegúrate de que sea una ruta válida
+          url: `https://tjm-front.vercel.app/${producto.image}`, // asegúrate de que sea una ruta válida
           width: 1200,
           height: 630,
           alt: producto.name,
