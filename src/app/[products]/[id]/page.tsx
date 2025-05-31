@@ -12,6 +12,7 @@ type Producto = {
   category: string;
   description: string;
   image: string;
+  images: string[]
 };
 
 async function obtenerProducto(id: number, category: string): Promise<Producto> {
@@ -22,6 +23,7 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     category: category,
     description: "Zapatos ligeros, cómodos y duraderos para correr.",
     image: `/zultan_1.PNG`,
+    images: []
   }
 
   db[category].map((item)=>{
@@ -35,17 +37,34 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     price: product.price,
     name: product.name,
     category: category,
-    description: "Zapatos ligeros, cómodos y duraderos para correr.",
-    image: `/zultan_1.PNG`,
+    description: "Editar: Muebles fabricados por profecionales, y materiales de primera",
+    image: product.image,
+    images: product.images,
   };
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const producto = await obtenerProducto(params.id, params.products);
+
   return {
     title: producto.name,
     description: producto.description,
+    openGraph: {
+      title: producto.name,
+      description: producto.description,
+      url: `https://tjm-front.vercel.app/${producto.category}/${producto.id}`,
+      images: [
+        {
+          url: `https://tjm-front.vercel.app${producto.image}`, // asegúrate de que sea una ruta válida
+          width: 1200,
+          height: 630,
+          alt: producto.name,
+        },
+      ],
+      siteName: 'TJM Front',
+      type: 'website',
+    },
   };
 }
 
@@ -55,7 +74,9 @@ export default async function Page({ params }: any) {
 
   return (
     <main className="main">
-      <Banner></Banner>
+      <Banner
+        images={producto.images}
+      />
       {/* <div className="carousel">
         <div className="carousel-track">
           <img src="/zultan_1.PNG" alt="foto 1" />

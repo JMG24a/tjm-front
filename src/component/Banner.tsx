@@ -2,7 +2,8 @@
 import "./banner.css";
 import { useEffect, useState, useRef } from "react";
 
-export default function Banner() {
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/
+export default function Banner({images}:any) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
 
@@ -30,14 +31,15 @@ export default function Banner() {
       <div className="container_carrusel">
         {/* Carrusel Manual */}
         <div className="carousel-manual" ref={trackRef}>
-          <div className="carousel-item"><img src="/zultan_1.PNG" alt="1" /></div>
-          <div className="carousel-item"><img src="/zultan_3.PNG" alt="2" /></div>
+          {images.map((item: string, key:number)=>(
+            <div key={key} className="carousel-item"><img src={`/${item}`} alt="1" /></div>
+          ))}
         </div>
 
         {/* Puntos indicadores */}
         <div className="dots">
-          {[0, 1].map((i) => (
-            <span key={i} className={`dot ${currentIndex === i ? "active" : ""}`} />
+          {images.map((i:string, key:number) => (
+            <span key={key} className={`dot ${currentIndex === key ? "active" : ""}`} />
           ))}
         </div>
       </div>

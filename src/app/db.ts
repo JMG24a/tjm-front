@@ -4,6 +4,7 @@ export type Product = {
   name: string;
   price: number;
   image: string;
+  images: string[]
   category?: string,
   description?: string,
 };
@@ -15,37 +16,56 @@ export const db: Record<string, Product[]> = {
         id: 1,
         name: "Zultan",
         price: 780,
-        image: "zultan_3.PNG"
+        image: "zultan_3.PNG",
+        images: [
+          "zultan_1.PNG",
+          "zultan_3.PNG",
+        ]
     },
     {
         id: 2,
         name: "Mueble L",
         price: 460,
-        image: "mueblel.PNG"
+        image: "mueblel.PNG",
+        images: [
+          "mueblel.PNG"
+        ]
     },
       {
         id: 3,
         name: "Juego Zuisa",
         price: 460,
-        image: "zultan2puestos.PNG"
+        image: "zultan2puestos.PNG",
+        images: [
+          "zultan2puestos.PNG"
+        ]
     },
     {
         id: 5,
         name: "Fenix",
         price: 460,
-        image: "fenix.PNG"
+        image: "fenix.PNG",
+        images: [
+          "fenix.PNG"
+        ]
     },
     {
       id: 6,
       name: "Roma",
       price: 1400,
-      image: "Roma.PNG"
+      image: "Roma.PNG",
+      images: [
+          "Roma.PNG"
+        ]
     },
     {
       id: 7,
       name: "Maya",
       price: 1600,
-      image: "maya.PNG"
+      image: "maya.PNG",
+      images: [
+          "maya.PNG"
+        ]
     }
   ],
   dormitorio:[
@@ -53,7 +73,10 @@ export const db: Record<string, Product[]> = {
         id: 101,
         name: "Zultan 2 Puestos",
         price: 460,
-        image: "zultan2puestos.PNG"
+        image: "zultan2puestos.PNG",
+                images: [
+          "mueblel.PNG"
+        ]
     }
   ],
   multimueble:[
@@ -61,7 +84,10 @@ export const db: Record<string, Product[]> = {
       id: 201,
         name: "Zultan 2 Puestos",
         price: 460,
-        image: "zultan2puestos.PNG"
+        image: "zultan2puestos.PNG",
+                images: [
+          "mueblel.PNG"
+        ]
     }
   ],
     comedor:[
@@ -69,7 +95,10 @@ export const db: Record<string, Product[]> = {
       id: 301,
         name: "Zultan 2 Puestos",
         price: 460,
-        image: "zultan2puestos.PNG"
+        image: "zultan2puestos.PNG",
+                images: [
+          "mueblel.PNG"
+        ]
     }
   ],
       colchones:[
@@ -77,7 +106,10 @@ export const db: Record<string, Product[]> = {
       id: 401,
         name: "Zultan 2 Puestos",
         price: 460,
-        image: "zultan2puestos.PNG"
+        image: "zultan2puestos.PNG",
+                images: [
+          "mueblel.PNG"
+        ]
     }
   ]
 }
