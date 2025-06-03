@@ -2,7 +2,7 @@ import styles from "../app/Home.module.css";
 import Image from "next/image";
 import {db} from "../app/db";
 import Link from "next/link";
- 
+
 // interface typeProduct {
 //   category: string;
 //   createdAt: string;
@@ -39,7 +39,7 @@ import Link from "next/link";
 
 // const getDollar  = async () => {
 //     const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
-//         method: 'GET', 
+//         method: 'GET',
 //         headers: {
 //             'Content-Type': 'application/json'
 //           },
@@ -61,7 +61,7 @@ type typeProps = {
 
 export default async function Products({category}:typeProps) {
   const categories: Category = (category && category in db ? category : "sofa") as Category;
-    // const priceDollar = await getDollar() 
+    // const priceDollar = await getDollar()
     //   const products = await getProducts(category);
 
     const myapi = process.env.NEXT_PUBLIC_API_URL || ""
@@ -71,7 +71,7 @@ export default async function Products({category}:typeProps) {
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
       {db[categories].map((product) => (
         <div key={product.id} className={styles.productCard}>
-          <Link href={`${myapi}/${categories}/${product.id}`}>          
+          <Link href={`${myapi}/${categories}/${product.id}`}>
             <Image
               src={product.image}
               alt={product.name}
@@ -85,7 +85,12 @@ export default async function Products({category}:typeProps) {
               <p className={styles.productName}>{product.name}</p>
               <div className={styles.detailsNamePrice}>
                 <p className={styles.productPrice}>${product.price}</p>
-                <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
+                <Link
+                  href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${categories}/${product.id}`}
+                  target="_blank"
+                >
+                  <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
+                </Link>
               </div>
             </div>
           </div>

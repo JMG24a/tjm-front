@@ -46,7 +46,6 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const producto = await obtenerProducto(params.id, params.products);
-
   return {
     title: producto.name,
     description: producto.description,
@@ -71,7 +70,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function Page({ params }: any) {
   const producto = await obtenerProducto(params.id, params.products);
-
+    const myapi = process.env.NEXT_PUBLIC_API_URL || ""
   return (
     <main className="main">
       <Banner
@@ -91,19 +90,25 @@ export default async function Page({ params }: any) {
           <p className="description">${producto.price}</p>
 
           <div className="whatsapp-link">
-            <a
+            <Link
               href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${producto.category}/${producto.id}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Go to Whatsapp
-            </a>
+              Whatsapp
+              <Image
+                src="/WhatsApp.svg.webp"
+                alt="WhatsApp"
+                width={25}
+                height={25}
+              />
+            </Link>
           </div>
         </div>
 
         <div className="productsGrid">
           <div className="productCard">
-            <Link href="/">
+            <Link href={`${myapi}/${producto.category}/${producto.id}`}>
               <Image
                 src="/maya.PNG"
                 alt={producto.name}
@@ -117,12 +122,17 @@ export default async function Page({ params }: any) {
                 <p className="productName">{producto.name}</p>
                 <div className="detailsNamePrice">
                   <p className="productPrice">${producto.price}</p>
+                <Link
+                  href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${producto.category}/${producto.id}`}
+                  target="_blank"
+                >
                   <Image
                     src="/WhatsApp.svg.webp"
                     alt="WhatsApp"
                     width={40}
                     height={40}
                   />
+                </Link>
                 </div>
               </div>
             </div>

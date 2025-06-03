@@ -128,12 +128,20 @@ html, body {
   border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.2s;
+
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.whatsapp-link a img{
+  margin-left: 5px;
 }
 
 .whatsapp-link a:hover {
   background-color: #16a34a; /* green-600 */
 }
-
 
 .productsGrid {
   display: grid;
@@ -197,8 +205,9 @@ html, body {
   width: 100%;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
-.details img{
+.details a{
   margin: auto 0;
 }

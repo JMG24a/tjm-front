@@ -13,14 +13,14 @@ export type Product = {
 export const db: Record<string, Product[]> = {
   sofa: [
     {
-        id: 1,
-        name: "Zultan",
-        price: 780,
-        image: "zultan_3.PNG",
-        images: [
-          "zultan_1.PNG",
-          "zultan_3.PNG",
-        ]
+      id: 1,
+      name: "Zultan",
+      price: 780,
+      image: "zultan_3.PNG",
+      images: [
+        "zultan_3.PNG",
+        "zultan_1.PNG",
+      ]
     },
     {
         id: 2,

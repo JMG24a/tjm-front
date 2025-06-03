@@ -100,8 +100,9 @@
   width: 100%;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
-.details img{
+.details a{
   margin: auto 0;
 }
