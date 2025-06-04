@@ -85,25 +85,146 @@ export const db: Record<string, Product[]> = {
   dormitorio:[
     {
         id: 101,
-        name: "Zultan 2 Puestos",
-        price: 460,
+        name: "Coquito",
+        price: 140,
         description: "",
-        image: "zultan2puestos.PNG",
+        image: "coco.jpg",
                 images: [
-          "mueblel.PNG"
+          "coco.jpg"
         ]
-    }
+    },
+    {
+      id: 102,
+      name: "Nene",
+      price: 180,
+      description: "",
+      image: "nene.jpg",
+              images: [
+        "nene.jpg"
+      ]
+    },
+    {
+      id: 103,
+      name: "Capitan",
+      price: 240,
+      description: "",
+      image: "capitan.jpg",
+      images: [
+        "capitan.jpg"
+      ]
+    },
+    {
+      id: 104,
+      name: "Triangular",
+      price: 180,
+      description: "",
+      image: "triangular.jpg",
+      images: [
+        "triangular.jpg"
+      ]
+    },
+    {
+      id: 105,
+      name: "Moises",
+      price: 240,
+      description: "",
+      image: "moises.jpg",
+      images: [
+        "moises.jpg"
+      ]
+    },
+    {
+      id: 106,
+      name: "Madera",
+      price: 160,
+      description: "",
+      image: "cama_madera.jpg",
+      images: [
+        "cama_madera.jpg",
+        "cama_madera_pintada.jpg"
+      ]
+    },
+    {
+      id: 107,
+      name: "Isabela",
+      price: 290,
+      description: "",
+      image: "cama_isabela.jpg",
+      images: [
+        "cama_isabela.jpg",
+      ]
+    },
+    {
+      id: 108,
+      name: "Princesa",
+      price: 225,
+      description: "",
+      image: "princesa.jpg",
+      images: [
+        "princesa.jpg",
+      ]
+    },
+    {
+      id: 109,
+      name: "Aurora",
+      price: 290,
+      description: "",
+      image: "cama_aurora.jpg",
+      images: [
+        "cama_aurora.jpg",
+      ]
+    },
+    {
+      id: 110,
+      name: "Barco",
+      price: 260,
+      description: "",
+      image: "cama_barco.jpg",
+      images: [
+        "cama_barco.jpg",
+      ]
+    },
+    {
+      id: 110,
+      name: "Magnun",
+      price: 440,
+      description: "",
+      image: "cama_magnun.jpg",
+      images: [
+        "cama_magnun.jpg",
+      ]
+    },
+    {
+      id: 110,
+      name: "Sol",
+      price: 440,
+      description: "",
+      image: "cama_sol.jpg",
+      images: [
+        "cama_sol.jpg",
+      ]
+    },
+    {
+      id: 111,
+      name: "Sol Especial",
+      price: 440,
+      description: "",
+      image: "cama_sol_especial.jpg",
+      images: [
+        "cama_sol_especial.jpg",
+      ]
+    },
   ],
   multimueble:[
     {
       id: 201,
-        name: "Zultan 2 Puestos",
-        price: 460,
-        description: "",
-        image: "zultan2puestos.PNG",
-                images: [
-          "mueblel.PNG"
-        ]
+      name: "Zultan 2 Puestos",
+      price: 460,
+      description: "",
+      image: "zultan2puestos.PNG",
+              images: [
+        "mueblel.PNG"
+      ]
     }
   ],
     comedor:[
