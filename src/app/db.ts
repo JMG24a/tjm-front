@@ -185,7 +185,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 110,
+      id: 111,
       name: "Magnun",
       price: 440,
       description: "",
@@ -195,7 +195,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 110,
+      id: 112,
       name: "Sol",
       price: 440,
       description: "",
@@ -205,7 +205,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 111,
+      id: 113,
       name: "Sol Especial",
       price: 440,
       description: "",
@@ -214,18 +214,108 @@ export const db: Record<string, Product[]> = {
         "cama_sol_especial.jpg",
       ]
     },
+    {
+      id: 114,
+      name: "Cama Cuna",
+      price: 440,
+      description: "",
+      image: "cama_cuna.jpg",
+      images: [
+        "cama_cuna.jpg",
+      ]
+    },
   ],
   multimueble:[
     {
       id: 201,
-      name: "Zultan 2 Puestos",
+      name: "Peinadora S",
       price: 460,
       description: "",
-      image: "zultan2puestos.PNG",
-              images: [
-        "mueblel.PNG"
+      image: "multi_mesa_manicure.jpg",
+      images: [
+        "multi_mesa_manicure.jpg"
       ]
-    }
+    },
+    {
+      id: 202,
+      name: "Peinadora XL",
+      price: 460,
+      description: "",
+      image: "multi_mesa_manicure2.jpg",
+      images: [
+        "multi_mesa_manicure2.jpg"
+      ]
+    },
+    {
+      id: 203,
+      name: "Peinadora Flotante",
+      price: 460,
+      description: "",
+      image: "multi_mesa_manicure3.jpg",
+      images: [
+        "multi_mesa_manicure3.jpg"
+      ]
+    },
+    {
+      id: 204,
+      name: "Juego para cuarto",
+      price: 460,
+      description: "",
+      image: "multi_mesa_chifonier.jpg",
+      images: [
+        "multi_mesa_chifonier.jpg"
+      ]
+    },
+    {
+      id: 205,
+      name: "mesa de centro",
+      price: 460,
+      description: "",
+      image: "multi_mesa_centro2.jpg",
+      images: [
+        "multi_mesa_centro2.jpg"
+      ]
+    },
+    {
+      id: 206,
+      name: "mesa de centro",
+      price: 460,
+      description: "",
+      image: "multi_mesa_centro.jpg",
+      images: [
+        "multi_mesa_centro.jpg"
+      ]
+    },
+    {
+      id: 207,
+      name: "mesa de centro",
+      price: 460,
+      description: "",
+      image: "multi_mesa_centro3.jpg",
+      images: [
+        "multi_mesa_centro3.jpg"
+      ]
+    },
+    // {
+    //   id: 207,
+    //   name: "Centro de TV",
+    //   price: 460,
+    //   description: "",
+    //   image: "multi_centro_tv.jpg",
+    //   images: [
+    //     "multi_centro_tv.jpg"
+    //   ]
+    // },
+    // {
+    //   id: 208,
+    //   name: "Centro de TV",
+    //   price: 460,
+    //   description: "",
+    //   image: "multi_centro_tv2.jpg",
+    //   images: [
+    //     "multi_centro_tv2.jpg"
+    //   ]
+    // },
   ],
     comedor:[
     {
