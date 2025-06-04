@@ -19,9 +19,9 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
   let product: Product = {
     id: 4,
     price: 780,
-    name: "Zapato",
+    name: "mueble",
     category: category,
-    description: "Zapatos ligeros, cómodos y duraderos para correr.",
+    description: "Muebles fabricados por profecionales, y materiales de primera",
     image: `/zultan_1.PNG`,
     images: []
   }
@@ -37,7 +37,7 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     price: product.price,
     name: product.name,
     category: category,
-    description: "Editar: Muebles fabricados por profecionales, y materiales de primera",
+    description: product.description,
     image: product.image,
     images: product.images,
   };
@@ -87,7 +87,7 @@ export default async function Page({ params }: any) {
         <div className="container_main-product">
           <h2 className="title">{producto.name}</h2>
           <p className="description">{producto.description}</p>
-          <p className="description">${producto.price}</p>
+          <p className="price">${producto.price}</p>
 
           <div className="whatsapp-link">
             <Link

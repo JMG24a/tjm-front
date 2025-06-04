@@ -73,8 +73,16 @@ html, body {
 
 .description {
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   margin-bottom: 1.5rem;
+}
+
+.price{
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #393838;
 }
 
 .product-grid {
@@ -112,7 +120,7 @@ html, body {
 .price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #16a34a; /* text-green-600 */
+  color: #2e2e2e; /* text-green-600 */
 }
 
 .whatsapp-link {
