@@ -229,7 +229,17 @@ export const db: Record<string, Product[]> = {
     {
       id: 201,
       name: "Peinadora S",
-      price: 460,
+      price: 270,
+      description: "",
+      image: "multi_peinadora_s.jpg",
+      images: [
+        "multi_peinadora_s.jpg"
+      ]
+    },
+    {
+      id: 202,
+      name: "Peinadora M",
+      price: 340,
       description: "",
       image: "multi_mesa_manicure.jpg",
       images: [
@@ -237,9 +247,9 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 202,
+      id: 203,
       name: "Peinadora XL",
-      price: 460,
+      price: 695,
       description: "",
       image: "multi_mesa_manicure2.jpg",
       images: [
@@ -247,9 +257,9 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 203,
-      name: "Peinadora Flotante",
-      price: 460,
+      id: 204,
+      name: "Peinadora",
+      price: 245,
       description: "",
       image: "multi_mesa_manicure3.jpg",
       images: [
@@ -257,7 +267,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 204,
+      id: 230,
       name: "Juego para cuarto",
       price: 460,
       description: "",
@@ -267,9 +277,9 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 205,
-      name: "mesa de centro",
-      price: 460,
+      id: 206,
+      name: "mesa de centro decorativo",
+      price: 170,
       description: "",
       image: "multi_mesa_centro2.jpg",
       images: [
@@ -277,9 +287,9 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 206,
+      id: 207,
       name: "mesa de centro",
-      price: 460,
+      price: 160,
       description: "",
       image: "multi_mesa_centro.jpg",
       images: [
@@ -287,13 +297,73 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 207,
+      id: 208,
       name: "mesa de centro",
-      price: 460,
+      price: 150,
       description: "",
       image: "multi_mesa_centro3.jpg",
       images: [
         "multi_mesa_centro3.jpg"
+      ]
+    },
+    {
+      id: 209,
+      name: "Mesa de Manicure S",
+      price: 240,
+      description: "",
+      image: "multi_mesa_manicure_s.jpg",
+      images: [
+        "multi_mesa_manicure_s.jpg"
+      ]
+    },
+    {
+      id: 210,
+      name: "Mesa de Manicure M",
+      price: 270,
+      description: "",
+      image: "multi_mesa_manicure_l.jpg",
+      images: [
+        "multi_mesa_manicure_l.jpg"
+      ]
+    },
+    {
+      id: 211,
+      name: "Mesa de Manicure L",
+      price: 295,
+      description: "",
+      image: "multi_manicure_l.jpg",
+      images: [
+        "multi_manicure_l.jpg"
+      ]
+    },
+    {
+      id: 212,
+      name: "Gavetero Moderno",
+      price: 430,
+      description: "",
+      image: "multi_gavetero.jpg",
+      images: [
+        "multi_gavetero.jpg"
+      ]
+    },
+    {
+      id: 213,
+      name: "Gavetero",
+      price: 560,
+      description: "",
+      image: "multi_gavetero2.jpg",
+      images: [
+        "multi_gavetero2.jpg"
+      ]
+    },
+    {
+      id: 214,
+      name: "Gavetero",
+      price: 400,
+      description: "",
+      image: "multi_gavetero3.jpg",
+      images: [
+        "multi_gavetero3.jpg"
       ]
     },
     // {
@@ -304,7 +374,7 @@ export const db: Record<string, Product[]> = {
     //   image: "multi_centro_tv.jpg",
     //   images: [
     //     "multi_centro_tv.jpg"
-    //   ]
+    //   ]d:\tjmPNG\heic\catalogo multimuebles\multi_gavetero2.jpg
     // },
     // {
     //   id: 208,
@@ -423,13 +493,23 @@ export const db: Record<string, Product[]> = {
     colchones:[
     {
       id: 401,
-      name: "Isabela",
-      price: 460,
+      name: "Imperia San Remo",
+      price: 200,
       description: "",
-      image: "isabela.jpg",
+      image: "colchon_imperia.JPG",
       images: [
-        "isabela.jpg"
+        "colchon_imperia.JPG"
       ]
-    }
+    },
+    {
+      id: 402,
+      name: "Colflex Lady Best",
+      price: 230,
+      description: "",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ]
+    },
   ]
 }
