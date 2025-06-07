@@ -17,9 +17,9 @@ export const db: Record<string, Product[]> = {
       name: "Zultan",
       price: 770,
       description: "El mueble Zultan está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, con una densidad de 24 grados, garantizando resistencia y comodidad.",
-      image: "zultan_3.PNG",
+      image: "zultan_3.jpg",
       images: [
-        "zultan_3.PNG",
+        "zultan_3.jpg",
         "zultan_1.PNG",
         "zultan_4.PNG",
         "zultan_5.PNG",
@@ -80,18 +80,62 @@ export const db: Record<string, Product[]> = {
       images: [
           "maya.PNG"
         ]
+    },
+    {
+      id: 8,
+      name: "Roraima",
+      price: 1050,
+      description: "",
+      image: "sofa_roraima.jpg",
+      images: [
+          "sofa_roraima.jpg",
+          "sofa_roraima2.jpg"
+        ]
+    },
+    {
+      id: 9,
+      name: "Roraima S",
+      price: 1050,
+      description: "",
+      image: "sofa_roraima_s.jpg",
+      images: [
+          "sofa_roraima_s.jpg",
+          "sofa_roraima_s2.jpg"
+        ]
+    },
+    {
+      id: 10,
+      name: "David",
+      price: 1050,
+      description: "",
+      image: "sofa_david_3.jpg",
+      images: [
+          "sofa_david_3.jpg",
+          "sofa_david_.jpg",
+          "sofa_david_2.jpg"
+        ]
+    },
+    {
+      id: 11,
+      name: "Invierno",
+      price: 1050,
+      description: "",
+      image: "sofa_invierno.jpg",
+      images: [
+          "sofa_invierno.jpg",
+        ]
     }
   ],
   dormitorio:[
     {
-        id: 101,
-        name: "Coquito",
-        price: 140,
-        description: "",
-        image: "coco.jpg",
-                images: [
-          "coco.jpg"
-        ]
+      id: 101,
+      name: "Coquito",
+      price: 140,
+      description: "",
+      image: "coco.jpg",
+      images: [
+        "coco.jpg"
+      ]
     },
     {
       id: 102,
@@ -206,8 +250,8 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 113,
-      name: "Sol Especial",
-      price: 440,
+      name: "Cama Sol Especial",
+      price: 500,
       description: "",
       image: "cama_sol_especial.jpg",
       images: [
@@ -216,8 +260,8 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 114,
-      name: "Cama Cuna",
-      price: 440,
+      name: "Cama Cuna Duplex",
+      price: 620,
       description: "",
       image: "cama_cuna.jpg",
       images: [
