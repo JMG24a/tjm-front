@@ -63,39 +63,42 @@ export default async function Products({category}:typeProps) {
   const categories: Category = (category && category in db ? category : "sofa") as Category;
     // const priceDollar = await getDollar()
     //   const products = await getProducts(category);
+  const myapi = process.env.NEXT_PUBLIC_API_URL || ""
 
-    const myapi = process.env.NEXT_PUBLIC_API_URL || ""
 
   return (
     <div className={styles.productsGrid}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
-      {db[categories].map((product) => (
-        <div key={product.id} className={styles.productCard}>
-          <Link href={`${myapi}/${categories}/${product.id}`}>
-            <Image
-              src={product.image}
-              alt={product.name}
-              width={200}
-              height={200}
-              className={styles.productImage}
-              />
-          </Link>
-          <div className={styles.details}>
-            <div className={styles.details_container}>
-              <p className={styles.productName}>{product.name}</p>
-              <div className={styles.detailsNamePrice}>
-                <p className={styles.productPrice}>${product.price}</p>
-                <Link
-                  href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${categories}/${product.id}`}
-                  target="_blank"
-                >
-                  <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
-                </Link>
+      {db[categories].map((product) => {
+        const mensaje = `https://tjm-front.vercel.app/${categories}/${product.id}
+Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${product.name}-${product.price}$`
+        return (
+          <div key={product.id} className={styles.productCard}>
+            <Link href={`${myapi}/${categories}/${product.id}`}>
+              <Image
+                src={product.image}
+                alt={product.name}
+                width={200}
+                height={200}
+                className={styles.productImage}
+                />
+            </Link>
+            <div className={styles.details}>
+              <div className={styles.details_container}>
+                <p className={styles.productName}>{product.name}</p>
+                <div className={styles.detailsNamePrice}>
+                  <p className={styles.productPrice}>${product.price}</p>
+                  <Link
+                    href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
+                    target="_blank"
+                  >
+                    <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+      )})}
     </div>
   );
 }

@@ -70,7 +70,10 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function Page({ params }: any) {
   const producto = await obtenerProducto(params.id, params.products);
-    const myapi = process.env.NEXT_PUBLIC_API_URL || ""
+  const myapi = process.env.NEXT_PUBLIC_API_URL || "";
+  const mensaje = `https://tjm-front.vercel.app/${producto.category}/${producto.id}
+Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto.name}-${producto.price}$`
+
   return (
     <main className="main">
       <Banner
@@ -91,7 +94,7 @@ export default async function Page({ params }: any) {
 
           <div className="whatsapp-link">
             <Link
-              href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${producto.category}/${producto.id}`}
+              href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +126,7 @@ export default async function Page({ params }: any) {
                 <div className="detailsNamePrice">
                   <p className="productPrice">${producto.price}</p>
                 <Link
-                  href={`https://wa.me/584120213946?text=https://tjm-front.vercel.app/${producto.category}/${producto.id}`}
+                  href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
                   target="_blank"
                 >
                   <Image

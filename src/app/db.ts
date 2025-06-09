@@ -89,13 +89,14 @@ export const db: Record<string, Product[]> = {
       image: "sofa_roraima.jpg",
       images: [
           "sofa_roraima.jpg",
-          "sofa_roraima2.jpg"
+          "sofa_roraima2.jpg",
+          "sofa_roraima3.jpg"
         ]
     },
     {
       id: 9,
       name: "Roraima S",
-      price: 1050,
+      price: 660,
       description: "",
       image: "sofa_roraima_s.jpg",
       images: [
@@ -106,7 +107,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 10,
       name: "David",
-      price: 1050,
+      price: 460,
       description: "",
       image: "sofa_david_3.jpg",
       images: [
@@ -118,13 +119,127 @@ export const db: Record<string, Product[]> = {
     {
       id: 11,
       name: "Invierno",
-      price: 1050,
+      price: 730,
       description: "",
       image: "sofa_invierno.jpg",
       images: [
           "sofa_invierno.jpg",
         ]
-    }
+    },
+    {
+      id: 12,
+      name: "Charlott",
+      price: 430,
+      description: "",
+      image: "sofa_charlot.jpg",
+      images: [
+          "sofa_charlot.jpg",
+        ]
+    },
+    {
+      id: 13,
+      name: "Media Luna",
+      price: 670,
+      description: "",
+      image: "sofa_media_luna.jpg",
+      images: [
+          "sofa_media_luna.jpg",
+        ]
+    },
+    {
+      id: 14,
+      name: "Mueble L",
+      price: 550,
+      description: "",
+      image: "sofa_mueblel5p(1).jpg",
+      images: [
+          "sofa_mueblel5p(1).jpg",
+          "sofa_mueblel5p(2).jpg",
+          "sofa_mueblel5p(3).jpg",
+        ]
+    },
+    {
+      id: 15,
+      name: "Rodolfo",
+      price: 690,
+      description: "",
+      image: "sofa_rodolfo.jpg",
+      images: [
+          "sofa_rodolfo.jpg",
+        ]
+    },
+    {
+      id: 16,
+      name: "Enmaly",
+      price: 320,
+      description: "",
+      image: "sofa_enmaly.jpg",
+      images: [
+          "sofa_enmaly.jpg",
+          "sofa_enmaly2.jpg",
+        ]
+    },
+    {
+      id: 17,
+      name: "Europa",
+      price: 810,
+      description: "",
+      image: "sofa_europa.jpg",
+      images: [
+          "sofa_europa.jpg",
+          "sofa_europa2.jpg"
+        ]
+    },
+    {
+      id: 18,
+      name: "Grecia",
+      price: 460,
+      description: "",
+      image: "sofa_grecia.jpg",
+      images: [
+          "sofa_grecia.jpg",
+        ]
+    },
+    {
+      id: 19,
+      name: "Ali",
+      price: 520,
+      description: "",
+      image: "sofa_ali.jpg",
+      images: [
+          "sofa_ali.jpg",
+        ]
+    },
+    {
+      id: 20,
+      name: "Labros",
+      price: 625,
+      description: "",
+      image: "sofa_labros.jpg",
+      images: [
+          "sofa_labros.jpg",
+        ]
+    },
+    {
+      id: 21,
+      name: "Richard",
+      price: 460,
+      description: "",
+      image: "sofa_richard.jpg",
+      images: [
+          "sofa_richard.jpg",
+        ]
+    },
+    {
+      id: 22,
+      name: "Audi",
+      price: 590,
+      description: "",
+      image: "sofa_audi.jpg",
+      images: [
+          "sofa_audi.jpg",
+        ]
+    },
   ],
   dormitorio:[
     {
@@ -213,9 +328,10 @@ export const db: Record<string, Product[]> = {
       name: "Aurora",
       price: 290,
       description: "",
-      image: "cama_aurora.jpg",
+      image: "cama_aurora2.jpg",
       images: [
         "cama_aurora.jpg",
+        "cama_aurora2.jpg"
       ]
     },
     {
@@ -410,6 +526,16 @@ export const db: Record<string, Product[]> = {
         "multi_gavetero3.jpg"
       ]
     },
+    {
+      id: 215,
+      name: "multimueble",
+      price: 280,
+      description: "",
+      image: "multimueble_geometrico.jpg",
+      images: [
+        "multimueble_geometrico.jpg"
+      ]
+    },
     // {
     //   id: 207,
     //   name: "Centro de TV",
@@ -436,7 +562,7 @@ export const db: Record<string, Product[]> = {
       id: 301,
       name: "Lux",
       price: 560,
-      description: "",
+      description: "El comedor lux es una comedor con estructura de saman ",
       image: "lux.jpg",
       images: [
         "lux.jpg"
