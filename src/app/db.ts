@@ -16,7 +16,7 @@ export const db: Record<string, Product[]> = {
       id: 1,
       name: "Zultan",
       price: 770,
-      description: "El mueble Zultan está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, con una densidad de 24 grados, garantizando resistencia y comodidad.",
+      description: "El mueble está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, con una densidad de 24 grados, garantizando resistencia y comodidad.",
       image: "zultan_3.jpg",
       images: [
         "zultan_3.jpg",
@@ -24,14 +24,14 @@ export const db: Record<string, Product[]> = {
         "zultan_4.PNG",
         "zultan_5.PNG",
         "zultan_6.PNG",
-        "zultan_7.PNG",
+        // "zultan_7.PNG",
       ]
     },
     {
         id: 2,
         name: "Mueble L",
         price: 550,
-        description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto con capacidad para cinco puestos. Sus dimensiones de 150 m x 200 m garantizan confort y ahorro de espacio, complementado con una sincha de 5 cm que optimiza la resistencia y estabilidad. Además, incorpora un revestimiento de goma de 4 pulgadas con una densidad de 24 grados, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
+        description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, complementado con una sincha de 5 cm que optimiza la resistencia y estabilidad. Además, incorpora un revestimiento de goma de 4 pulgadas con densidad de 24 grados, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
         image: "mueblel.PNG",
         images: [
           "mueblel.PNG",
@@ -40,30 +40,22 @@ export const db: Record<string, Product[]> = {
     },
       {
         id: 3,
-        name: "Juego Zuisa",
-        price: 460,
-        description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto con capacidad para cinco puestos. Sus dimensiones de 150 m x 200 m garantizan confort y ahorro de espacio, complementado con una sincha de 5 cm que optimiza la resistencia y estabilidad. Además, incorpora un revestimiento de goma de 4 pulgadas con una densidad de 24 grados, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
-        image: "zultan2puestos.PNG",
+        name: "Juego Suiza",
+        price: 710,
+        description: "El juego Suiza está compuesto por dos piezas con una estructura de zaman y un diseño tradicional, con capacidad para cinco puestos. La primera pieza tiene una longitud de 150 cm y ofrece dos puestos, mientras que la segunda mide 210 cm, proporcionando un espacio amplio y confortable.",
+        image: "sofa_juego_suiza.PNG",
         images: [
-          "zultan2puestos.PNG"
-        ]
-    },
-    {
-        id: 5,
-        name: "Fenix",
-        price: 450,
-        description: "El Fenix cuenta con una estructura robusta de zaman y un diseño moderno para cinco puestos. Sus dimensiones de 190 m x 190 m garantizan confort y ahorro de espacio, Además, incorpora un revestimiento de goma de 4 pulgadas con una densidad de 24 grados, ofreciendo comodidad y durabilidad.",
-        image: "fenix.PNG",
-        images: [
-          "fenix.PNG",
-          "fenix_2.PNG"
+          "sofa_juego_suiza.PNG",
+          "sofa_juego_zuisa2.jpg"
         ]
     },
     {
       id: 6,
       name: "Roma",
       price: 1400,
-      description: "El mueble Roma cuenta con una estructura robusta de zaman y un diseño conpacto con capacidad para seis puestos. Sus dimensiones de 250 m x 310 m garantiza confort o, complementado con una sincha de 5 cm que optimiza la resistencia y estabilidad. Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
+      description: `El mueble Roma posee una estructura robusta de zaman y un diseño compacto, con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "Roma.PNG",
       images: [
           "Roma.PNG",
@@ -211,6 +203,19 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
+      id: 5,
+      name: "Fenix",
+      price: 450,
+      description: `El modelo Fénix consta de tres piezas con una estructura robusta de zaman y un diseño moderno, ideal para cinco puestos. Sus dimensiones de 190 cm x 190 cm garantizan confort y optimización del espacio.
+
+      Además, cuenta con un revestimiento de goma de 4 pulgadas y una densidad de 24 grados, proporcionando el equilibrio perfecto entre comodidad y durabilidad.`,
+      image: "fenix.PNG",
+      images: [
+        "fenix.PNG",
+        "fenix_2.PNG"
+      ]
+    },
+    {
       id: 20,
       name: "Labros",
       price: 625,
@@ -238,6 +243,67 @@ export const db: Record<string, Product[]> = {
       image: "sofa_audi.jpg",
       images: [
           "sofa_audi.jpg",
+        ]
+    },
+    {
+      id: 23,
+      name: "Suiza",
+      price: 510,
+      description: "",
+      image: "sofa_zuisa.jpg",
+      images: [
+          "sofa_zuisa.jpg",
+        ]
+    },
+    {
+      id: 24,
+      name: "Anasur",
+      price: 440,
+      description: "",
+      image: "sofa_anasur.jpg",
+      images: [
+          "sofa_anasur.jpg",
+        ]
+    },
+    {
+      id: 25,
+      name: "Rosa",
+      price: 660,
+      description: "",
+      image: "sofa_rosa.jpg",
+      images: [
+          "sofa_rosa.jpg",
+        ]
+    },
+        {
+      id: 26,
+      name: "Juego Principe",
+      price: 450,
+      description: "",
+      image: "sofa_juego_principe.jpg",
+      images: [
+          "sofa_juego_principe.jpg",
+          "sofa_juego_principe2.jpg"
+        ]
+    },
+    {
+      id: 27,
+      name: "Juego Barco",
+      price: 690,
+      description: "",
+      image: "sofa_barco.jpg",
+      images: [
+          "sofa_barco.jpg",
+        ]
+    },
+    {
+      id: 28,
+      name: "Juego Mufada",
+      price: 690,
+      description: "",
+      image: "sofa_juego_mufada.jpg",
+      images: [
+          "sofa_juego_mufada.jpg",
         ]
     },
   ],

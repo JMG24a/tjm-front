@@ -109,7 +109,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
           </div>
         </div>
 
-        <div className="productsGrid">
+        {/* <div className="productsGrid">
           <div className="productCard">
             <Link href={`${myapi}/${producto.category}/${producto.id}`}>
               <Image
@@ -140,7 +140,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
