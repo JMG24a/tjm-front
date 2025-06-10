@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function Page({ params }: any) {
   const producto = await obtenerProducto(params.id, params.products);
-  const myapi = process.env.NEXT_PUBLIC_API_URL || "";
+  // const myapi = process.env.NEXT_PUBLIC_API_URL || "";
   const mensaje = `https://tjm-front.vercel.app/${producto.category}/${producto.id}
 Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto.name}-${producto.price}$`
 
