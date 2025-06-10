@@ -299,11 +299,62 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
     {
       id: 28,
       name: "Juego Mufada",
-      price: 690,
+      price: 670,
       description: "",
       image: "sofa_juego_mufada.jpg",
       images: [
           "sofa_juego_mufada.jpg",
+        ]
+    },
+    {
+      id: 29,
+      name: "Sofa Cama",
+      price: 470,
+      description: "",
+      image: "sofa_sofacama.jpg",
+      images: [
+          "sofa_sofacama.jpg",
+        ]
+    },
+    {
+      id: 30,
+      name: "Juego Primavera",
+      price: 260,
+      description: "",
+      image: "sofa_juego_primavera2.jpg",
+      images: [
+          "sofa_juego_primavera2.jpg",
+          "sofa_juego_primavera.jpg",
+        ]
+    },
+    {
+      id: 31,
+      name: "Ariana",
+      price: 540,
+      description: "",
+      image: "sofa_ariana.jpg",
+      images: [
+          "sofa_ariana.jpg",
+        ]
+    },
+    {
+      id: 32,
+      name: "Curazao",
+      price: 680,
+      description: "",
+      image: "sofa_curazao2.jpg",
+      images: [
+          "sofa_curazao2.jpg",
+        ]
+    },
+    {
+      id: 33,
+      name: "Paris",
+      price: 400,
+      description: "",
+      image: "sofa_paris.jpg",
+      images: [
+          "sofa_paris.jpg",
         ]
     },
   ],
