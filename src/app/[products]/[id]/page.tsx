@@ -98,9 +98,9 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
           <p className="caracteristicas">Caracteristicas</p>
 
           <div className="gridContainers">
-            {producto.tag.map((item)=>{
+            {producto.tag.map((item, key)=>{
               return(
-                <p>{item}</p>
+                <p key={key}>{item}</p>
               )
             })}
           </div>
