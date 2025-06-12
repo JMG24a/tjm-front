@@ -31,7 +31,7 @@ export const db: Record<string, Product[]> = {
         "5 Puestos",
         "3 Piezas",
         'Goma 5"',
-        "Sincha 5cm",
+        "Cincha 5cm",
       ]
     },
     {

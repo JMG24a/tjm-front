@@ -84,9 +84,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
       />
 
       <Link href="/" className="buttonHome">
-        <p>
-          ←
-        </p>
+        <Image src={"/back.webp"} width={35} height={35} alt="go back"/>
       </Link>
 
       <div className="container">
