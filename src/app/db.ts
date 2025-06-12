@@ -6,6 +6,7 @@ export type Product = {
   image: string;
   images: string[]
   description: string,
+  tag: string[],
   category?: string,
 };
 
@@ -25,6 +26,12 @@ export const db: Record<string, Product[]> = {
         "zultan_5.PNG",
         "zultan_6.PNG",
         // "zultan_7.PNG",
+      ],
+      tag: [
+        "Tela",
+        "Piel",
+        "5 puestos",
+        "3 piezas"
       ]
     },
     {
@@ -36,7 +43,8 @@ export const db: Record<string, Product[]> = {
         images: [
           "mueblel.PNG",
           "muebleL_2.PNG"
-        ]
+        ],
+        tag: []
     },
       {
         id: 3,
@@ -47,7 +55,8 @@ export const db: Record<string, Product[]> = {
         images: [
           "sofa_juego_suiza.PNG",
           "sofa_juego_zuisa2.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 6,
@@ -61,7 +70,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
           "Roma.PNG",
           "roma_2.PNG",
           "roma_3.PNG"
-        ]
+        ],
+        tag: []
     },
     {
       id: 7,
@@ -71,7 +81,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "maya.PNG",
       images: [
           "maya.PNG"
-        ]
+        ],
+        tag: []
     },
     {
       id: 8,
@@ -83,7 +94,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
           "sofa_roraima.jpg",
           "sofa_roraima2.jpg",
           "sofa_roraima3.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 9,
@@ -94,7 +106,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
           "sofa_roraima_s.jpg",
           "sofa_roraima_s2.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 10,
@@ -106,7 +119,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
           "sofa_david_3.jpg",
           "sofa_david_.jpg",
           "sofa_david_2.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 11,
@@ -116,7 +130,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_invierno.jpg",
       images: [
           "sofa_invierno.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 12,
@@ -126,7 +141,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_charlot.jpg",
       images: [
           "sofa_charlot.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 13,
@@ -136,7 +152,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_media_luna.jpg",
       images: [
           "sofa_media_luna.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 14,
@@ -148,7 +165,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
           "sofa_mueblel5p(1).jpg",
           "sofa_mueblel5p(2).jpg",
           "sofa_mueblel5p(3).jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 15,
@@ -158,7 +176,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_rodolfo.jpg",
       images: [
           "sofa_rodolfo.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 16,
@@ -169,7 +188,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
           "sofa_enmaly.jpg",
           "sofa_enmaly2.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 17,
@@ -180,7 +200,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
           "sofa_europa.jpg",
           "sofa_europa2.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 18,
@@ -190,7 +211,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_grecia.jpg",
       images: [
           "sofa_grecia.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 19,
@@ -200,7 +222,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_ali.jpg",
       images: [
           "sofa_ali.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 5,
@@ -213,7 +236,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "fenix.PNG",
         "fenix_2.PNG"
-      ]
+      ],
+      tag: []
     },
     {
       id: 20,
@@ -223,7 +247,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_labros.jpg",
       images: [
           "sofa_labros.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 21,
@@ -233,7 +258,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_richard.jpg",
       images: [
           "sofa_richard.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 22,
@@ -243,7 +269,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_audi.jpg",
       images: [
           "sofa_audi.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 23,
@@ -253,7 +280,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_zuisa.jpg",
       images: [
           "sofa_zuisa.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 24,
@@ -263,7 +291,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_anasur.jpg",
       images: [
           "sofa_anasur.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 25,
@@ -273,7 +302,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_rosa.jpg",
       images: [
           "sofa_rosa.jpg",
-        ]
+        ],
+        tag: []
     },
         {
       id: 26,
@@ -284,7 +314,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
           "sofa_juego_principe.jpg",
           "sofa_juego_principe2.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 27,
@@ -294,7 +325,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_barco.jpg",
       images: [
           "sofa_barco.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 28,
@@ -304,7 +336,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_juego_mufada.jpg",
       images: [
           "sofa_juego_mufada.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 29,
@@ -314,7 +347,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_sofacama.jpg",
       images: [
           "sofa_sofacama.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 30,
@@ -325,7 +359,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
           "sofa_juego_primavera2.jpg",
           "sofa_juego_primavera.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 31,
@@ -335,7 +370,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_ariana.jpg",
       images: [
           "sofa_ariana.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 32,
@@ -345,7 +381,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_curazao2.jpg",
       images: [
           "sofa_curazao2.jpg",
-        ]
+        ],
+        tag: []
     },
     {
       id: 33,
@@ -355,7 +392,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_paris.jpg",
       images: [
           "sofa_paris.jpg",
-        ]
+        ],
+        tag: []
     },
   ],
   dormitorio:[
@@ -367,7 +405,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "coco.jpg",
       images: [
         "coco.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 102,
@@ -377,7 +416,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "nene.jpg",
               images: [
         "nene.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 103,
@@ -387,7 +427,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "capitan.jpg",
       images: [
         "capitan.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 104,
@@ -397,7 +438,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "triangular.jpg",
       images: [
         "triangular.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 105,
@@ -407,7 +449,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "moises.jpg",
       images: [
         "moises.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 106,
@@ -418,7 +461,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "cama_madera.jpg",
         "cama_madera_pintada.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 107,
@@ -428,7 +472,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "cama_isabela.jpg",
       images: [
         "cama_isabela.jpg",
-      ]
+      ],
+      tag: []
     },
     {
       id: 108,
@@ -438,7 +483,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "princesa.jpg",
       images: [
         "princesa.jpg",
-      ]
+      ],
+      tag: []
     },
     {
       id: 109,
@@ -449,7 +495,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "cama_aurora.jpg",
         "cama_aurora2.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 110,
@@ -459,7 +506,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "cama_barco.jpg",
       images: [
         "cama_barco.jpg",
-      ]
+      ],
+      tag: []
     },
     {
       id: 111,
@@ -469,7 +517,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "cama_magnun.jpg",
       images: [
         "cama_magnun.jpg",
-      ]
+      ],
+      tag: []
     },
     {
       id: 112,
@@ -479,7 +528,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "cama_sol.jpg",
       images: [
         "cama_sol.jpg",
-      ]
+      ],
+      tag: []
     },
     {
       id: 113,
@@ -489,7 +539,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "cama_sol_especial.jpg",
       images: [
         "cama_sol_especial.jpg",
-      ]
+      ],
+      tag: []
     },
     {
       id: 114,
@@ -499,7 +550,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "cama_cuna.jpg",
       images: [
         "cama_cuna.jpg",
-      ]
+      ],
+      tag: []
     },
   ],
   multimueble:[
@@ -511,7 +563,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_peinadora_s.jpg",
       images: [
         "multi_peinadora_s.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 202,
@@ -521,7 +574,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_manicure.jpg",
       images: [
         "multi_mesa_manicure.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 203,
@@ -531,7 +585,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_manicure2.jpg",
       images: [
         "multi_mesa_manicure2.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 204,
@@ -541,7 +596,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_manicure3.jpg",
       images: [
         "multi_mesa_manicure3.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 230,
@@ -551,7 +607,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_chifonier.jpg",
       images: [
         "multi_mesa_chifonier.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 206,
@@ -561,7 +618,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_centro2.jpg",
       images: [
         "multi_mesa_centro2.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 207,
@@ -571,7 +629,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_centro.jpg",
       images: [
         "multi_mesa_centro.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 208,
@@ -581,7 +640,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_centro3.jpg",
       images: [
         "multi_mesa_centro3.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 209,
@@ -591,7 +651,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_manicure_s.jpg",
       images: [
         "multi_mesa_manicure_s.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 210,
@@ -601,7 +662,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_mesa_manicure_l.jpg",
       images: [
         "multi_mesa_manicure_l.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 211,
@@ -611,7 +673,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_manicure_l.jpg",
       images: [
         "multi_manicure_l.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 212,
@@ -621,7 +684,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_gavetero.jpg",
       images: [
         "multi_gavetero.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 213,
@@ -631,7 +695,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_gavetero2.jpg",
       images: [
         "multi_gavetero2.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 214,
@@ -641,7 +706,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multi_gavetero3.jpg",
       images: [
         "multi_gavetero3.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 215,
@@ -651,7 +717,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "multimueble_geometrico.jpg",
       images: [
         "multimueble_geometrico.jpg"
-      ]
+      ],
+      tag: []
     },
     // {
     //   id: 207,
@@ -683,7 +750,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "lux.jpg",
       images: [
         "lux.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 302,
@@ -694,7 +762,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
                 images: [
           "isabela.jpg",
           "isabela_2.jpg"
-        ]
+        ],
+        tag: []
     },
     {
       id: 303,
@@ -704,7 +773,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "lily.jpg",
       images: [
         "lily.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 304,
@@ -714,7 +784,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "coral.jpg",
       images: [
         "coral.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 305,
@@ -724,7 +795,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "tifany.jpg",
       images: [
         "tifany.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 306,
@@ -734,7 +806,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "Tipo_v.jpg",
       images: [
         "Tipo_v.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 307,
@@ -744,7 +817,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "redondo.jpg",
       images: [
         "redondo.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 308,
@@ -754,7 +828,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "valentina.jpg",
       images: [
         "valentina.jpg"
-      ]
+      ],
+      tag: []
     },
     {
       id: 309,
@@ -764,7 +839,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "tipo_i.jpg",
       images: [
         "tipo_i.jpg"
-      ]
+      ],
+      tag: []
     },
         {
       id: 310,
@@ -774,7 +850,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "madera.jpg",
       images: [
         "madera.jpg"
-      ]
+      ],
+      tag: []
     },
   ],
     colchones:[
@@ -786,7 +863,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "colchon_imperia.JPG",
       images: [
         "colchon_imperia.JPG"
-      ]
+      ],
+      tag: []
     },
     {
       id: 402,
@@ -796,7 +874,8 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "colchon_colflex_lady.PNG",
       images: [
         "colchon_colflex_lady.PNG"
-      ]
+      ],
+      tag: []
     },
   ]
 }

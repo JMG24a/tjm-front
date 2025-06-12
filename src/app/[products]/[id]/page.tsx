@@ -12,7 +12,8 @@ type Producto = {
   category: string;
   description: string;
   image: string;
-  images: string[]
+  images: string[],
+  tag: string[]
 };
 
 async function obtenerProducto(id: number, category: string): Promise<Producto> {
@@ -23,7 +24,8 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     category: category,
     description: "Muebles fabricados por profecionales, y materiales de primera",
     image: `/zultan_1.PNG`,
-    images: []
+    images: [],
+    tag: []
   }
 
   db[category].map((item)=>{
@@ -40,6 +42,7 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     description: product.description,
     image: product.image,
     images: product.images,
+    tag: product.tag,
   };
 }
 
@@ -91,6 +94,16 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
           <h2 className="title">{producto.name}</h2>
           <p className="description">{producto.description}</p>
           <p className="price">${producto.price}</p>
+
+          <p className="caracteristicas">Caracteristicas</p>
+
+          <div className="gridContainers">
+            {producto.tag.map((item)=>{
+              return(
+                <p>{item}</p>
+              )
+            })}
+          </div>
 
           <div className="whatsapp-link">
             <Link

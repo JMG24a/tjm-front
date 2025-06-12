@@ -220,3 +220,26 @@ html, body {
 .details a{
   margin: auto 0;
 }
+
+.caracteristicas{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.gridContainers{
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  grid-template-rows: repeat(3, auto);   /* 3 filas, altura automática */
+  gap: 10px; /* espacio entre celdas (opcional) */
+}
+
+.gridContainers p{
+  background-color: #f0f0f0; /* solo para visualización */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
