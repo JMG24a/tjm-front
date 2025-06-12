@@ -239,7 +239,8 @@ html, body {
   background-color: #f0f0f0; /* solo para visualización */
   padding: 10px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
+  box-shadow: 7px 9px 11px rgb(184, 196, 196);
 }
 
