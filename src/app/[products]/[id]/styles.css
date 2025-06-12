@@ -236,7 +236,7 @@ html, body {
 }
 
 .gridContainers p{
-  background-color: #f0f0f0; /* solo para visualización */
+  background-color: #ffffff; /* solo para visualización */
   padding: 10px;
   text-align: center;
   border: none;
@@ -244,3 +244,19 @@ html, body {
   box-shadow: 7px 9px 11px rgb(184, 196, 196);
 }
 
+.buttonHome {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #a0a0a0;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonHome:hover {
+  background-color: #005bb5;
+}

@@ -28,10 +28,10 @@ export const db: Record<string, Product[]> = {
         // "zultan_7.PNG",
       ],
       tag: [
-        "Tela",
-        "Piel",
-        "5 puestos",
-        "3 piezas"
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 5"',
+        "Sincha 5cm",
       ]
     },
     {

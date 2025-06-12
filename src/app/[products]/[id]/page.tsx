@@ -82,12 +82,12 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
       <Banner
         images={producto.images}
       />
-      {/* <div className="carousel">
-        <div className="carousel-track">
-          <img src="/zultan_1.PNG" alt="foto 1" />
-          <img src="/zultan_3.PNG" alt="foto 2" />
-        </div>
-      </div> */}
+
+      <Link href="/" className="buttonHome">
+        <p>
+          ←
+        </p>
+      </Link>
 
       <div className="container">
         <div className="container_main-product">
@@ -121,39 +121,6 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
             </Link>
           </div>
         </div>
-
-        {/* <div className="productsGrid">
-          <div className="productCard">
-            <Link href={`${myapi}/${producto.category}/${producto.id}`}>
-              <Image
-                src="/maya.PNG"
-                alt={producto.name}
-                width={200}
-                height={200}
-                className="productImage"
-              />
-            </Link>
-            <div className="details">
-              <div className="details_container">
-                <p className="productName">{producto.name}</p>
-                <div className="detailsNamePrice">
-                  <p className="productPrice">${producto.price}</p>
-                <Link
-                  href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
-                  target="_blank"
-                >
-                  <Image
-                    src="/WhatsApp.svg.webp"
-                    alt="WhatsApp"
-                    width={40}
-                    height={40}
-                  />
-                </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </main>
   );
