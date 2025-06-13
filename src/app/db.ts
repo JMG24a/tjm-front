@@ -834,7 +834,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 301,
       name: "Lux",
       price: 560,
-      description: "El comedor lux es una comedor con estructura de saman ",
+      description: "Comedor de cuatro puestos, ideal para optimizar espacios reducidos. Fabricado en madera de samán, ofrece una combinación perfecta de elegancia y modernidad, convirtiéndose en una pieza sofisticada para cualquier ambiente.",
       image: "lux.jpg",
       images: [
         "lux.jpg"
@@ -849,7 +849,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 302,
         name: "Isabela",
         price: 650,
-        description: "",
+        description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
         image: "isabela.jpg",
                 images: [
           "isabela.jpg",
@@ -865,7 +865,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 303,
       name: "LiLy",
       price: 460,
-      description: "",
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "lily.jpg",
       images: [
         "lily.jpg"
@@ -880,7 +880,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 304,
       name: "Coral",
       price: 500,
-      description: "",
+      description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 150 cm x 150 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "coral.jpg",
       images: [
         "coral.jpg"
@@ -910,7 +910,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 306,
       name: "Tipo v",
       price: 630,
-      description: "",
+      description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "Tipo_v.jpg",
       images: [
         "Tipo_v.jpg"
@@ -923,9 +923,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
     },
     {
       id: 307,
-      name: "Redondo",
+      name: "Rog",
       price: 320,
-      description: "",
+      description: "Comedor de cuatro puestos y tope de vidrio, ideal para optimizar espacios reducidos. Fabricado en madera de samán, ofrece una combinación perfecta de elegancia y modernidad, convirtiéndose en una pieza sofisticada para cualquier ambiente.",
       image: "redondo.jpg",
       images: [
         "redondo.jpg"
@@ -940,7 +940,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 308,
       name: "Valentina",
       price: 540,
-      description: "",
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "valentina.jpg",
       images: [
         "valentina.jpg"
@@ -956,7 +956,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 309,
       name: "Tipo i",
       price: 540,
-      description: "",
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 150 cm x 150 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "tipo_i.jpg",
       images: [
         "tipo_i.jpg"
@@ -971,7 +971,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 310,
       name: "Madera",
       price: 540,
-      description: "",
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "madera.jpg",
       images: [
         "madera.jpg"
@@ -1000,7 +1000,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
     },
     {
       id: 402,
-      name: "Colflex Lady Best Pillow Top",
+      name: "Colflex Lady Best",
       price: 230,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
       image: "colchon_colflex_lady.PNG",
