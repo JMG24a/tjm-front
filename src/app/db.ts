@@ -30,7 +30,7 @@ export const db: Record<string, Product[]> = {
       tag: [
         "5 Puestos",
         "3 Piezas",
-        'Goma 5"',
+        'Goma 4"',
         "Cincha 5cm",
       ]
     },
@@ -42,9 +42,14 @@ export const db: Record<string, Product[]> = {
         image: "mueblel.PNG",
         images: [
           "mueblel.PNG",
-          "muebleL_2.PNG"
+          "sofa_muebleL_2.PNG"
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 4"',
+          "Cincha 5cm",
+        ]
     },
       {
         id: 3,
@@ -56,13 +61,18 @@ export const db: Record<string, Product[]> = {
           "sofa_juego_suiza.PNG",
           "sofa_juego_zuisa2.jpg"
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "2 Piezas",
+          'Goma 4"',
+          "Cincha 5cm",
+        ]
     },
     {
       id: 6,
       name: "Roma",
       price: 1400,
-      description: `El mueble Roma posee una estructura robusta de zaman y un diseño compacto, con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
+      description: `El mueble Roma posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
 
 Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "Roma.PNG",
@@ -71,125 +81,199 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
           "roma_2.PNG",
           "roma_3.PNG"
         ],
-        tag: []
+        tag: [
+          "6 Puestos",
+          "4 Piezas",
+          'Goma 6"',
+          "Cincha 5cm",
+        ]
     },
     {
       id: 7,
       name: "Maya",
       price: 1600,
-      description: "",
-      image: "maya.PNG",
+      description: `El mueble Maya posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
+      image: "sofa_maya.PNG",
       images: [
-          "maya.PNG"
+          "sofa_maya.PNG"
         ],
-        tag: []
+        tag: [
+          "6 Puestos",
+          "4 Piezas",
+          'Goma 6"',
+          "Cincha 5cm",
+        ]
     },
     {
       id: 8,
       name: "Roraima",
       price: 1050,
-      description: "",
+      description: `El mueble Roraima posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_roraima.jpg",
       images: [
           "sofa_roraima.jpg",
           "sofa_roraima2.jpg",
           "sofa_roraima3.jpg"
         ],
-        tag: []
+        tag: [
+          "6 Puestos",
+          "3 Piezas",
+          "1 Puff",
+          'Goma 4"',
+          "Cincha 5cm",
+        ]
     },
     {
       id: 9,
       name: "Roraima S",
       price: 660,
-      description: "",
+      description: `El mueble Roraima S posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_roraima_s.jpg",
       images: [
           "sofa_roraima_s.jpg",
           "sofa_roraima_s2.jpg"
         ],
-        tag: []
+        tag: [
+          "8 Puestos",
+          "4 Piezas",
+          'Goma 3"',
+          "Cincha 5cm",
+        ]
     },
     {
       id: 10,
       name: "David",
       price: 460,
-      description: "",
+      description: `El mueble David posee una estructura robusta de zaman y con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_david_3.jpg",
       images: [
           "sofa_david_3.jpg",
           "sofa_david_.jpg",
           "sofa_david_2.jpg"
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "4 Piezas",
+          'Goma 2.5"',
+        ]
     },
     {
       id: 11,
       name: "Invierno",
       price: 730,
-      description: "",
+      description: `El mueble Invierno posee una estructura robusta de zaman y con capacidad para 3 puestos. Sus dimensiones de 200cm x 180cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_invierno.jpg",
       images: [
           "sofa_invierno.jpg",
         ],
-        tag: []
+        tag: [
+          "3 Puestos",
+          "2 Piezas",
+          'Goma 4"',
+          "cincha 5cm"
+        ]
     },
     {
       id: 12,
       name: "Charlott",
       price: 430,
-      description: "",
+      description: `El mueble Charlott posee una estructura robusta de zaman y con capacidad para 3 puestos. Sus dimensiones de 150cm x 170cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_charlot.jpg",
       images: [
           "sofa_charlot.jpg",
         ],
-        tag: []
+        tag: [
+          "3 Puestos",
+          "2 Piezas",
+          'Goma 2.5"',
+        ]
     },
     {
       id: 13,
       name: "Media Luna",
       price: 670,
-      description: "",
+      description: `El mueble Media Luna posee una estructura robusta de zaman y con capacidad para 3 puestos. Sus dimensiones de 150cm x 170cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 3 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_media_luna.jpg",
       images: [
           "sofa_media_luna.jpg",
         ],
-        tag: []
+        tag: [
+          "3 Puestos",
+          "2 Piezas",
+          'Goma 3"',
+          "cincha 5cm",
+          "Diseño capitaneado"
+        ]
     },
     {
       id: 14,
       name: "Mueble L",
       price: 550,
-      description: "",
-      image: "sofa_mueblel5p(1).jpg",
+      description: `El Mueble L posee una estructura robusta de zaman y con capacidad para 5 puestos. Sus dimensiones de 250cm x 165cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "sofa_mueblel5p(2).jpg",
       images: [
-          "sofa_mueblel5p(1).jpg",
+          // "sofa_mueblel5p(1).jpg",
           "sofa_mueblel5p(2).jpg",
           "sofa_mueblel5p(3).jpg",
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
       id: 15,
       name: "Rodolfo",
       price: 690,
-      description: "",
+      description: `El Mueble Rodolfo posee una estructura robusta de zaman y con capacidad para 6 puestos. Sus dimensiones de 250cm x 180cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_rodolfo.jpg",
       images: [
           "sofa_rodolfo.jpg",
         ],
-        tag: []
+        tag: [
+          "6 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
       id: 16,
       name: "Enmaly",
       price: 320,
-      description: "",
+      description: `El Mueble Enmaly posee una estructura robusta de zaman y con capacidad para 5 puestos. Sus dimensiones de 175cm x 175cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_enmaly.jpg",
       images: [
           "sofa_enmaly.jpg",
           "sofa_enmaly2.jpg",
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 2.5"',
+        ]
     },
     {
       id: 17,
@@ -406,7 +490,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "coco.jpg"
       ],
-      tag: []
+      tag: [
+        "Matrimonial",
+        "Queen",
+        "King"
+      ]
     },
     {
       id: 102,
@@ -751,7 +839,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "lux.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 302,
@@ -763,7 +855,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
           "isabela.jpg",
           "isabela_2.jpg"
         ],
-        tag: []
+        tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 303,
@@ -774,7 +870,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "lily.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 304,
@@ -785,7 +885,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "coral.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 305,
@@ -796,7 +900,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "tifany.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 306,
@@ -807,7 +915,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "Tipo_v.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 307,
@@ -818,7 +930,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "redondo.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 308,
@@ -829,7 +945,12 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "valentina.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+        "Banquillo"
+      ]
     },
     {
       id: 309,
@@ -840,7 +961,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "tipo_i.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
         {
       id: 310,
@@ -851,7 +976,11 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       images: [
         "madera.jpg"
       ],
-      tag: []
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
   ],
     colchones:[
@@ -859,23 +988,29 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       id: 401,
       name: "Imperia San Remo",
       price: 200,
-      description: "",
+      description: `Un colchón semi ortopédico Imperia ofrece un equilibrio entre soporte y comodidad, lo que lo hace ideal para quienes buscan un descanso saludable sin una firmeza extrema`,
       image: "colchon_imperia.JPG",
       images: [
         "colchon_imperia.JPG"
       ],
-      tag: []
+      tag: [
+        "Garantia 5 años",
+        "Semi Ortopedico"
+      ]
     },
     {
       id: 402,
-      name: "Colflex Lady Best",
+      name: "Colflex Lady Best Pillow Top",
       price: 230,
-      description: "",
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
       image: "colchon_colflex_lady.PNG",
       images: [
         "colchon_colflex_lady.PNG"
       ],
-      tag: []
+      tag: [
+        "Garantia 5 años",
+        "Extra Pillow Top",
+      ]
     },
   ]
 }
