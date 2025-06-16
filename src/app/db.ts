@@ -75,11 +75,11 @@ export const db: Record<string, Product[]> = {
       description: `El mueble Roma posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
 
 Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
-      image: "Roma.PNG",
+      image: "sofa_roma.PNG",
       images: [
-          "Roma.PNG",
-          "roma_2.PNG",
-          "roma_3.PNG"
+          "sofa_roma.PNG",
+          "sofa_roma_2.PNG",
+          "sofa_roma_3.PNG"
         ],
         tag: [
           "6 Puestos",
@@ -279,19 +279,25 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 17,
       name: "Europa",
       price: 810,
-      description: "",
+      description: `El Mueble Europa posee una estructura robusta de zaman y con capacidad para 3 puestos y accesorios de lujo como porta vasos. Sus dimensiones de 175cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
+
+Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_europa.jpg",
       images: [
           "sofa_europa.jpg",
           "sofa_europa2.jpg"
         ],
-        tag: []
+        tag: [
+          "3 puestos",
+          "1 pieza",
+          "porta vasos"
+        ]
     },
     {
       id: 18,
       name: "Grecia",
       price: 460,
-      description: "",
+      description: ``,
       image: "sofa_grecia.jpg",
       images: [
           "sofa_grecia.jpg",
