@@ -1,4 +1,11 @@
 // Tipos de productos
+type suggest = {
+  id: number,
+  name: string,
+  price: number,
+  image: string,
+}
+
 export type Product = {
   id: number;
   name: string;
@@ -7,6 +14,7 @@ export type Product = {
   images: string[]
   description: string,
   tag: string[],
+  associations: suggest[],
   category?: string,
 };
 
@@ -17,15 +25,18 @@ export const db: Record<string, Product[]> = {
       id: 1,
       name: "Zultan",
       price: 770,
-      description: "El mueble está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, con una densidad de 24 grados, garantizando resistencia y comodidad.",
-      image: "zultan_3.jpg",
+      description: "El mueble está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, garantizando resistencia y comodidad.",
+      image: "sofa_zultan_3.PNG",
       images: [
-        "zultan_3.jpg",
+        "sofa_zultan_3.PNG",
         "zultan_1.PNG",
         "zultan_4.PNG",
         "zultan_5.PNG",
         "zultan_6.PNG",
         // "zultan_7.PNG",
+      ],
+      associations: [
+
       ],
       tag: [
         "5 Puestos",
@@ -44,6 +55,9 @@ export const db: Record<string, Product[]> = {
           "mueblel.PNG",
           "sofa_muebleL_2.PNG"
         ],
+        associations: [
+
+        ],
         tag: [
           "5 Puestos",
           "3 Piezas",
@@ -61,6 +75,9 @@ export const db: Record<string, Product[]> = {
           "sofa_juego_suiza.PNG",
           "sofa_juego_zuisa2.jpg"
         ],
+        associations: [
+
+        ],
         tag: [
           "5 Puestos",
           "2 Piezas",
@@ -72,20 +89,23 @@ export const db: Record<string, Product[]> = {
       id: 6,
       name: "Roma",
       price: 1400,
-      description: `El mueble Roma posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
+      description: `El mueble Roma posee una estructura robusta de zaman. Su dimensión de 250 cm x 310 cm garantizan confort, resistencia y estabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "sofa_roma.PNG",
       images: [
           "sofa_roma.PNG",
           "sofa_roma_2.PNG",
           "sofa_roma_3.PNG"
         ],
+        associations: [
+
+        ],
         tag: [
           "6 Puestos",
           "4 Piezas",
           'Goma 6"',
           "Cincha 5cm",
+          "Portavasos",
+          "Reclinable",
         ]
     },
     {
@@ -98,6 +118,9 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       image: "sofa_maya.PNG",
       images: [
           "sofa_maya.PNG"
+        ],
+        associations: [
+
         ],
         tag: [
           "6 Puestos",
@@ -119,6 +142,9 @@ Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilib
           "sofa_roraima2.jpg",
           "sofa_roraima3.jpg"
         ],
+        associations: [
+
+        ],
         tag: [
           "6 Puestos",
           "3 Piezas",
@@ -138,6 +164,9 @@ Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilib
       images: [
           "sofa_roraima_s.jpg",
           "sofa_roraima_s2.jpg"
+        ],
+        associations: [
+
         ],
         tag: [
           "8 Puestos",
@@ -159,6 +188,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
           "sofa_david_.jpg",
           "sofa_david_2.jpg"
         ],
+        associations: [
+
+        ],
         tag: [
           "5 Puestos",
           "4 Piezas",
@@ -175,6 +207,9 @@ Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilib
       image: "sofa_invierno.jpg",
       images: [
           "sofa_invierno.jpg",
+        ],
+        associations: [
+
         ],
         tag: [
           "3 Puestos",
@@ -194,6 +229,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_charlot.jpg",
         ],
+        associations: [
+
+        ],
         tag: [
           "3 Puestos",
           "2 Piezas",
@@ -210,6 +248,9 @@ Además, incorpora un revestimiento de goma de 3 pulgadas, ofreciendo el equilib
       image: "sofa_media_luna.jpg",
       images: [
           "sofa_media_luna.jpg",
+        ],
+        associations: [
+
         ],
         tag: [
           "3 Puestos",
@@ -232,6 +273,9 @@ Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equil
           "sofa_mueblel5p(2).jpg",
           "sofa_mueblel5p(3).jpg",
         ],
+        associations: [
+
+        ],
         tag: [
           "5 Puestos",
           "3 Piezas",
@@ -249,6 +293,9 @@ Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equil
       image: "sofa_rodolfo.jpg",
       images: [
           "sofa_rodolfo.jpg",
+        ],
+        associations: [
+
         ],
         tag: [
           "6 Puestos",
@@ -269,6 +316,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
           "sofa_enmaly.jpg",
           "sofa_enmaly2.jpg",
         ],
+        associations: [
+
+        ],
         tag: [
           "5 Puestos",
           "3 Piezas",
@@ -287,6 +337,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
           "sofa_europa.jpg",
           "sofa_europa2.jpg"
         ],
+        associations: [
+
+        ],
         tag: [
           "3 puestos",
           "1 pieza",
@@ -302,6 +355,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_grecia.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -312,6 +368,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_ali.jpg",
       images: [
           "sofa_ali.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -327,6 +386,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
         "fenix.PNG",
         "fenix_2.PNG"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -337,6 +397,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_labros.jpg",
       images: [
           "sofa_labros.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -349,6 +412,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_richard.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -359,6 +425,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_audi.jpg",
       images: [
           "sofa_audi.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -371,6 +440,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_zuisa.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -382,6 +454,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_anasur.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -392,6 +467,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_rosa.jpg",
       images: [
           "sofa_rosa.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -405,6 +483,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
           "sofa_juego_principe.jpg",
           "sofa_juego_principe2.jpg"
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -415,6 +496,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_barco.jpg",
       images: [
           "sofa_barco.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -427,6 +511,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_juego_mufada.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -437,6 +524,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_sofacama.jpg",
       images: [
           "sofa_sofacama.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -450,6 +540,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
           "sofa_juego_primavera2.jpg",
           "sofa_juego_primavera.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -460,6 +553,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_ariana.jpg",
       images: [
           "sofa_ariana.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -472,6 +568,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
           "sofa_curazao2.jpg",
         ],
+        associations: [
+
+        ],
         tag: []
     },
     {
@@ -482,6 +581,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "sofa_paris.jpg",
       images: [
           "sofa_paris.jpg",
+        ],
+        associations: [
+
         ],
         tag: []
     },
@@ -496,6 +598,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "coco.jpg"
       ],
+      associations: [],
       tag: [
         "Matrimonial",
         "Queen",
@@ -511,6 +614,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
               images: [
         "nene.jpg"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -522,6 +626,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "capitan.jpg"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -533,6 +638,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "triangular.jpg"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -544,6 +650,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "moises.jpg"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -556,6 +663,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
         "cama_madera.jpg",
         "cama_madera_pintada.jpg"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -567,6 +675,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "cama_isabela.jpg",
       ],
+      associations: [],
       tag: []
     },
     {
@@ -578,6 +687,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "princesa.jpg",
       ],
+      associations: [],
       tag: []
     },
     {
@@ -590,6 +700,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
         "cama_aurora.jpg",
         "cama_aurora2.jpg"
       ],
+      associations: [],
       tag: []
     },
     {
@@ -601,6 +712,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "cama_barco.jpg",
       ],
+      associations: [],
       tag: []
     },
     {
@@ -612,6 +724,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "cama_magnun.jpg",
       ],
+      associations: [],
       tag: []
     },
     {
@@ -623,6 +736,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "cama_sol.jpg",
       ],
+      associations: [],
       tag: []
     },
     {
@@ -634,6 +748,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "cama_sol_especial.jpg",
       ],
+      associations: [],
       tag: []
     },
     {
@@ -645,6 +760,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "cama_cuna.jpg",
       ],
+      associations: [],
       tag: []
     },
   ],
@@ -658,6 +774,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_peinadora_s.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -668,6 +787,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multi_mesa_manicure.jpg",
       images: [
         "multi_mesa_manicure.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -680,6 +802,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_mesa_manicure2.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -690,6 +815,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multi_mesa_manicure3.jpg",
       images: [
         "multi_mesa_manicure3.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -702,6 +830,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_mesa_chifonier.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -712,6 +843,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multi_mesa_centro2.jpg",
       images: [
         "multi_mesa_centro2.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -724,6 +858,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_mesa_centro.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -734,6 +871,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multi_mesa_centro3.jpg",
       images: [
         "multi_mesa_centro3.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -746,6 +886,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_mesa_manicure_s.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -756,6 +899,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multi_mesa_manicure_l.jpg",
       images: [
         "multi_mesa_manicure_l.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -768,6 +914,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_manicure_l.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -778,6 +927,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multi_gavetero.jpg",
       images: [
         "multi_gavetero.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -790,6 +942,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_gavetero2.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -801,6 +956,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "multi_gavetero3.jpg"
       ],
+      associations: [
+
+      ],
       tag: []
     },
     {
@@ -811,6 +969,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       image: "multimueble_geometrico.jpg",
       images: [
         "multimueble_geometrico.jpg"
+      ],
+      associations: [
+
       ],
       tag: []
     },
@@ -845,6 +1006,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "lux.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -861,6 +1023,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
           "isabela.jpg",
           "isabela_2.jpg"
         ],
+        associations: [
+
+        ],
         tag: [
         "4 Puestos",
         "6 Puestos",
@@ -876,6 +1041,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "lily.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -891,6 +1057,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "coral.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -906,6 +1073,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "tifany.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -921,6 +1089,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "Tipo_v.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -936,6 +1105,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "redondo.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -951,6 +1121,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "valentina.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -967,6 +1138,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "tipo_i.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -982,6 +1154,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "madera.jpg"
       ],
+      associations: [],
       tag: [
         "4 Puestos",
         "6 Puestos",
@@ -999,6 +1172,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "colchon_imperia.JPG"
       ],
+      associations: [],
       tag: [
         "Garantia 5 años",
         "Semi Ortopedico"
@@ -1013,9 +1187,584 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       images: [
         "colchon_colflex_lady.PNG"
       ],
+      associations: [],
       tag: [
         "Garantia 5 años",
         "Extra Pillow Top",
+      ]
+    },
+    {
+      id: 403,
+      name: "Colflex Vegas",
+      price: 139,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Vegas Matrimonial",
+          price: 170,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 404,
+      name: "Colflex Collection",
+      price: 165,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Collection Queen",
+          price: 270,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Collection King",
+          price: 320,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Collection Matrimonial",
+          price: 210,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 405,
+      name: "Colflex Collection 1 pillow",
+      price: 190,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Collection 1 pillow Queen",
+          price: 314,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Collection 1 pillow King",
+          price: 375,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Collection 1 pillow Matrimonial",
+          price: 240,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 406,
+      name: "Colflex Collection 2 pillow",
+      price: 213,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Collection 2 pillow Queen",
+          price: 349,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Collection 2 pillow King",
+          price: 433,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Collection 2 pillow Matrimonial",
+          price: 275,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 407,
+      name: "Colflex Europillow",
+      price: 247,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Europillow Queen",
+          price: 396,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Europillow King",
+          price: 475,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Europillow Matrimonial",
+          price: 325,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 408,
+      name: "Divenca Caroni",
+      price: 115,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Caroni Matrimonial",
+          price: 148,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 409,
+      name: "Divenca Orinoco",
+      price: 145,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Orinoco Queen",
+          price: 220,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Orinoco King",
+          price: 295,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Orinoco Matrimonial",
+          price: 180,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 410,
+      name: "Divenca Ensueño",
+      price: 207,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Ensueño Queen",
+          price: 327,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Ensueño King",
+          price: 414,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Ensueño Matrimonial",
+          price: 267,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 411,
+      name: "Imperia San Remo",
+      price: 128,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "San Remo Matrimonial",
+          price: 165,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 412,
+      name: "Imperia San Remo 1 pillow",
+      price: 150,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "San Remo Matrimonial 1 pillow",
+          price: 190,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 413,
+      name: "Imperia San Remo 2 pillow",
+      price: 200,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "San Remo Matrimonial 2 pillow",
+          price: 220,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 414,
+      name: "Imperia San Rebowd",
+      price: 125,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "San Rebowd Matrimonial",
+          price: 150,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 415,
+      name: "Imperia San Rebowd",
+      price: 125,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "San Rebowd Matrimonial",
+          price: 150,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 416,
+      name: "Eclipse Atlanta",
+      price: 143,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "Atlanta Matrimonial",
+          price: 170,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 417,
+      name: "Eclipse Nevada 2 pillow",
+      price: 270,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Nevada Queen 2 pillow",
+          price: 365,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 2,
+          name: "Nevada King 2 pillow",
+          price: 420,
+          image: "colchon_colflex_lady.PNG",
+        },
+        {
+          id: 3,
+          name: "Nevada Matrimonial 2 pillow",
+          price: 310,
+          image: "colchon_colflex_lady.PNG",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 418,
+      name: "Sealy Paris",
+      price: 143,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_sealy_parisnoche.jpg",
+      images: [
+        "colchon_sealy_parisnoche.jpg"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "Paris Matrimonial",
+          price: 170,
+          image: "colchon_sealy_parisnoche.jpg",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 419,
+      name: "Sealy Florida",
+      price: 153,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_sealy_atlanta.jpg",
+      images: [
+        "colchon_sealy_atlanta.jpg"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "Florida Matrimonial",
+          price: 207,
+          image: "colchon_sealy_atlanta.jpg",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 420,
+      name: "Sealy Planet",
+      price: 135,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_sealy_planet.jpg",
+      images: [
+        "colchon_sealy_planet.jpg"
+      ],
+      associations: [
+        {
+          id: 3,
+          name: "Planet Matrimonial",
+          price: 160,
+          image: "colchon_sealy_planet.jpg",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 421,
+      name: "Sealy Nebraska 1 pillow",
+      price: 243,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_sealy_nebraska.jpg",
+      images: [
+        "colchon_sealy_nebraska.jpg"
+      ],
+      associations: [
+        {
+          id: 1,
+          name: "Nebraska Queen 1 pillow",
+          price: 338,
+          image: "colchon_sealy_nebraska.jpg",
+        },
+        {
+          id: 2,
+          name: "Nebraska King 1 pillow",
+          price: 398,
+          image: "colchon_sealy_nebraska.jpg",
+        },
+        {
+          id: 3,
+          name: "Nebraska Matrimonial 1 pillow",
+          price: 290,
+          image: "colchon_sealy_nebraska.jpg",
+        },
+      ],
+      tag: [
+        "individual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 422,
+      name: "Sealy Kansas 2 pillow",
+      price: 310,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_sealy_kansas.jpg",
+      images: [
+        "colchon_sealy_kansas.jpg"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 423,
+      name: "Confort Monte Real 1 pillow",
+      price: 189,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 424,
+      name: "Confort Monte Carlo",
+      price: 135,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [],
+      tag: [
+        "Invididual",
+        "Garantia 5 años",
+      ]
+    },
+    {
+      id: 424,
+      name: "Confort Power",
+      price: 306,
+      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
+      image: "colchon_colflex_lady.PNG",
+      images: [
+        "colchon_colflex_lady.PNG"
+      ],
+      associations: [],
+      tag: [
+        "Queen",
+        "Garantia 5 años",
       ]
     },
   ]

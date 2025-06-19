@@ -13,6 +13,7 @@ type Producto = {
   description: string;
   image: string;
   images: string[],
+  associations: [],
   tag: string[]
 };
 
@@ -25,6 +26,7 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     description: "Muebles fabricados por profecionales, y materiales de primera",
     image: `/zultan_1.PNG`,
     images: [],
+    associations: [],
     tag: []
   }
 
@@ -42,6 +44,7 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
     description: product.description,
     image: product.image,
     images: product.images,
+    associations: product.associations,
     tag: product.tag,
   };
 }
@@ -75,7 +78,7 @@ export default async function Page({ params }: any) {
   const producto = await obtenerProducto(params.id, params.products);
   // const myapi = process.env.NEXT_PUBLIC_API_URL || "";
   const mensaje = `https://tjm-front.vercel.app/${producto.category}/${producto.id}
-Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto.name}-${producto.price}$`
+Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
 
   return (
     <main className="main">
@@ -105,7 +108,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
 
           <div className="whatsapp-link">
             <Link
-              href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
+              href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)} ${producto.name}-${producto.price}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -118,6 +121,47 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${producto
               />
             </Link>
           </div>
+        </div>
+      <div>
+        {producto.associations.length > 0 ?
+          <div>
+            <p className="caracteristicas">Sugerencias</p>
+            <div className="productsGrid">
+              {producto.associations.map((item, key)=>{
+                return(
+                  <div key={key}>
+                    <div>
+                      <Image
+                        src={`/${item.image}`}
+                        alt={item.name}
+                        width={200}
+                        height={200}
+                        className={`productImage`}
+                      />
+                    </div>
+                    <div className={`details`}>
+                      <div className={`details_container`}>
+                        <p className={`productName`}>{item.name}</p>
+                        <div className={`detailsNamePrice`}>
+                          <p className="productPrice">${item.price}</p>
+                          <Link
+                            href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)} ${item.name}-${item.price}`}
+                            target="_blank"
+                          >
+                            <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
+          :
+          <></>
+          }
         </div>
       </div>
     </main>

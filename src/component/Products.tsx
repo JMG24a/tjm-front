@@ -81,7 +81,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${product.
                 width={200}
                 height={200}
                 className={styles.productImage}
-                />
+              />
             </Link>
             <div className={styles.details}>
               <div className={styles.details_container}>
