@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./styles.css";
-import {db, Product} from "../../db";
+import {db, Product, suggest} from "../../db";
 import Banner from "../../../component/Banner";
 
 type Producto = {
@@ -13,7 +13,7 @@ type Producto = {
   description: string;
   image: string;
   images: string[],
-  associations: [],
+  associations: suggest[],
   tag: string[]
 };
 

@@ -1,5 +1,5 @@
 // Tipos de productos
-type suggest = {
+export type suggest = {
   id: number,
   name: string,
   price: number,
