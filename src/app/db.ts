@@ -1164,50 +1164,20 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
   ],
     colchones:[
     {
-      id: 401,
-      name: "Imperia San Remo",
-      price: 200,
-      description: `Un colchón semi ortopédico Imperia ofrece un equilibrio entre soporte y comodidad, lo que lo hace ideal para quienes buscan un descanso saludable sin una firmeza extrema`,
-      image: "colchon_imperia.JPG",
-      images: [
-        "colchon_imperia.JPG"
-      ],
-      associations: [],
-      tag: [
-        "Garantia 5 años",
-        "Semi Ortopedico"
-      ]
-    },
-    {
-      id: 402,
-      name: "Colflex Lady Best",
-      price: 230,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
-      images: [
-        "colchon_colflex_lady.PNG"
-      ],
-      associations: [],
-      tag: [
-        "Garantia 5 años",
-        "Extra Pillow Top",
-      ]
-    },
-    {
       id: 403,
       name: "Colflex Vegas",
       price: 139,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_colflex_vega.jpg",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_colflex_vega.jpg"
       ],
       associations: [
         {
           id: 1,
           name: "Vegas Matrimonial",
           price: 170,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_colflex_vega.jpg",
         },
       ],
       tag: [
@@ -1322,28 +1292,28 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Colflex Europillow",
       price: 247,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_colflex_europillow.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_colflex_europillow.png"
       ],
       associations: [
         {
           id: 1,
           name: "Europillow Queen",
           price: 396,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_colflex_europillow.png",
         },
         {
           id: 2,
           name: "Europillow King",
           price: 475,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_colflex_europillow.png",
         },
         {
           id: 3,
           name: "Europillow Matrimonial",
           price: 325,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_colflex_europillow.png",
         },
       ],
       tag: [
@@ -1356,16 +1326,16 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Divenca Caroni",
       price: 115,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_divenca2.jpg",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_divenca2.jpg"
       ],
       associations: [
         {
           id: 1,
           name: "Caroni Matrimonial",
           price: 148,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca2.jpg",
         },
       ],
       tag: [
@@ -1378,28 +1348,28 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Divenca Orinoco",
       price: 145,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_divenca2.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_divenca2.png"
       ],
       associations: [
         {
           id: 1,
           name: "Orinoco Queen",
           price: 220,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca2.png",
         },
         {
           id: 2,
           name: "Orinoco King",
           price: 295,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca2.png",
         },
         {
           id: 3,
           name: "Orinoco Matrimonial",
           price: 180,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca2.png",
         },
       ],
       tag: [
@@ -1412,28 +1382,28 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Divenca Ensueño",
       price: 207,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_divenca_1.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_divenca_1.png"
       ],
       associations: [
         {
           id: 1,
           name: "Ensueño Queen",
           price: 327,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca_1.png",
         },
         {
           id: 2,
           name: "Ensueño King",
           price: 414,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca_1.png",
         },
         {
           id: 3,
           name: "Ensueño Matrimonial",
           price: 267,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_divenca_1.png",
         },
       ],
       tag: [
@@ -1446,16 +1416,16 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Imperia San Remo",
       price: 128,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_imperia.JPG",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_imperia.JPG"
       ],
       associations: [
         {
           id: 3,
           name: "San Remo Matrimonial",
           price: 165,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_imperia.JPG",
         },
       ],
       tag: [
@@ -1468,16 +1438,16 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Imperia San Remo 1 pillow",
       price: 150,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_imperia.JPG",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_imperia.JPG"
       ],
       associations: [
         {
           id: 3,
           name: "San Remo Matrimonial 1 pillow",
           price: 190,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_imperia.JPG",
         },
       ],
       tag: [
@@ -1490,16 +1460,16 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Imperia San Remo 2 pillow",
       price: 200,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_imperial_san_remo.jpg",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_imperial_san_remo.jpg"
       ],
       associations: [
         {
           id: 3,
           name: "San Remo Matrimonial 2 pillow",
           price: 220,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_imperial_san_remo.jpg",
         },
       ],
       tag: [
@@ -1512,38 +1482,16 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Imperia San Rebowd",
       price: 125,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_imperia_one_pillow.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_imperia_one_pillow.png"
       ],
       associations: [
         {
           id: 3,
           name: "San Rebowd Matrimonial",
           price: 150,
-          image: "colchon_colflex_lady.PNG",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 415,
-      name: "Imperia San Rebowd",
-      price: 125,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
-      images: [
-        "colchon_colflex_lady.PNG"
-      ],
-      associations: [
-        {
-          id: 3,
-          name: "San Rebowd Matrimonial",
-          price: 150,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_imperia_one_pillow.png",
         },
       ],
       tag: [
@@ -1556,16 +1504,16 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Eclipse Atlanta",
       price: 143,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_eclipse_atlanta.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_eclipse_atlanta.png"
       ],
       associations: [
         {
           id: 3,
           name: "Atlanta Matrimonial",
           price: 170,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_eclipse_atlanta.png",
         },
       ],
       tag: [
@@ -1578,28 +1526,28 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Eclipse Nevada 2 pillow",
       price: 270,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_eclipse_nevada.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_eclipse_nevada.png"
       ],
       associations: [
         {
           id: 1,
           name: "Nevada Queen 2 pillow",
           price: 365,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_eclipse_nevada.png",
         },
         {
           id: 2,
           name: "Nevada King 2 pillow",
           price: 420,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_eclipse_nevada.png",
         },
         {
           id: 3,
           name: "Nevada Matrimonial 2 pillow",
           price: 310,
-          image: "colchon_colflex_lady.PNG",
+          image: "colchon_eclipse_nevada.png",
         },
       ],
       tag: [
@@ -1727,9 +1675,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Confort Monte Real 1 pillow",
       price: 189,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_confort_monte_real.jpeg",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_confort_monte_real.jpeg"
       ],
       associations: [],
       tag: [
@@ -1742,9 +1690,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Confort Monte Carlo",
       price: 135,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_confort_monte_carlo.jpg",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_confort_monte_carlo.jpg"
       ],
       associations: [],
       tag: [
@@ -1757,9 +1705,9 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       name: "Confort Power",
       price: 306,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
+      image: "colchon_confort_power.png",
       images: [
-        "colchon_colflex_lady.PNG"
+        "colchon_confort_power.png"
       ],
       associations: [],
       tag: [
