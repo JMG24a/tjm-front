@@ -59,11 +59,52 @@ type typeProps = {
   category?: Category;
 };
 
+// interface propsInterface {
+//     dollar: {
+//         monitors: {
+//             usd: {
+//                 price: number,
+//                 price_old: number
+//             }
+//         }
+//     },
+//     priceGlobal: {
+//         price: number
+//     }
+// }
+
+const getDollar  = async () => {
+    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
 export default async function Products({category}:typeProps) {
   const categories: Category = (category && category in db ? category : "sofa") as Category;
     // const priceDollar = await getDollar()
     //   const products = await getProducts(category);
   const myapi = process.env.NEXT_PUBLIC_API_URL || ""
+
+  const dollar = await getDollar();
+
+  const onChangeDollar = (price: number):string => {
+      const priceNumber = Number(price)
+      const dollarWhitGlobal = priceNumber;
+      const result = dollar.monitors.usd.price * dollarWhitGlobal;
+      const formatted = new Intl.NumberFormat('es-VE', {
+      style: 'currency',
+      currency: 'VES',
+      minimumFractionDigits: 2
+      }).format(result);
+
+      // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
+      return formatted;
+  }
 
 
   return (
@@ -88,7 +129,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${product.
                 <p className={styles.productName}>{product.name}</p>
               </div>
               <div className={styles.detailsNamePrice}>
-                <p className={styles.productPrice}>${product.price}</p>
+                <p className={styles.productPrice}>{onChangeDollar(product.price)}</p>
                 <Link
                   href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
                   target="_blank"

@@ -17,6 +17,17 @@ type Producto = {
   tag: string[]
 };
 
+const getDollar  = async () => {
+    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+          },
+    });
+    const data = await response.json();
+    return data;
+}
+
 async function obtenerProducto(id: number, category: string): Promise<Producto> {
   let product: Product = {
     id: 4,
@@ -52,6 +63,7 @@ async function obtenerProducto(id: number, category: string): Promise<Producto> 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const producto = await obtenerProducto(params.id, params.products);
+
   return {
     title: producto.name,
     description: producto.description,
@@ -80,6 +92,23 @@ export default async function Page({ params }: any) {
   const mensaje = `https://tjm-front.vercel.app/${producto.category}/${producto.id}
 Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
 
+  const dollar = await getDollar();
+
+  const onChangeDollar = (price: number):string => {
+    const priceNumber = Number(price)
+    const dollarWhitGlobal = priceNumber;
+    const result = dollar.monitors.usd.price * dollarWhitGlobal;
+    const formatted = new Intl.NumberFormat('es-VE', {
+    style: 'currency',
+    currency: 'VES',
+    minimumFractionDigits: 2
+    }).format(result);
+
+    // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
+    return formatted;
+  }
+
+
   return (
     <main className="main">
       <Banner
@@ -94,7 +123,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
         <div className="container_main-product">
           <h2 className="title">{producto.name}</h2>
           <p className="description">{producto.description}</p>
-          <p className="price">${producto.price}</p>
+          <p className="price">{onChangeDollar(producto.price)}</p>
 
           <p className="caracteristicas">Caracteristicas</p>
 

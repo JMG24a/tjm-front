@@ -75,7 +75,8 @@
 .productPrice {
   text-align: left;
   width: 66%;
-  margin-left: 20px;
+  font-size: 0.7rem;
+  margin-left: 5px;
   color: #232121; /* red-600 */
 }
 
