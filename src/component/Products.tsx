@@ -86,15 +86,15 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${product.
             <div className={styles.details}>
               <div className={styles.details_container}>
                 <p className={styles.productName}>{product.name}</p>
-                <div className={styles.detailsNamePrice}>
-                  <p className={styles.productPrice}>${product.price}</p>
-                  <Link
-                    href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
-                    target="_blank"
-                  >
-                    <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
-                  </Link>
-                </div>
+              </div>
+              <div className={styles.detailsNamePrice}>
+                <p className={styles.productPrice}>${product.price}</p>
+                <Link
+                  href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
+                  target="_blank"
+                >
+                  <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
+                </Link>
               </div>
             </div>
           </div>

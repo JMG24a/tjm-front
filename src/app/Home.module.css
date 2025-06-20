@@ -61,6 +61,7 @@
   border-radius: 1rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   background: white;
+  padding: 4px;
 }
 
 .productImage {
@@ -88,11 +89,13 @@
 
 .details {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  height: 50%;
 }
 
 .details_container {
   width: 100%;
+  height: 70%;
 }
 
 .details .detailsNamePrice{
@@ -101,6 +104,8 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  height: 30%;
+  padding: 8px 0px;
 }
 
 .details a{

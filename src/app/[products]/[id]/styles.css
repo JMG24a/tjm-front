@@ -210,11 +210,13 @@ html, body {
 }
 
 .details .detailsNamePrice{
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
+  bottom: 0px;
 }
 
 .details a{

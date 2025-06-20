@@ -1701,7 +1701,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       ]
     },
     {
-      id: 424,
+      id: 425,
       name: "Confort Power",
       price: 306,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
