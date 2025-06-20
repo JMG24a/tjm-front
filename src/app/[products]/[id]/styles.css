@@ -188,7 +188,8 @@ html, body {
 .productPrice {
   text-align: left;
   width: 66%;
-  margin-left: 20px;
+  font-size: 0.8rem;
+  margin-left: 5px;
   color: #232121; /* red-600 */
 }
 
@@ -202,7 +203,8 @@ html, body {
 
 .details {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  height: 50%;
 }
 
 .details_container {
