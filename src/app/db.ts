@@ -49,7 +49,7 @@ export const db: Record<string, Product[]> = {
         id: 2,
         name: "Mueble L",
         price: 550,
-        description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, complementado con una sincha de 5 cm que optimiza la resistencia y estabilidad. Además, incorpora un revestimiento de goma de 4 pulgadas con densidad de 24 grados, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
+        description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, resistencia y estabilidad. Además, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
         image: "mueblel.PNG",
         images: [
           "mueblel.PNG",
@@ -112,9 +112,7 @@ export const db: Record<string, Product[]> = {
       id: 7,
       name: "Maya",
       price: 1600,
-      description: `El mueble Maya posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, complementado por una cincha de 5 cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24 grados, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
+      description: `El mueble Maya posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "sofa_maya.PNG",
       images: [
           "sofa_maya.PNG"
@@ -133,9 +131,7 @@ Además, incorpora un revestimiento de goma de 6 pulgadas con una densidad de 24
       id: 8,
       name: "Roraima",
       price: 1050,
-      description: `El mueble Roraima posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Roraima posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
       image: "sofa_roraima.jpg",
       images: [
           "sofa_roraima.jpg",
@@ -157,9 +153,7 @@ Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilib
       id: 9,
       name: "Roraima S",
       price: 660,
-      description: `El mueble Roraima S posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Roraima s posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
       image: "sofa_roraima_s.jpg",
       images: [
           "sofa_roraima_s.jpg",
@@ -179,9 +173,7 @@ Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilib
       id: 10,
       name: "David",
       price: 460,
-      description: `El mueble David posee una estructura robusta de zaman y con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble David posee una estructura robusta de zaman, son 4 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_david_3.jpg",
       images: [
           "sofa_david_3.jpg",
@@ -201,9 +193,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 11,
       name: "Invierno",
       price: 730,
-      description: `El mueble Invierno posee una estructura robusta de zaman y con capacidad para 3 puestos. Sus dimensiones de 200cm x 180cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Invierno posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 175cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_invierno.jpg",
       images: [
           "sofa_invierno.jpg",
@@ -222,9 +212,7 @@ Además, incorpora un revestimiento de goma de 4 pulgadas, ofreciendo el equilib
       id: 12,
       name: "Charlott",
       price: 430,
-      description: `El mueble Charlott posee una estructura robusta de zaman y con capacidad para 3 puestos. Sus dimensiones de 150cm x 170cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Charlott posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_charlot.jpg",
       images: [
           "sofa_charlot.jpg",
@@ -242,9 +230,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 13,
       name: "Media Luna",
       price: 670,
-      description: `El mueble Media Luna posee una estructura robusta de zaman y con capacidad para 3 puestos. Sus dimensiones de 150cm x 170cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 3 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_media_luna.jpg",
       images: [
           "sofa_media_luna.jpg",
@@ -264,9 +250,7 @@ Además, incorpora un revestimiento de goma de 3 pulgadas, ofreciendo el equilib
       id: 14,
       name: "Mueble L",
       price: 550,
-      description: `El Mueble L posee una estructura robusta de zaman y con capacidad para 5 puestos. Sus dimensiones de 250cm x 165cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_mueblel5p(2).jpg",
       images: [
           // "sofa_mueblel5p(1).jpg",
@@ -287,9 +271,7 @@ Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equil
       id: 15,
       name: "Rodolfo",
       price: 690,
-      description: `El Mueble Rodolfo posee una estructura robusta de zaman y con capacidad para 6 puestos. Sus dimensiones de 250cm x 180cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Rodolfo posee una estructura robusta de zaman, son 4 piezas con capacidad para 6 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_rodolfo.jpg",
       images: [
           "sofa_rodolfo.jpg",
@@ -308,9 +290,7 @@ Además, incorpora un revestimiento de goma de 3.5 pulgadas, ofreciendo el equil
       id: 16,
       name: "Enmaly",
       price: 320,
-      description: `El Mueble Enmaly posee una estructura robusta de zaman y con capacidad para 5 puestos. Sus dimensiones de 175cm x 175cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Enmaly posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 190cm x 190cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_enmaly.jpg",
       images: [
           "sofa_enmaly.jpg",
@@ -329,9 +309,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 17,
       name: "Europa",
       price: 810,
-      description: `El Mueble Europa posee una estructura robusta de zaman y con capacidad para 3 puestos y accesorios de lujo como porta vasos. Sus dimensiones de 175cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad.
-
-Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Europa posee una estructura robusta de zaman, son 4 piezas con capacidad para 6 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece accesorios de lujo como portavasos y patas de lujo`,
       image: "sofa_europa.jpg",
       images: [
           "sofa_europa.jpg",
@@ -350,7 +328,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 18,
       name: "Grecia",
       price: 460,
-      description: ``,
+      description: `El mueble Grecia posee una estructura robusta de zaman, son 3 piezas con capacidad para 4 puestos. Sus dimensiones de 180cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_grecia.jpg",
       images: [
           "sofa_grecia.jpg",
@@ -364,7 +342,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 19,
       name: "Ali",
       price: 520,
-      description: "",
+      description: `El mueble Ali posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_ali.jpg",
       images: [
           "sofa_ali.jpg",
@@ -378,9 +356,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 5,
       name: "Fenix",
       price: 450,
-      description: `El modelo Fénix consta de tres piezas con una estructura robusta de zaman y un diseño moderno, ideal para cinco puestos. Sus dimensiones de 190 cm x 190 cm garantizan confort y optimización del espacio.
-
-      Además, cuenta con un revestimiento de goma de 4 pulgadas y una densidad de 24 grados, proporcionando el equilibrio perfecto entre comodidad y durabilidad.`,
+      description: `El mueble Fenix posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "fenix.PNG",
       images: [
         "fenix.PNG",
@@ -393,7 +369,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 20,
       name: "Labros",
       price: 625,
-      description: "",
+      description: `El mueble Labros posee una estructura robusta de zaman, son 2 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_labros.jpg",
       images: [
           "sofa_labros.jpg",
@@ -407,7 +383,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 21,
       name: "Richard",
       price: 460,
-      description: "",
+      description: `El mueble Richard posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad`,
       image: "sofa_richard.jpg",
       images: [
           "sofa_richard.jpg",
@@ -421,7 +397,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 22,
       name: "Audi",
       price: 590,
-      description: "",
+      description: "El mueble Audi posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_audi.jpg",
       images: [
           "sofa_audi.jpg",
@@ -435,7 +411,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 23,
       name: "Suiza",
       price: 510,
-      description: "",
+      description: "El mueble Suiza posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_zuisa.jpg",
       images: [
           "sofa_zuisa.jpg",
@@ -449,7 +425,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 24,
       name: "Anasur",
       price: 440,
-      description: "",
+      description: "El mueble Anasur posee una estructura robusta de zaman, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_anasur.jpg",
       images: [
           "sofa_anasur.jpg",
@@ -463,7 +439,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 25,
       name: "Rosa",
       price: 660,
-      description: "",
+      description: "El mueble Rosa posee una estructura robusta de zaman, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_rosa.jpg",
       images: [
           "sofa_rosa.jpg",
@@ -473,11 +449,11 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
         ],
         tag: []
     },
-        {
+    {
       id: 26,
       name: "Juego Principe",
       price: 450,
-      description: "",
+      description: "El juego de muebles Principe posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_juego_principe.jpg",
       images: [
           "sofa_juego_principe.jpg",
@@ -492,7 +468,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 27,
       name: "Juego Barco",
       price: 690,
-      description: "",
+      description: "El juego de muebles Barco posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_barco.jpg",
       images: [
           "sofa_barco.jpg",
@@ -506,7 +482,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 28,
       name: "Juego Mufada",
       price: 670,
-      description: "",
+      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_juego_mufada.jpg",
       images: [
           "sofa_juego_mufada.jpg",
@@ -520,7 +496,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 29,
       name: "Sofa Cama",
       price: 470,
-      description: "",
+      description: "El Sofa Cama tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
       image: "sofa_sofacama.jpg",
       images: [
           "sofa_sofacama.jpg",
@@ -534,7 +510,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 30,
       name: "Juego Primavera",
       price: 260,
-      description: "",
+      description: "El juego de muebles Primavera posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_juego_primavera2.jpg",
       images: [
           "sofa_juego_primavera2.jpg",
@@ -549,7 +525,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 31,
       name: "Ariana",
       price: 540,
-      description: "",
+      description: "El mueble Ariana posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_ariana.jpg",
       images: [
           "sofa_ariana.jpg",
@@ -563,7 +539,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 32,
       name: "Curazao",
       price: 680,
-      description: "",
+      description: "El mueble Curazao posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece detalles de lujo como cabeceras reclinables ideal entre comodidad y durabilidad",
       image: "sofa_curazao2.jpg",
       images: [
           "sofa_curazao2.jpg",
@@ -577,7 +553,7 @@ Además, incorpora un revestimiento de goma de 2.5 pulgadas, ofreciendo el equil
       id: 33,
       name: "Paris",
       price: 400,
-      description: "",
+      description: "El mueble Curazao posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos. Sus dimensiones de 120cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_paris.jpg",
       images: [
           "sofa_paris.jpg",
