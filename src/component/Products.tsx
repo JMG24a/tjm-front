@@ -111,8 +111,6 @@ export default async function Products({category}:typeProps) {
     <div className={styles.productsGrid}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
       {db[categories].map((product) => {
-        const mensaje = `https://tjm-front.vercel.app/${categories}/${product.id}
-Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${product.name}-${product.price}$`
         return (
           <div key={product.id} className={styles.productCard}>
             <Link href={`${myapi}/${categories}/${product.id}`}>
