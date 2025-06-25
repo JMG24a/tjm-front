@@ -130,12 +130,6 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto: ${product.
               </div>
               <div className={styles.detailsNamePrice}>
                 <p className={styles.productPrice}>{onChangeDollar(product.price)}</p>
-                <Link
-                  href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)}`}
-                  target="_blank"
-                >
-                  <Image src={"/WhatsApp.svg.webp"} alt="WhatsApp" width={40} height={40} />
-                </Link>
               </div>
             </div>
           </div>
