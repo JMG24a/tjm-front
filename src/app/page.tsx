@@ -4,7 +4,8 @@ import Image from "next/image";
 import styles from "./Home.module.css";
 import Navbar from "../component/Navbar";
 import Products from "../component/Products";
-import DropdownButton from "app/component/DropDownButton";
+import "../component/dropDownButton.css";
+import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function HomePage({ searchParams }: any) {
@@ -25,7 +26,20 @@ export default function HomePage({ searchParams }: any) {
 
       <Navbar />
 
-      <DropdownButton />
+      <div className={"menu"}>
+        <div>
+          <Link href={"https://www.instagram.com/tiojaimemuebleria/"} target='_blank'>
+            <Image src={"/Instagram_logo_2022.svg.webp"} height={25} width={25} alt='redirect'/>
+          </Link>
+        </div>
+        <div>
+          <Link href={"https://wa.me/584120213946"} target='_blank'>
+            <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect'/>
+          </Link>
+        </div>
+      </div>
+
+      {/* <DropdownButton /> */}
 
       <Products category={category || "sofa"} />
     </div>
