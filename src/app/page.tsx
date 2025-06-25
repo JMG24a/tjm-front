@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./Home.module.css";
 import Navbar from "../component/Navbar";
 import Products from "../component/Products";
+import DropdownButton from "app/component/DropDownButton";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function HomePage({ searchParams }: any) {
@@ -23,6 +24,8 @@ export default function HomePage({ searchParams }: any) {
       </div>
 
       <Navbar />
+
+      <DropdownButton />
 
       <Products category={category || "sofa"} />
     </div>
