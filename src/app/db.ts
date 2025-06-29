@@ -586,9 +586,9 @@ export const db: Record<string, Product[]> = {
       name: "Nene",
       price: 180,
       description: "",
-      image: "nene.jpg",
-              images: [
-        "nene.jpg"
+      image: "cama_nene.jpg",
+      images: [
+        "cama_nene.jpg"
       ],
       associations: [],
       tag: []
@@ -598,21 +598,24 @@ export const db: Record<string, Product[]> = {
       name: "Capitan",
       price: 240,
       description: "",
-      image: "capitan.jpg",
+      image: "cama_capitan.jpg",
       images: [
-        "capitan.jpg"
+        "cama_capitan.jpg",
+        "cama_capitan2.jpg",
       ],
       associations: [],
-      tag: []
+      tag: [
+        "Invididual"
+      ]
     },
     {
       id: 104,
       name: "Triangular",
       price: 180,
       description: "",
-      image: "triangular.jpg",
+      image: "cama_triangular.jpg",
       images: [
-        "triangular.jpg"
+        "cama_triangular.jpg"
       ],
       associations: [],
       tag: []
@@ -622,9 +625,9 @@ export const db: Record<string, Product[]> = {
       name: "Moises",
       price: 240,
       description: "",
-      image: "moises.jpg",
+      image: "cama_moises.jpg",
       images: [
-        "moises.jpg"
+        "cama_moises.jpg"
       ],
       associations: [],
       tag: []
@@ -637,7 +640,7 @@ export const db: Record<string, Product[]> = {
       image: "cama_madera.jpg",
       images: [
         "cama_madera.jpg",
-        "cama_madera_pintada.jpg"
+        "cama_madera2.jpg"
       ],
       associations: [],
       tag: []
@@ -647,9 +650,9 @@ export const db: Record<string, Product[]> = {
       name: "Isabela",
       price: 290,
       description: "",
-      image: "cama_isabela.jpg",
+      image: "cama_isabela2.jpg",
       images: [
-        "cama_isabela.jpg",
+        "cama_isabela2.jpg"
       ],
       associations: [],
       tag: []
@@ -659,9 +662,9 @@ export const db: Record<string, Product[]> = {
       name: "Princesa",
       price: 225,
       description: "",
-      image: "princesa.jpg",
+      image: "cama_princesa.jpg",
       images: [
-        "princesa.jpg",
+        "cama_princesa.jpg"
       ],
       associations: [],
       tag: []
@@ -674,7 +677,8 @@ export const db: Record<string, Product[]> = {
       image: "cama_aurora2.jpg",
       images: [
         "cama_aurora.jpg",
-        "cama_aurora2.jpg"
+        "cama_aurora2.jpg",
+        "cama_aurora3.jpg"
       ],
       associations: [],
       tag: []
@@ -708,9 +712,10 @@ export const db: Record<string, Product[]> = {
       name: "Sol",
       price: 440,
       description: "",
-      image: "cama_sol.jpg",
+      image: "cama_sol1.jpg",
       images: [
-        "cama_sol.jpg",
+        "cama_sol1.jpg",
+        "cama_sol2.jpg"
       ],
       associations: [],
       tag: []
@@ -738,6 +743,34 @@ export const db: Record<string, Product[]> = {
       ],
       associations: [],
       tag: []
+    },
+    {
+      id: 115,
+      name: "cama box",
+      price: 75,
+      description: "",
+      image: "cama_box.jpg",
+      images: [
+        "cama_box.jpg",
+      ],
+      associations: [],
+      tag: [
+        "invididual",
+      ]
+    },
+    {
+      id: 116,
+      name: "cama punto",
+      price: 115,
+      description: "",
+      image: "cama_punto.png",
+      images: [
+        "cama_punto.png",
+      ],
+      associations: [],
+      tag: [
+        "invididual",
+      ]
     },
   ],
   multimueble:[
