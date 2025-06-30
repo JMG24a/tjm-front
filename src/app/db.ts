@@ -652,7 +652,8 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "cama_isabela2.jpg",
       images: [
-        "cama_isabela2.jpg"
+        "cama_isabela2.jpg",
+        "cama_isabela3.jpg"
       ],
       associations: [],
       tag: []
@@ -676,9 +677,7 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "cama_aurora2.jpg",
       images: [
-        "cama_aurora.jpg",
         "cama_aurora2.jpg",
-        "cama_aurora3.jpg"
       ],
       associations: [],
       tag: []
@@ -725,9 +724,10 @@ export const db: Record<string, Product[]> = {
       name: "Cama Sol Especial",
       price: 500,
       description: "",
-      image: "cama_sol_especial.jpg",
+      image: "cama_sol_especial2.jpg",
       images: [
         "cama_sol_especial.jpg",
+        "cama_sol_especial2.jpg"
       ],
       associations: [],
       tag: []
@@ -770,6 +770,90 @@ export const db: Record<string, Product[]> = {
       associations: [],
       tag: [
         "invididual",
+      ]
+    },
+    {
+      id: 117,
+      name: "rodolf",
+      price: 110,
+      description: "",
+      image: "cama_madera_rodolfo.png",
+      images: [
+        "cama_madera_rodolfo.png",
+      ],
+      associations: [],
+      tag: [
+        "invididual",
+      ]
+    },
+    {
+      id: 118,
+      name: "Cama Rockford",
+      price: 110,
+      description: "",
+      image: "cama_rockford.jpg",
+      images: [
+        "cama_rockford.jpg",
+      ],
+      associations: [],
+      tag: [
+        "invididual",
+      ]
+    },
+    {
+      id: 119,
+      name: "Cama Edith",
+      price: 1390,
+      description: "",
+      image: "cama_edith.png",
+      images: [
+        "cama_edith2.png"
+      ],
+      associations: [],
+      tag: [
+        "invididual",
+      ]
+    },
+    {
+      id: 120,
+      name: "Marruecos",
+      price: 640,
+      description: "",
+      image: "cama_marruecos.png",
+      images: [
+        "cama_marruecos2.png"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
+    {
+      id: 121,
+      name: "Cama Espejo",
+      price: 640,
+      description: "",
+      image: "cama_espejo.png",
+      images: [
+        "cama_espejo.png"
+      ],
+      associations: [],
+      tag: [
+        "invididual",
+      ]
+    },
+    {
+      id: 122,
+      name: "Cama Singapur",
+      price: 670,
+      description: "",
+      image: "cama_singapur.png",
+      images: [
+        "cama_singapur.png"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
       ]
     },
   ],
