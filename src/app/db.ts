@@ -637,7 +637,7 @@ export const db: Record<string, Product[]> = {
       name: "Madera",
       price: 160,
       description: "",
-      image: "cama_madera.jpg",
+      image: "cama_madera_r.jpg",
       images: [
         "cama_madera.jpg",
         "cama_madera2.jpg"
