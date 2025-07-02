@@ -856,6 +856,48 @@ export const db: Record<string, Product[]> = {
         "Matrimonial",
       ]
     },
+    {
+      id: 123,
+      name: "Cuna",
+      price: 150,
+      description: "",
+      image: "cama_cuna_basica.jpg",
+      images: [
+        "cama_cuna_basica.jpg"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
+    {
+      id: 124,
+      name: "Cuna Plus",
+      price: 335,
+      description: "",
+      image: "cama_cuna_plus.jpg",
+      images: [
+        "cama_cuna_plus.jpg"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
+    {
+      id: 125,
+      name: "Cama Nube",
+      price: 335,
+      description: "",
+      image: "cama_nube.png",
+      images: [
+        "cama_nube.png"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
   ],
   multimueble:[
     {
