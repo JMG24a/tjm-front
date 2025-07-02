@@ -763,9 +763,10 @@ export const db: Record<string, Product[]> = {
       name: "cama punto",
       price: 115,
       description: "",
-      image: "cama_punto.png",
+      image: "cama_punto2.png",
       images: [
         "cama_punto.png",
+        "cama_punto2.png"
       ],
       associations: [],
       tag: [
