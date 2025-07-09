@@ -1281,7 +1281,7 @@ export const db: Record<string, Product[]> = {
         '8 Puestos',
       ]
     },
-        {
+    {
       id: 310,
       name: "Madera",
       price: 540,
@@ -1289,6 +1289,54 @@ export const db: Record<string, Product[]> = {
       image: "madera.jpg",
       images: [
         "madera.jpg"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
+      id: 311,
+      name: "Marmol",
+      price: 540,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_marmol.png",
+      images: [
+        "comedor_marmol.png"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
+      id: 312,
+      name: "Valet",
+      price: 540,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_valet_marmol.png",
+      images: [
+        "comedor_valet_marmol.png"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
+      id: 313,
+      name: "Viper",
+      price: 540,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_viper.png",
+      images: [
+        "comedor_viper.png"
       ],
       associations: [],
       tag: [
