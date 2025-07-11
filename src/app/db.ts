@@ -1364,6 +1364,120 @@ export const db: Record<string, Product[]> = {
       ],
       tag: []
     },
+    {
+      id: 220,
+      name: "Modulo small tv",
+      price: 510,
+      description: "",
+      image: "multi_modulo_smal.jpg",
+      images: [
+        "multi_modulo_smal.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 221,
+      name: "Modulo tv Barra",
+      price: 510,
+      description: "",
+      image: "multi_modulo_barra.jpg",
+      images: [
+        "multi_modulo_barra.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 222,
+      name: "Modulo tv Glass",
+      price: 510,
+      description: "",
+      image: "multi_modulo_vidrio.png",
+      images: [
+        "multi_modulo_vidrio.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 223,
+      name: "Ropero Vol 1",
+      price: 510,
+      description: "",
+      image: "multi_ropero_vol1.jpg",
+      images: [
+        "multi_ropero_vol1.jpg",
+        "multi_ropero_vol1.1.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 224,
+      name: "Ropero Vol 2",
+      price: 510,
+      description: "",
+      image: "multi_ropero_vol2.jpg",
+      images: [
+        "multi_ropero_vol2.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 225,
+      name: "Ropero Vol 3",
+      price: 510,
+      description: "",
+      image: "multi_ropero_vol3.jpg",
+      images: [
+        "multi_ropero_vol3.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 226,
+      name: "Ropero Vol 4",
+      price: 510,
+      description: "",
+      image: "multi_ropero_vol4.jpg",
+      images: [
+        "multi_ropero_vol4.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 227,
+      name: "Ropero Vol 5",
+      price: 510,
+      description: "",
+      image: "multi_ropero_vol5.jpg",
+      images: [
+        "multi_ropero_vol5.jpg",
+        "multi_ropero_vol5.1.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
     // {
     //   id: 207,
     //   name: "Centro de TV",
