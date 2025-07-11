@@ -1478,6 +1478,90 @@ export const db: Record<string, Product[]> = {
       ],
       tag: []
     },
+    {
+      id: 228,
+      name: "Mesa de Noche Vol 1",
+      price: 110,
+      description: "",
+      image: "multi_mesa_noche_0.jpg",
+      images: [
+        "multi_mesa_noche_0.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 229,
+      name: "Mesa de Noche Vol 2",
+      price: 110,
+      description: "",
+      image: "multi_mesa_noche_1.jpg",
+      images: [
+        "multi_mesa_noche_1.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 230,
+      name: "Mesa de Noche Vol 3",
+      price: 110,
+      description: "",
+      image: "multi_mesa_noche_2.jpg",
+      images: [
+        "multi_mesa_noche_2.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 231,
+      name: "Mesa de Noche Vol 4",
+      price: 110,
+      description: "",
+      image: "multi_mesa_noche_3.jpg",
+      images: [
+        "multi_mesa_noche_3.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 232,
+      name: "Mesa de Noche Vol 5",
+      price: 110,
+      description: "",
+      image: "multi_mesa_noche_4.jpg",
+      images: [
+        "multi_mesa_noche_4.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 233,
+      name: "Mesa de Noche Vol 6",
+      price: 110,
+      description: "",
+      image: "multi_mesa_noche_5.jpg",
+      images: [
+        "multi_mesa_noche_5.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
     // {
     //   id: 207,
     //   name: "Centro de TV",
