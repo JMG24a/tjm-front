@@ -579,12 +579,13 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 35,
-      name: "Cleopatra",
+      name: "Columpio",
       price: 400,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
       image: "muble_aereo.png",
       images: [
-          "muble_aereo.png",
+          "muble_aereo-view.png",
+          "mueble_aereo2.png"
         ],
         associations: [
 
@@ -1211,6 +1212,34 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 209,
+      name: "mesa de centro",
+      price: 130,
+      description: "",
+      image: "multi_mesa_centro_3.jpg",
+      images: [
+        "multi_mesa_centro_3.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 210,
+      name: "mesa de centro",
+      price: 130,
+      description: "",
+      image: "multi_mesa_centro_4.jpg",
+      images: [
+        "multi_mesa_centro_4.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 211,
       name: "Mesa de Manicure S",
       price: 240,
       description: "",
@@ -1224,7 +1253,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 210,
+      id: 212,
       name: "Mesa de Manicure M",
       price: 270,
       description: "",
@@ -1238,7 +1267,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 211,
+      id: 213,
       name: "Mesa de Manicure L",
       price: 295,
       description: "",
@@ -1252,7 +1281,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 212,
+      id: 214,
       name: "Gavetero Moderno",
       price: 430,
       description: "",
@@ -1266,7 +1295,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 213,
+      id: 215,
       name: "Gavetero",
       price: 560,
       description: "",
@@ -1280,7 +1309,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 214,
+      id: 216,
       name: "Gavetero",
       price: 400,
       description: "",
@@ -1294,13 +1323,41 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 215,
+      id: 217,
       name: "multimueble",
       price: 280,
       description: "",
       image: "multimueble_geometrico.jpg",
       images: [
         "multimueble_geometrico.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 218,
+      name: "Modulo tv Jirajara",
+      price: 510,
+      description: "",
+      image: "multimueble_modulo_tv1.png",
+      images: [
+        "multimueble_modulo_tv1.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 219,
+      name: "Modulo tv Mediterraneo",
+      price: 510,
+      description: "",
+      image: "multimueble_modulo_tv2.png",
+      images: [
+        "multimueble_modulo_tv2.png"
       ],
       associations: [
 
@@ -1498,7 +1555,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 311,
       name: "Marmol",
-      price: 540,
+      price: 950,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_marmol.png",
       images: [
@@ -1514,7 +1571,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 312,
       name: "Valet",
-      price: 540,
+      price: 900,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_valet_marmol.png",
       images: [
@@ -1530,7 +1587,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 313,
       name: "Viper",
-      price: 540,
+      price: 850,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_viper.png",
       images: [
@@ -1545,8 +1602,8 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 314,
-      name: "rosa",
-      price: 540,
+      name: "Rosa",
+      price: 1000,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_rosa.png",
       images: [
