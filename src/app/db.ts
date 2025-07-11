@@ -563,6 +563,202 @@ export const db: Record<string, Product[]> = {
         ],
         tag: []
     },
+    {
+      id: 34,
+      name: "Cleopatra",
+      price: 400,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_cleopatra.png",
+      images: [
+          "mueble_cleopatra.png",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 35,
+      name: "Cleopatra",
+      price: 400,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "muble_aereo.png",
+      images: [
+          "muble_aereo.png",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 36,
+      name: "Poltrona Rosa",
+      price: 180,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_rosa.png",
+      images: [
+          "mueble_poltrona_rosa.png",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 37,
+      name: "Poltrona Rolando",
+      price: 95,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_rolando.png",
+      images: [
+          "mueble_poltrona_rolando.png",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 38,
+      name: "Poltrona Roma",
+      price: 300,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_roma.jpg",
+      images: [
+          "mueble_poltrona_roma.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 39,
+      name: "Poltrona Mistic",
+      price: 210,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_mistic.jpg",
+      images: [
+          "mueble_poltrona_mistic.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 40,
+      name: "Poltrona Rudy",
+      price: 240,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_rudy.jpg",
+      images: [
+          "mueble_poltrona_rudy.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 41,
+      name: "Poltrona Petalo",
+      price: 240,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_petalo.jpg",
+      images: [
+          "mueble_poltrona_petalo.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 42,
+      name: "Poltrona Gray",
+      price: 200,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_gray.jpg",
+      images: [
+          "mueble_poltrona_gray.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 43,
+      name: "Poltrona Miss",
+      price: 130,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_miss.jpg",
+      images: [
+          "mueble_poltrona_miss.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 44,
+      name: "Poltrona Presidencial",
+      price: 240,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_poltrona_presidencial.jpg",
+      images: [
+          "mueble_poltrona_presidencial.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 45,
+      name: "Peresosa Capitoneada",
+      price: 290,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_peresosa_capitoneada.jpg",
+      images: [
+          "mueble_peresosa_capitoneada.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 46,
+      name: "Divan Sutra",
+      price: 250,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_divan_sutra.jpg",
+      images: [
+          "mueble_divan_sutra.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 47,
+      name: "Divan Barriga",
+      price: 290,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "mueble_divan_barriga.jpg",
+      images: [
+          "mueble_divan_barriga.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
   ],
   dormitorio:[
     {
@@ -1189,9 +1385,9 @@ export const db: Record<string, Product[]> = {
       name: "Coral",
       price: 500,
       description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 150 cm x 150 cm lo convierten en una opción versátil y elegante para cualquier espacio",
-      image: "coral.jpg",
+      image: "comedor_coral.jpg",
       images: [
-        "coral.jpg"
+        "comedor_coral.jpg"
       ],
       associations: [],
       tag: [
@@ -1221,9 +1417,11 @@ export const db: Record<string, Product[]> = {
       name: "Tipo v",
       price: 630,
       description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
-      image: "Tipo_v.jpg",
+      image: "comedor_tipo_v2.png",
       images: [
-        "Tipo_v.jpg"
+        "comedor_tipo_v2.png",
+        "comedor_tipo_v3.png",
+        "Tipo_v.jpg",
       ],
       associations: [],
       tag: [
@@ -1253,9 +1451,9 @@ export const db: Record<string, Product[]> = {
       name: "Valentina",
       price: 540,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
-      image: "valentina.jpg",
+      image: "comedor_valentina.jpg",
       images: [
-        "valentina.jpg"
+        "comedor_valentina.jpg"
       ],
       associations: [],
       tag: [
@@ -1270,9 +1468,9 @@ export const db: Record<string, Product[]> = {
       name: "Tipo i",
       price: 540,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 150 cm x 150 cm lo convierten en una opción versátil y elegante para cualquier espacio",
-      image: "tipo_i.jpg",
+      image: "comedor_tipo_i.jpg",
       images: [
-        "tipo_i.jpg"
+        "comedor_tipo_i.jpg"
       ],
       associations: [],
       tag: [
@@ -1337,6 +1535,22 @@ export const db: Record<string, Product[]> = {
       image: "comedor_viper.png",
       images: [
         "comedor_viper.png"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
+      id: 314,
+      name: "rosa",
+      price: 540,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_rosa.png",
+      images: [
+        "comedor_rosa.png"
       ],
       associations: [],
       tag: [
