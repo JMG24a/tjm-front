@@ -86,7 +86,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 6,
+      id: 4,
       name: "Roma",
       price: 1400,
       description: `El mueble Roma posee una estructura robusta de zaman. Su dimensión de 250 cm x 310 cm garantizan confort, resistencia y estabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
@@ -94,7 +94,11 @@ export const db: Record<string, Product[]> = {
       images: [
           "sofa_roma.PNG",
           "sofa_roma_2.PNG",
-          "sofa_roma_3.PNG"
+          "sofa_roma_3.PNG",
+          "mueble_roma (1).jpg",
+          "mueble_roma (2).jpg",
+          "mueble_roma (3).jpg",
+          "sofa_roma7.JPG"
         ],
         associations: [
 
@@ -109,8 +113,8 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 7,
-      name: "Maya",
+      id: 5,
+      name: "Damasco",
       price: 1600,
       description: `El mueble Maya posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "sofa_maya.PNG",
@@ -128,49 +132,51 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 8,
-      name: "Roraima",
-      price: 1050,
-      description: `El mueble Roraima posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
-      image: "sofa_roraima.jpg",
+      id: 6,
+      name: "Mueble L Plus",
+      price: 550,
+      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "sofa_mueblel5p(2).jpg",
       images: [
-          "sofa_roraima.jpg",
-          "sofa_roraima2.jpg",
-          "sofa_roraima3.jpg"
+          // "sofa_mueblel5p(1).jpg",
+          "sofa_mueblel5p(2).jpg",
+          "sofa_mueblel5p(3).jpg",
         ],
         associations: [
 
         ],
         tag: [
-          "6 Puestos",
+          "5 Puestos",
           "3 Piezas",
-          "1 Puff",
-          'Goma 4"',
-          "Cincha 5cm",
+          'Goma 3.5"',
+          "cincha 5cm",
         ]
     },
-    {
-      id: 9,
-      name: "Roraima S",
-      price: 660,
-      description: `El mueble Roraima s posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
-      image: "sofa_roraima_s.jpg",
+      {
+      id: 7,
+      name: "Mueble Berlin",
+      price: 212,
+      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "mueble_berlin.PNG",
       images: [
-          "sofa_roraima_s.jpg",
-          "sofa_roraima_s2.jpg"
+        "mueble_berlin.PNG",
+        "mueble_berlin (1).jpg",
+        "mueble_berlin (2).jpg",
+        "mueble_berlin (3).jpg",
+
         ],
         associations: [
 
         ],
         tag: [
-          "8 Puestos",
-          "4 Piezas",
-          'Goma 3"',
-          "Cincha 5cm",
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
         ]
     },
     {
-      id: 10,
+      id: 8,
       name: "David",
       price: 460,
       description: `El mueble David posee una estructura robusta de zaman, son 4 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -190,7 +196,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 11,
+      id: 9,
       name: "Invierno",
       price: 730,
       description: `El mueble Invierno posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 175cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -209,7 +215,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 12,
+      id: 10,
       name: "Charlott",
       price: 430,
       description: `El mueble Charlott posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -227,7 +233,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 13,
+      id: 11,
       name: "Media Luna",
       price: 670,
       description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -246,16 +252,38 @@ export const db: Record<string, Product[]> = {
           "Diseño capitaneado"
         ]
     },
-    {
-      id: 14,
-      name: "Mueble L",
-      price: 550,
+   {
+      id: 12,
+      name: "Saman Barnisado",
+      price: 670,
       description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
-      image: "sofa_mueblel5p(2).jpg",
+      image: "sofa_saman_barnisado-removebg-preview.png",
       images: [
-          // "sofa_mueblel5p(1).jpg",
-          "sofa_mueblel5p(2).jpg",
-          "sofa_mueblel5p(3).jpg",
+          "sofa_saman_barnisado-removebg-preview.png",
+        ],
+        associations: [
+
+        ],
+        tag: [
+          "3 Puestos",
+          "2 Piezas",
+          'Goma 3"',
+          "cincha 5cm",
+          "Diseño capitaneado"
+        ]
+    },
+        {
+      id: 13,
+      name: "Mueble Palermo",
+      price: 212,
+      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "mueble_palermo__2_-removebg-preview.png",
+      images: [
+        "mueble_berlin.PNG",
+        "mueble_palermo (1).jpg",
+        "mueble_palermo (2).jpg",
+        "mueble_palermo (3).jpg",
+        "mueble_palermo3.JPG"
         ],
         associations: [
 
@@ -265,6 +293,26 @@ export const db: Record<string, Product[]> = {
           "3 Piezas",
           'Goma 3.5"',
           "cincha 5cm",
+        ]
+    },
+   {
+      id: 14,
+      name: "Roraima S",
+      price: 660,
+      description: `El mueble Roraima s posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
+      image: "sofa_roraima_s.jpg",
+      images: [
+          "sofa_roraima_s.jpg",
+          "sofa_roraima_s2.jpg"
+        ],
+        associations: [
+
+        ],
+        tag: [
+          "8 Puestos",
+          "4 Piezas",
+          'Goma 3"',
+          "Cincha 5cm",
         ]
     },
     {
@@ -295,6 +343,7 @@ export const db: Record<string, Product[]> = {
       images: [
           "sofa_enmaly.jpg",
           "sofa_enmaly2.jpg",
+          "sofa_enmaly.JPG"
         ],
         associations: [
 
@@ -353,7 +402,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 5,
+      id: 20,
       name: "Fenix",
       price: 450,
       description: `El mueble Fenix posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -366,7 +415,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 20,
+      id: 21,
       name: "Labros",
       price: 625,
       description: `El mueble Labros posee una estructura robusta de zaman, son 2 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -380,7 +429,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 21,
+      id: 22,
       name: "Richard",
       price: 460,
       description: `El mueble Richard posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad`,
@@ -394,7 +443,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 22,
+      id: 23,
       name: "Audi",
       price: 590,
       description: "El mueble Audi posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -408,7 +457,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 23,
+      id: 24,
       name: "Suiza",
       price: 510,
       description: "El mueble Suiza posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -422,7 +471,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 24,
+      id: 25,
       name: "Anasur",
       price: 440,
       description: "El mueble Anasur posee una estructura robusta de zaman, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -436,7 +485,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 25,
+      id: 26,
       name: "Rosa",
       price: 660,
       description: "El mueble Rosa posee una estructura robusta de zaman, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -450,7 +499,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 26,
+      id: 27,
       name: "Juego Principe",
       price: 450,
       description: "El juego de muebles Principe posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -465,7 +514,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 27,
+      id: 28,
       name: "Juego Barco",
       price: 690,
       description: "El juego de muebles Barco posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -479,7 +528,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 28,
+      id: 29,
       name: "Juego Mufada",
       price: 670,
       description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -493,7 +542,37 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 29,
+      id: 30,
+      name: "Modern",
+      price: 670,
+      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_modern.PNG",
+      images: [
+          "sofa_modern.PNG",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id:  31,
+      name: "Nube",
+      price: 670,
+      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_nube_2_review.png",
+      images: [
+          "sofa_nube (1).JPG",
+          "sofa_nube (2).JPG",
+          "sofa_nube (3).JPG",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 32,
       name: "Sofa Cama",
       price: 470,
       description: "El Sofa Cama tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
@@ -507,7 +586,56 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 30,
+      id: 33,
+      name: "Sofa Cama Con Mecanismo",
+      price: 470,
+      description: "El Sofa Cama tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      image: "sofa_cama_mecanismo (1).PNG",
+      images: [
+          "sofa_cama_mecanismo (1).PNG",
+          "sofa_cama_mecanismo (2).PNG"
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 34,
+      name: "Sofa Cama pequeño",
+      price: 470,
+      description: "El Sofa Cama 130x100 tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      image: "sofa_cama_pequeno (1).PNG",
+      images: [
+          "sofa_cama_pequeno (1).PNG",
+          "sofa_cama_pequeno (2).PNG"
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 35,
+      name: "Sofa Cama Con Portavasos",
+      price: 470,
+      description: "El Sofa Cama 130x100 tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      image: "sofa_cama_posabroPNG.png",
+      images: [
+          "sofa_cama_posabrazo (1).JPG",
+          "sofa_cama_posabrazo (2).JPG",
+          "sofa_cama_posabrazo (3).JPG",
+          "sofa_cama_posabrazo (4).JPG",
+          "sofa_cama_posabrazo (5).JPG",
+          "sofa_cama_posabrazo (6).JPG",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 36,
       name: "Juego Primavera",
       price: 260,
       description: "El juego de muebles Primavera posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -522,7 +650,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 31,
+      id: 37,
       name: "Ariana",
       price: 540,
       description: "El mueble Ariana posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -536,7 +664,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 32,
+      id: 38,
       name: "Curazao",
       price: 680,
       description: "El mueble Curazao posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece detalles de lujo como cabeceras reclinables ideal entre comodidad y durabilidad",
@@ -550,7 +678,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 33,
+      id: 39,
       name: "Paris",
       price: 400,
       description: "El mueble Curazao posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos. Sus dimensiones de 120cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -564,7 +692,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 34,
+      id: 40,
       name: "Cleopatra",
       price: 400,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -578,7 +706,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 35,
+      id: 41,
       name: "Columpio",
       price: 400,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -593,7 +721,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 36,
+      id: 42,
       name: "Poltrona Rosa",
       price: 180,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -607,7 +735,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 37,
+      id: 43,
       name: "Poltrona Rolando",
       price: 95,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -621,7 +749,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 38,
+      id: 44,
       name: "Poltrona Roma",
       price: 300,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -635,7 +763,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 39,
+      id: 45,
       name: "Poltrona Mistic",
       price: 210,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -649,7 +777,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 40,
+      id: 46,
       name: "Poltrona Rudy",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -663,7 +791,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 41,
+      id: 47,
       name: "Poltrona Petalo",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -677,7 +805,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 42,
+      id: 48,
       name: "Poltrona Gray",
       price: 200,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -691,7 +819,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 43,
+      id: 49,
       name: "Poltrona Miss",
       price: 130,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -705,7 +833,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 44,
+      id: 50,
       name: "Poltrona Presidencial",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -719,7 +847,21 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 45,
+      id: 51,
+      name: "Poltrona Nube",
+      price: 240,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "sofa_poltrona_nube.png",
+      images: [
+          "sofa_poltrona_nube.png",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id: 52,
       name: "Peresosa Capitoneada",
       price: 290,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -733,7 +875,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 46,
+      id: 53,
       name: "Divan Sutra",
       price: 250,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -747,7 +889,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 47,
+      id: 54,
       name: "Divan Barriga",
       price: 290,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
@@ -760,6 +902,20 @@ export const db: Record<string, Product[]> = {
         ],
         tag: []
     },
+    {
+      id: 55,
+      name: "Camilla Spa",
+      price: 290,
+      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      image: "sofa_camilla.JPG",
+      images: [
+          "sofa_camilla.JPG",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    }
   ],
   dormitorio:[
     {
@@ -831,6 +987,33 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 106,
+      name: "Moises Ligth",
+      price: 240,
+      description: "",
+      image: "cama_moises_ligth__2_-removebg-preview.png",
+      images: [
+        "cama_moises_ligth (1).JPG",
+        "cama_moises_ligth (2).JPG"
+      ],
+      associations: [],
+      tag: []
+    },
+    {
+      id: 107,
+      name: "Moises con baul",
+      price: 240,
+      description: "",
+      image: "cama_moises_baul__1_-removebg-preview (1).png",
+      images: [
+        "cama_moises_baul (1).JPG",
+        "cama_moises_baul (2).JPG",
+        "cama_moises_baul (3).JPG",
+      ],
+      associations: [],
+      tag: []
+    },
+    {
+      id: 108,
       name: "Madera",
       price: 160,
       description: "",
@@ -843,20 +1026,48 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 107,
-      name: "Isabela",
+      id: 109,
+      name: "Isabel",
       price: 290,
       description: "",
       image: "cama_isabela2.jpg",
       images: [
         "cama_isabela21.jpg",
-        "cama_isabela3.jpg"
+        "cama_isabela3.jpg",
       ],
       associations: [],
       tag: []
     },
     {
-      id: 108,
+      id: 110,
+      name: "Isabel 4 puestos",
+      price: 290,
+      description: "",
+      image: "comedor_isabel_cuatro.PNG",
+      images: [
+        "comedor_isabel_cuatro.PNG",
+        "cama_isabela3.jpg",
+      ],
+      associations: [],
+      tag: []
+    },
+    {
+      id: 111,
+      name: "Media Luna",
+      price: 290,
+      description: "",
+      image: "comedor_media_luna.PNG",
+      images: [
+        "comedor_media_luna.PNG",
+        "comedor_luna_1.JPG",
+        "comedor_luna_2.JPG",
+        "comedor_luna3.JPG"
+      ],
+      associations: [],
+      tag: []
+    },
+    {
+      id: 112,
       name: "Princesa",
       price: 225,
       description: "",
@@ -868,7 +1079,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 109,
+      id: 113,
       name: "Aurora",
       price: 290,
       description: "",
@@ -880,7 +1091,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 110,
+      id: 114,
       name: "Barco",
       price: 260,
       description: "",
@@ -892,7 +1103,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 111,
+      id: 115,
       name: "Magnun",
       price: 440,
       description: "",
@@ -904,7 +1115,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 112,
+      id: 117,
       name: "Sol",
       price: 440,
       description: "",
@@ -917,7 +1128,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 113,
+      id: 118,
       name: "Cama Sol Especial",
       price: 500,
       description: "",
@@ -930,7 +1141,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 114,
+      id: 119,
       name: "Cama Cuna Duplex",
       price: 620,
       description: "",
@@ -942,7 +1153,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 115,
+      id: 120,
       name: "cama box",
       price: 75,
       description: "",
@@ -956,7 +1167,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 116,
+      id: 121,
       name: "cama punto",
       price: 115,
       description: "",
@@ -971,7 +1182,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 117,
+      id: 122,
       name: "rodolf",
       price: 110,
       description: "",
@@ -985,7 +1196,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 118,
+      id: 123,
       name: "Cama Rockford",
       price: 110,
       description: "",
@@ -999,7 +1210,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 119,
+      id: 124,
       name: "Cama Edith",
       price: 1390,
       description: "",
@@ -1013,7 +1224,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 120,
+      id: 125,
       name: "Marruecos",
       price: 640,
       description: "",
@@ -1027,7 +1238,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 121,
+      id: 126,
       name: "Cama Espejo",
       price: 640,
       description: "",
@@ -1041,7 +1252,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 122,
+      id: 127,
       name: "Cama Singapur",
       price: 670,
       description: "",
@@ -1055,7 +1266,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 123,
+      id: 128,
       name: "Cuna",
       price: 150,
       description: "",
@@ -1069,13 +1280,16 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 124,
+      id: 129,
       name: "Cuna Plus",
       price: 335,
       description: "",
       image: "cama_cuna_plus.jpg",
       images: [
-        "cama_cuna_plus.jpg"
+        "cama_cuna_plus.jpg",
+        "cama_cuna_plus (1).JPG",
+        "cama_cuna_plus (2).JPG",
+        "cama_cuna_plus (3).JPG"
       ],
       associations: [],
       tag: [
@@ -1083,13 +1297,30 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 125,
-      name: "Cama Nube",
+      id: 130,
+      name: "Cama Hielo",
       price: 335,
       description: "",
       image: "cama_nube2.png",
       images: [
-        "cama_nube2.png"
+        "cama_nube2.png",
+        "cama_hielo.jpg"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
+    {
+      id: 131,
+      name: "Cama Nube",
+      price: 335,
+      description: "",
+      image: "cama_nube__2_-removebg-preview.png",
+      images: [
+        "cama_nube (1).JPG",
+        "cama_nube (2).JPG",
+        "cama_nube (3).JPG"
       ],
       associations: [],
       tag: [
@@ -1155,7 +1386,21 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 230,
+      id: 205,
+      name: "Escritorio Ejecutivo",
+      price: 245,
+      description: "",
+      image: "multimueble_escritorio_ejecutivo-removebg-preview.png",
+      images: [
+        "multimueble_escritorio_ejecutivo-removebg-preview.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 206,
       name: "Juego para cuarto",
       price: 460,
       description: "",
@@ -1169,7 +1414,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 206,
+      id: 207,
       name: "mesa de centro decorativo",
       price: 170,
       description: "",
@@ -1183,7 +1428,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 207,
+      id: 208,
       name: "mesa de centro",
       price: 160,
       description: "",
@@ -1197,7 +1442,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 208,
+      id: 209,
       name: "mesa de centro",
       price: 150,
       description: "",
@@ -1211,13 +1456,14 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 209,
+      id: 210,
       name: "mesa de centro",
       price: 130,
       description: "",
       image: "multi_mesa_centro_3.jpg",
       images: [
-        "multi_mesa_centro_3.jpg"
+        "multi_mesa_centro_3.jpg",
+        "multimueble_mesa_centro_con_luz.JPG"
       ],
       associations: [
 
@@ -1225,7 +1471,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 210,
+      id: 211,
       name: "mesa de centro",
       price: 130,
       description: "",
@@ -1239,7 +1485,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 211,
+      id: 212,
       name: "Mesa de Manicure S",
       price: 240,
       description: "",
@@ -1253,7 +1499,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 212,
+      id: 213,
       name: "Mesa de Manicure M",
       price: 270,
       description: "",
@@ -1267,7 +1513,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 213,
+      id: 214,
       name: "Mesa de Manicure L",
       price: 295,
       description: "",
@@ -1281,7 +1527,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 214,
+      id: 215,
       name: "Gavetero Moderno",
       price: 430,
       description: "",
@@ -1295,7 +1541,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 215,
+      id: 216,
       name: "Gavetero",
       price: 560,
       description: "",
@@ -1309,7 +1555,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 216,
+      id: 217,
       name: "Gavetero",
       price: 400,
       description: "",
@@ -1323,7 +1569,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 217,
+      id: 218,
       name: "multimueble",
       price: 280,
       description: "",
@@ -1337,8 +1583,8 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 218,
-      name: "Modulo tv Jirajara",
+      id: 219,
+      name: "Modulo tv Jirahara",
       price: 510,
       description: "",
       image: "multimueble_modulo_tv1.png",
@@ -1351,7 +1597,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 219,
+      id: 221,
       name: "Modulo tv Mediterraneo",
       price: 510,
       description: "",
@@ -1365,7 +1611,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 220,
+      id: 222,
       name: "Modulo small tv",
       price: 510,
       description: "",
@@ -1379,7 +1625,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 221,
+      id: 223,
       name: "Modulo tv Barra",
       price: 510,
       description: "",
@@ -1393,7 +1639,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 222,
+      id: 224,
       name: "Modulo tv Glass",
       price: 510,
       description: "",
@@ -1407,7 +1653,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 223,
+      id: 225,
       name: "Ropero Vol 1",
       price: 510,
       description: "",
@@ -1422,7 +1668,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 224,
+      id: 226,
       name: "Ropero Vol 2",
       price: 510,
       description: "",
@@ -1436,7 +1682,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 225,
+      id: 227,
       name: "Ropero Vol 3",
       price: 510,
       description: "",
@@ -1450,7 +1696,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 226,
+      id: 228,
       name: "Ropero Vol 4",
       price: 510,
       description: "",
@@ -1464,7 +1710,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 227,
+      id: 229,
       name: "Ropero Vol 5",
       price: 510,
       description: "",
@@ -1479,7 +1725,21 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 228,
+      id: 230,
+      name: "Ropero Princesa",
+      price: 510,
+      description: "",
+      image: "multimueble_ropero_princesa.png",
+      images: [
+        "multimueble_ropero_princesa.png",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 231,
       name: "Mesa de Noche Vol 1",
       price: 110,
       description: "",
@@ -1493,7 +1753,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 229,
+      id: 232,
       name: "Mesa de Noche Vol 2",
       price: 110,
       description: "",
@@ -1507,7 +1767,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 230,
+      id: 233,
       name: "Mesa de Noche Vol 3",
       price: 110,
       description: "",
@@ -1521,7 +1781,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 231,
+      id: 234,
       name: "Mesa de Noche Vol 4",
       price: 110,
       description: "",
@@ -1535,7 +1795,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 232,
+      id: 235,
       name: "Mesa de Noche Vol 5",
       price: 110,
       description: "",
@@ -1549,13 +1809,28 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 233,
+      id: 236,
       name: "Mesa de Noche Vol 6",
       price: 110,
       description: "",
       image: "multi_mesa_noche_5.jpg",
       images: [
         "multi_mesa_noche_5.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 237,
+      name: "Mesa Centro Arteco",
+      price: 110,
+      description: "moodelos a consultar",
+      image: "mesa_centro_arteco_3_pisos (1).JPG",
+      images: [
+        "mesa_centro_arteco_3_pisos (1).JPG",
+        "mesa_centro_arteco_3_pisos (2).JPG",
       ],
       associations: [
 
@@ -1720,7 +1995,7 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 309,
-      name: "Tipo i",
+      name: "Canada",
       price: 540,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 150 cm x 150 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_tipo_i.jpg",
@@ -1736,12 +2011,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 310,
-      name: "Madera",
+      name: "Saman barnizado",
       price: 540,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "madera.jpg",
       images: [
-        "madera.jpg"
+        "madera.jpg",
       ],
       associations: [],
       tag: [
@@ -1752,7 +2027,7 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 311,
-      name: "Marmol",
+      name: "Luna",
       price: 950,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_marmol.png",
@@ -1800,12 +2075,47 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 314,
-      name: "Rosa",
+      name: "Ramadan",
+      price: 850,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_ramadan.png",
+      images: [
+        "comedor_ramadan (1).JPG",
+        "comedor_ramadan (2).JPG",
+        "comedor_ramadan.JPG"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
+      id: 315,
+      name: "Saturno con tope de vidrio",
       price: 1000,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_rosa.png",
       images: [
-        "comedor_rosa.png"
+        "comedor_rosa.png",
+        "comedor_zatruno_2.JPG"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
+      id: 316,
+      name: "Saturno",
+      price: 1000,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_zaturno_con_tope-removebg-preview.png",
+      images: [
+        "comedor_zaturno_con_tope-removebg-preview.png",
       ],
       associations: [],
       tag: [
@@ -1817,213 +2127,15 @@ export const db: Record<string, Product[]> = {
   ],
     colchones:[
     {
-      id: 403,
-      name: "Colflex Vegas",
-      price: 139,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_vega.jpg",
-      images: [
-        "colchon_colflex_vega.jpg"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Vegas Matrimonial",
-          price: 170,
-          image: "colchon_colflex_vega.jpg",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 404,
-      name: "Colflex Collection",
-      price: 165,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
-      images: [
-        "colchon_colflex_lady.PNG"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Collection Queen",
-          price: 270,
-          image: "colchon_colflex_lady.PNG",
-        },
-        {
-          id: 2,
-          name: "Collection King",
-          price: 320,
-          image: "colchon_colflex_lady.PNG",
-        },
-        {
-          id: 3,
-          name: "Collection Matrimonial",
-          price: 210,
-          image: "colchon_colflex_lady.PNG",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 405,
-      name: "Colflex Collection 1 pillow",
-      price: 190,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
-      images: [
-        "colchon_colflex_lady.PNG"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Collection 1 pillow Queen",
-          price: 314,
-          image: "colchon_colflex_lady.PNG",
-        },
-        {
-          id: 2,
-          name: "Collection 1 pillow King",
-          price: 375,
-          image: "colchon_colflex_lady.PNG",
-        },
-        {
-          id: 3,
-          name: "Collection 1 pillow Matrimonial",
-          price: 240,
-          image: "colchon_colflex_lady.PNG",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 406,
-      name: "Colflex Collection 2 pillow",
-      price: 213,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_lady.PNG",
-      images: [
-        "colchon_colflex_lady.PNG"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Collection 2 pillow Queen",
-          price: 349,
-          image: "colchon_colflex_lady.PNG",
-        },
-        {
-          id: 2,
-          name: "Collection 2 pillow King",
-          price: 433,
-          image: "colchon_colflex_lady.PNG",
-        },
-        {
-          id: 3,
-          name: "Collection 2 pillow Matrimonial",
-          price: 275,
-          image: "colchon_colflex_lady.PNG",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 407,
-      name: "Colflex Europillow",
-      price: 247,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_colflex_europillow.png",
-      images: [
-        "colchon_colflex_europillow.png"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Europillow Queen",
-          price: 396,
-          image: "colchon_colflex_europillow.png",
-        },
-        {
-          id: 2,
-          name: "Europillow King",
-          price: 475,
-          image: "colchon_colflex_europillow.png",
-        },
-        {
-          id: 3,
-          name: "Europillow Matrimonial",
-          price: 325,
-          image: "colchon_colflex_europillow.png",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 408,
-      name: "Divenca Caroni",
-      price: 115,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_divenca2.jpg",
-      images: [
-        "colchon_divenca2.jpg"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Caroni Matrimonial",
-          price: 148,
-          image: "colchon_divenca2.jpg",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
       id: 409,
-      name: "Divenca Orinoco",
-      price: 145,
+      name: "Paris",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_divenca2.png",
+      image: "paris.png",
       images: [
-        "colchon_divenca2.png"
+        "paris.png"
       ],
       associations: [
-        {
-          id: 1,
-          name: "Orinoco Queen",
-          price: 220,
-          image: "colchon_divenca2.png",
-        },
-        {
-          id: 2,
-          name: "Orinoco King",
-          price: 295,
-          image: "colchon_divenca2.png",
-        },
-        {
-          id: 3,
-          name: "Orinoco Matrimonial",
-          price: 180,
-          image: "colchon_divenca2.png",
-        },
       ],
       tag: [
         "individual",
@@ -2032,32 +2144,14 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 410,
-      name: "Divenca Ensueño",
-      price: 207,
+      name: "Colflex",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_divenca_1.png",
+      image: "Group 375.png",
       images: [
-        "colchon_divenca_1.png"
+        "Group 375.png"
       ],
       associations: [
-        {
-          id: 1,
-          name: "Ensueño Queen",
-          price: 327,
-          image: "colchon_divenca_1.png",
-        },
-        {
-          id: 2,
-          name: "Ensueño King",
-          price: 414,
-          image: "colchon_divenca_1.png",
-        },
-        {
-          id: 3,
-          name: "Ensueño Matrimonial",
-          price: 267,
-          image: "colchon_divenca_1.png",
-        },
       ],
       tag: [
         "individual",
@@ -2066,12 +2160,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 411,
-      name: "Imperia San Remo",
-      price: 128,
+      name: "Confort",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_imperia.JPG",
+      image: "confort_logo.png",
       images: [
-        "colchon_imperia.JPG"
+        "confort_logo.png"
       ],
       associations: [
         {
@@ -2088,19 +2182,19 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 412,
-      name: "Imperia San Remo 1 pillow",
-      price: 150,
+      name: "Serta",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_imperia.JPG",
+      image: "Group 380.png",
       images: [
-        "colchon_imperia.JPG"
+        "Group 380.png"
       ],
       associations: [
         {
           id: 3,
           name: "San Remo Matrimonial 1 pillow",
           price: 190,
-          image: "colchon_imperia.JPG",
+          image: "colchon_imperia2.JPG",
         },
       ],
       tag: [
@@ -2110,12 +2204,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 413,
-      name: "Imperia San Remo 2 pillow",
-      price: 200,
+      name: "Divenca",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_imperial_san_remo.jpg",
+      image: "divenca.png",
       images: [
-        "colchon_imperial_san_remo.jpg"
+        "divenca.png"
       ],
       associations: [
         {
@@ -2132,12 +2226,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 414,
-      name: "Imperia San Rebowd",
-      price: 125,
+      name: "Silys",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_imperia_one_pillow.png",
+      image: "silys.png",
       images: [
-        "colchon_imperia_one_pillow.png"
+        "silys.png"
       ],
       associations: [
         {
@@ -2154,12 +2248,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 416,
-      name: "Eclipse Atlanta",
-      price: 143,
+      name: "Imperia",
+      price: 0,
       description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_eclipse_atlanta.png",
+      image: "imperia2.png",
       images: [
-        "colchon_eclipse_atlanta.png"
+        "imperia2.png"
       ],
       associations: [
         {
@@ -2171,200 +2265,6 @@ export const db: Record<string, Product[]> = {
       ],
       tag: [
         "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 417,
-      name: "Eclipse Nevada 2 pillow",
-      price: 270,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_eclipse_nevada.png",
-      images: [
-        "colchon_eclipse_nevada.png"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Nevada Queen 2 pillow",
-          price: 365,
-          image: "colchon_eclipse_nevada.png",
-        },
-        {
-          id: 2,
-          name: "Nevada King 2 pillow",
-          price: 420,
-          image: "colchon_eclipse_nevada.png",
-        },
-        {
-          id: 3,
-          name: "Nevada Matrimonial 2 pillow",
-          price: 310,
-          image: "colchon_eclipse_nevada.png",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 418,
-      name: "Sealy Paris",
-      price: 143,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_sealy_parisnoche.jpg",
-      images: [
-        "colchon_sealy_parisnoche.jpg"
-      ],
-      associations: [
-        {
-          id: 3,
-          name: "Paris Matrimonial",
-          price: 170,
-          image: "colchon_sealy_parisnoche.jpg",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 419,
-      name: "Sealy Florida",
-      price: 153,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_sealy_atlanta.jpg",
-      images: [
-        "colchon_sealy_atlanta.jpg"
-      ],
-      associations: [
-        {
-          id: 3,
-          name: "Florida Matrimonial",
-          price: 207,
-          image: "colchon_sealy_atlanta.jpg",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 420,
-      name: "Sealy Planet",
-      price: 135,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_sealy_planet.jpg",
-      images: [
-        "colchon_sealy_planet.jpg"
-      ],
-      associations: [
-        {
-          id: 3,
-          name: "Planet Matrimonial",
-          price: 160,
-          image: "colchon_sealy_planet.jpg",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 421,
-      name: "Sealy Nebraska 1 pillow",
-      price: 243,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_sealy_nebraska.jpg",
-      images: [
-        "colchon_sealy_nebraska.jpg"
-      ],
-      associations: [
-        {
-          id: 1,
-          name: "Nebraska Queen 1 pillow",
-          price: 338,
-          image: "colchon_sealy_nebraska.jpg",
-        },
-        {
-          id: 2,
-          name: "Nebraska King 1 pillow",
-          price: 398,
-          image: "colchon_sealy_nebraska.jpg",
-        },
-        {
-          id: 3,
-          name: "Nebraska Matrimonial 1 pillow",
-          price: 290,
-          image: "colchon_sealy_nebraska.jpg",
-        },
-      ],
-      tag: [
-        "individual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 422,
-      name: "Sealy Kansas 2 pillow",
-      price: 310,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_sealy_kansas.jpg",
-      images: [
-        "colchon_sealy_kansas.jpg"
-      ],
-      associations: [],
-      tag: [
-        "Matrimonial",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 423,
-      name: "Confort Monte Real 1 pillow",
-      price: 189,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_confort_monte_real.jpeg",
-      images: [
-        "colchon_confort_monte_real.jpeg"
-      ],
-      associations: [],
-      tag: [
-        "Matrimonial",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 424,
-      name: "Confort Monte Carlo",
-      price: 135,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_confort_monte_carlo.jpg",
-      images: [
-        "colchon_confort_monte_carlo.jpg"
-      ],
-      associations: [],
-      tag: [
-        "Invididual",
-        "Garantia 5 años",
-      ]
-    },
-    {
-      id: 425,
-      name: "Confort Power",
-      price: 306,
-      description: "El colchón Colflex pillow top tiene una capa adicional de acolchado en la parte superior, lo que proporciona una sensación de suavidad y confort extra",
-      image: "colchon_confort_power.png",
-      images: [
-        "colchon_confort_power.png"
-      ],
-      associations: [],
-      tag: [
-        "Queen",
         "Garantia 5 años",
       ]
     },
