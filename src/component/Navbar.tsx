@@ -1,17 +1,31 @@
 "use client"
 import Link from 'next/link';
 import styles from "../app/Home.module.css";
+import { useSearchParams } from 'next/navigation'
 
 const NavBar = () => {
-    const myAppApi = process.env.NEXT_PUBLIC_API_URL;
-    
+  const searchParams = useSearchParams();
+  const currentCategory = searchParams.get('category');
+
+  const links = [
+    { label: 'Sofas', category: 'sofa' },
+    { label: 'Comedores', category: 'comedor' },
+    { label: 'Dormitorios', category: 'dormitorio' },
+    { label: 'Multimuebles', category: 'multimueble' },
+    { label: 'Colchones', category: 'colchones' }
+  ];
+
   return (
     <div className={styles.navbar}>
-        <Link href={`${myAppApi}/?category=sofa`}>Sofas</Link>
-        <Link href={`${myAppApi}/?category=comedor`}>Comedores</Link>
-        <Link href={`${myAppApi}/?category=dormitorio`}>Dormitorios</Link>
-        <Link href={`${myAppApi}/?category=multimueble`}>Multimuebles</Link>
-        <Link href={`${myAppApi}/?category=colchones`}>Colchones</Link>
+      {links.map(link => (
+        <Link
+          key={link.category}
+          href={`/?category=${link.category}`}
+          className={currentCategory === link.category ? styles.current : styles.idle}
+        >
+          {link.label}
+        </Link>
+      ))}
     </div>
   );
 };
