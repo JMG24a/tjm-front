@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 import Navbar from "../component/Navbar";
 import Products from "../component/Products";
 import "../component/dropDownButton.css";
+import {RandomOptionsWs} from "../component/RandomOptionsWs";
 import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -33,9 +34,9 @@ export default function HomePage({ searchParams }: any) {
           </Link>
         </div>
         <div>
-          <Link href={"https://wa.me/584120213946"} target='_blank'>
-            <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect'/>
-          </Link>
+          <RandomOptionsWs/>
+          {/* <Link href={"https://wa.me/584120213946"} target='_blank'>
+          </Link> */}
         </div>
       </div>
 

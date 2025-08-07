@@ -23,9 +23,9 @@ export default function DropdownButton() {
             </Link>
           </div>
           <div>
-            <Link href={"https://wa.me/584120213946"} target='_blank'>
+            {/* <Link href={"https://wa.me/584120213946"} target='_blank'>
               <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect'/>
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}
