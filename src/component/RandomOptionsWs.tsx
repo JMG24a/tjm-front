@@ -26,18 +26,27 @@ export function RandomOptionsWs() {
     return (
       <div className="modalRandomOptionsWs">
         <div className="optionsRandomWs">
-          <div className="optionRandomWs">
-            <a href={status.randomOption} target="_blank" rel="noopener noreferrer">
-              <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
-            </a>
-            <p>WhatsApp Barquisimeto</p>
+          <div>
+            <button
+            className="closeButtonRandomWs"
+              onClick={() => setStatus({...status, state: !status.state})}
+            >
+              X
+            </button>
           </div>
 
           <div className="optionRandomWs">
-            <a href={"https://wa.me/584120213946"} target="_blank" rel="noopener noreferrer">
+            <a className="anchorRandomWs" href={"https://wa.me/584120213946"} target="_blank" rel="noopener noreferrer">
               <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
+              <p>WhatsApp Barquisimeto</p>
             </a>
-            <p>WhatsApp San Felipe</p>
+          </div>
+
+          <div className="optionRandomWs">
+            <a className="anchorRandomWs" href={status.randomOption} target="_blank" rel="noopener noreferrer">
+              <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
+              <p>WhatsApp San Felipe</p>
+            </a>
           </div>
         </div>
       </div>
