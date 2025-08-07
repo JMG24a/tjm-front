@@ -176,6 +176,36 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
+      id: 30,
+      name: "Modern",
+      price: 670,
+      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_modern.PNG",
+      images: [
+          "sofa_modern.PNG",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
+      id:  31,
+      name: "Nube",
+      price: 670,
+      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_nube_2_review.png",
+      images: [
+          "sofa_nube (1).JPG",
+          "sofa_nube (2).JPG",
+          "sofa_nube (3).JPG",
+        ],
+        associations: [
+
+        ],
+        tag: []
+    },
+    {
       id: 8,
       name: "David",
       price: 460,
@@ -362,7 +392,9 @@ export const db: Record<string, Product[]> = {
       image: "sofa_europa.jpg",
       images: [
           "sofa_europa.jpg",
-          "sofa_europa2.jpg"
+          "sofa_europa2.jpg",
+          "mueble_europa (1).JPG",
+          "mueble_europa (2).JPG"
         ],
         associations: [
 
@@ -535,36 +567,6 @@ export const db: Record<string, Product[]> = {
       image: "sofa_juego_mufada.jpg",
       images: [
           "sofa_juego_mufada.jpg",
-        ],
-        associations: [
-
-        ],
-        tag: []
-    },
-    {
-      id: 30,
-      name: "Modern",
-      price: 670,
-      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
-      image: "sofa_modern.PNG",
-      images: [
-          "sofa_modern.PNG",
-        ],
-        associations: [
-
-        ],
-        tag: []
-    },
-    {
-      id:  31,
-      name: "Nube",
-      price: 670,
-      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
-      image: "sofa_nube_2_review.png",
-      images: [
-          "sofa_nube (1).JPG",
-          "sofa_nube (2).JPG",
-          "sofa_nube (3).JPG",
         ],
         associations: [
 
@@ -992,8 +994,8 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "cama_moises_ligth__2_-removebg-preview.png",
       images: [
+        "cama_moises_ligth (2).JPG",
         "cama_moises_ligth (1).JPG",
-        "cama_moises_ligth (2).JPG"
       ],
       associations: [],
       tag: []
@@ -1505,7 +1507,9 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multi_mesa_manicure_l.jpg",
       images: [
-        "multi_mesa_manicure_l.jpg"
+        "multi_mesa_manicure_l.jpg",
+        "mesa_manicure_vol2_2.JPG",
+        "multimueble_mesa_manicure_m.JPG"
       ],
       associations: [
 
@@ -1519,7 +1523,8 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multi_manicure_l.jpg",
       images: [
-        "multi_manicure_l.jpg"
+        "multi_manicure_l.jpg",
+        "mesa_manicure_l2.JPG"
       ],
       associations: [
 
@@ -1589,7 +1594,10 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multimueble_modulo_tv1.png",
       images: [
-        "multimueble_modulo_tv1.png"
+        "multimueble_modulo_tv1.png",
+        "multimueble_modulo_tv_mediterraneo (1).JPG",
+        "multimueble_modulo_tv_mediterraneo (2).JPG",
+        "multimueble_modulo_tv_mediterraneo (3).JPG",
       ],
       associations: [
 
@@ -1827,7 +1835,7 @@ export const db: Record<string, Product[]> = {
       name: "Mesa Centro Arteco",
       price: 110,
       description: "moodelos a consultar",
-      image: "mesa_centro_arteco_3_pisos (1).JPG",
+      image: "mesa_centro_vidrio2.png",
       images: [
         "mesa_centro_arteco_3_pisos (1).JPG",
         "mesa_centro_arteco_3_pisos (2).JPG",
@@ -1837,16 +1845,6 @@ export const db: Record<string, Product[]> = {
       ],
       tag: []
     },
-    // {
-    //   id: 207,
-    //   name: "Centro de TV",
-    //   price: 460,
-    //   description: "",
-    //   image: "multi_centro_tv.jpg",
-    //   images: [
-    //     "multi_centro_tv.jpg"
-    //   ]d:\tjmPNG\heic\catalogo multimuebles\multi_gavetero2.jpg
-    // },
     // {
     //   id: 208,
     //   name: "Centro de TV",

@@ -172,7 +172,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
                       <div className={`details_container`}>
                         <p className={`productName`}>{item.name}</p>
                         <div className={`detailsNamePrice`}>
-                          <p className="productPrice">${item.price}</p>
+                          {/* <p className="productPrice">${item.price}</p> */}
                           <Link
                             href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)} ${item.name}-${item.price}`}
                             target="_blank"
@@ -187,7 +187,6 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
               })}
             </div>
           </div>
-
           :
           <></>
           }
