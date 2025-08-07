@@ -19,7 +19,7 @@ export function RandomOptionsWs() {
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * options.length);
     setStatus({...status, randomOption: options[randomIndex]});
-  }, [status.state]);
+  }, []);
 
 
   if(status.state){

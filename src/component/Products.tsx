@@ -91,7 +91,9 @@ export default async function Products({category}:typeProps) {
   const myapi = process.env.NEXT_PUBLIC_API_URL || ""
 
   const dollar = await getDollar();
+  console.log("🚀 ~ Products ~ dollar:", dollar)
 
+  /*
   const onChangeDollar = (price: number):string => {
       const priceNumber = Number(price)
       const dollarWhitGlobal = priceNumber;
@@ -102,9 +104,9 @@ export default async function Products({category}:typeProps) {
       minimumFractionDigits: 2
       }).format(result);
 
-      // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
+      console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
       return formatted;
-  }
+  }*/
 
 
   return (
