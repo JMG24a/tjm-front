@@ -82,8 +82,11 @@
   text-align: left;
   width: 66%;
   font-size: 0.8rem;
-  margin-left: 5px;
-  color: #232121; /* red-600 */
+  padding: 2px 5px;
+  /* margin-left: 5px; */
+  border-radius: 5px;
+  color: #e7e3e3; /* red-600 */
+  background-color: rgb(165, 12, 12);
 }
 
 .productName {
@@ -107,11 +110,12 @@
 
 .details .detailsNamePrice{
   display: flex;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 30%;
+  height: 50%;
   padding: 8px 0px;
 }
 

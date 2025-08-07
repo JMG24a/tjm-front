@@ -128,9 +128,12 @@ export default async function Products({category}:typeProps) {
               <div className={styles.details_container}>
                 <p className={styles.productName}>{product.name}</p>
               </div>
-              <div className={styles.detailsNamePrice}>
-                {/* <p className={styles.productPrice}>{onChangeDollar(product.price)}</p> */}
-              </div>
+              { product.price == 0 ? (
+                <div className={styles.detailsNamePrice}>
+                  <p className={styles.productPrice}>{"Descuento"}</p>
+                </div>
+              ): (<></>)
+              }
             </div>
           </div>
       )})}

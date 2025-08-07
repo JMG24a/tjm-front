@@ -24,7 +24,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 1,
       name: "Zultan",
-      price: 770,
+      price: 0,
       description: "El mueble está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, garantizando resistencia y comodidad.",
       image: "sofa_zultan_3.PNG",
       images: [
@@ -48,7 +48,7 @@ export const db: Record<string, Product[]> = {
     {
         id: 2,
         name: "Mueble L",
-        price: 550,
+        price: 0,
         description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, resistencia y estabilidad. Además, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
         image: "mueblel.PNG",
         images: [
@@ -115,7 +115,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 5,
       name: "Damasco",
-      price: 1600,
+      price: 0,
       description: `El mueble Maya posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "sofa_maya.PNG",
       images: [
@@ -134,7 +134,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 6,
       name: "Mueble L Plus",
-      price: 550,
+      price: 0,
       description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_mueblel5p(2).jpg",
       images: [
@@ -923,7 +923,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 101,
       name: "Coquito",
-      price: 140,
+      price: 0,
       description: "",
       image: "coco.jpg",
       images: [
@@ -939,7 +939,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 102,
       name: "Nene",
-      price: 180,
+      price: 0,
       description: "",
       image: "cama_nene.jpg",
       images: [
@@ -1859,12 +1859,14 @@ export const db: Record<string, Product[]> = {
     comedor:[
     {
       id: 301,
-      name: "Lux",
-      price: 560,
-      description: "Comedor de cuatro puestos, ideal para optimizar espacios reducidos. Fabricado en madera de samán, ofrece una combinación perfecta de elegancia y modernidad, convirtiéndose en una pieza sofisticada para cualquier ambiente.",
-      image: "lux.jpg",
+      name: "Tipo v",
+      price: 0,
+      description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_tipo_v2.png",
       images: [
-        "lux.jpg"
+        "comedor_tipo_v2.png",
+        "comedor_tipo_v3.png",
+        "Tipo_v.jpg",
       ],
       associations: [],
       tag: [
@@ -1876,7 +1878,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 302,
         name: "Isabela",
-        price: 650,
+        price: 0,
         description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
         image: "isabela.jpg",
                 images: [
@@ -1942,14 +1944,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 306,
-      name: "Tipo v",
-      price: 630,
-      description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
-      image: "comedor_tipo_v2.png",
+      name: "Lux",
+      price: 560,
+      description: "Comedor de cuatro puestos, ideal para optimizar espacios reducidos. Fabricado en madera de samán, ofrece una combinación perfecta de elegancia y modernidad, convirtiéndose en una pieza sofisticada para cualquier ambiente.",
+      image: "lux.jpg",
       images: [
-        "comedor_tipo_v2.png",
-        "comedor_tipo_v3.png",
-        "Tipo_v.jpg",
+        "lux.jpg"
       ],
       associations: [],
       tag: [
