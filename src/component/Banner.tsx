@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 import "./banner.css";
 import { useEffect, useState, useRef } from "react";
 
@@ -32,7 +33,7 @@ export default function Banner({images}:any) {
         {/* Carrusel Manual */}
         <div className="carousel-manual" ref={trackRef}>
           {images.map((item: string, key:number)=>(
-            <div key={key} className="carousel-item"><img src={`/${item}`} alt="1" /></div>
+            <div key={key} className="carousel-item"><Image src={`/${item}`} alt="1" width={100} height={80}/></div>
           ))}
         </div>
 

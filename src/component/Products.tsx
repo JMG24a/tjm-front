@@ -73,16 +73,16 @@ type typeProps = {
 //     }
 // }
 
-const getDollar  = async () => {
-    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-          },
-    });
-    const data = await response.json();
-    return data;
-}
+// const getDollar  = async () => {
+//     const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+//         method: 'GET',
+//         headers: {
+//             'Content-Type': 'application/json'
+//           },
+//     });
+//     const data = await response.json();
+//     return data;
+// }
 
 export default async function Products({category}:typeProps) {
   const categories: Category = (category && category in db ? category : "sofa") as Category;
@@ -90,8 +90,8 @@ export default async function Products({category}:typeProps) {
     //   const products = await getProducts(category);
   const myapi = process.env.NEXT_PUBLIC_API_URL || ""
 
-  const dollar = await getDollar();
-  console.log("🚀 ~ Products ~ dollar:", dollar)
+  // const dollar = await getDollar();
+  // console.log("🚀 ~ Products ~ dollar:", dollar)
 
   /*
   const onChangeDollar = (price: number):string => {

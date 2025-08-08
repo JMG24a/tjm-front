@@ -17,16 +17,16 @@ type Producto = {
   tag: string[]
 };
 
-const getDollar  = async () => {
-    const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-          },
-    });
-    const data = await response.json();
-    return data;
-}
+// const getDollar  = async () => {
+//     const response = await fetch("https://pydolarve.org/api/v1/dollar?page=bcv&format_date=default&rounded_price=true",{
+//         method: 'GET',
+//         headers: {
+//             'Content-Type': 'application/json'
+//           },
+//     });
+//     const data = await response.json();
+//     return data;
+// }
 
 async function obtenerProducto(id: number, category: string): Promise<Producto> {
   let product: Product = {
@@ -92,22 +92,23 @@ export default async function Page({ params }: any) {
   const mensaje = `https://tjm-front.vercel.app/${producto.category}/${producto.id}
 Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
 
-  const dollar = await getDollar();
+  // const dollar = await getDollar();
+  // console.log("🚀 ~ Page ~ dollar:", dollar)
 
-  const onChangeDollar = (price: number):string => {
-    const priceNumber = Number(price)
-    const dollarWhitGlobal = priceNumber;
-    const result = dollar.monitors.usd.price * dollarWhitGlobal;
-    const formatted = new Intl.NumberFormat('es-VE', {
-    style: 'currency',
-    currency: 'VES',
-    minimumFractionDigits: 2
-    }).format(result);
+  // const onChangeDollar = (price: number):string => {
+  //   const priceNumber = Number(price)
+  //   const dollarWhitGlobal = priceNumber;
+  //   const result = dollar.monitors.usd.price * dollarWhitGlobal;
+  //   const formatted = new Intl.NumberFormat('es-VE', {
+  //   style: 'currency',
+  //   currency: 'VES',
+  //   minimumFractionDigits: 2
+  //   }).format(result);
 
-    // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
-    return formatted;
-  }
-  console.log("🚀 ~ onChangeDollar ~ onChangeDollar:", onChangeDollar)
+  //   // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
+  //   return formatted;
+  // }
+  // console.log("🚀 ~ onChangeDollar ~ onChangeDollar:", onChangeDollar)
 
 
   return (

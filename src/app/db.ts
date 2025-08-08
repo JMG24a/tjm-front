@@ -68,7 +68,7 @@ export const db: Record<string, Product[]> = {
       {
         id: 3,
         name: "Juego Suiza",
-        price: 710,
+        price: 0,
         description: "El juego Suiza está compuesto por dos piezas con una estructura de zaman y un diseño tradicional, con capacidad para cinco puestos. La primera pieza tiene una longitud de 150 cm y ofrece dos puestos, mientras que la segunda mide 210 cm, proporcionando un espacio amplio y confortable.",
         image: "sofa_juego_suiza.PNG",
         images: [
@@ -88,7 +88,7 @@ export const db: Record<string, Product[]> = {
     {
       id: 4,
       name: "Roma",
-      price: 1400,
+      price: 0,
       description: `El mueble Roma posee una estructura robusta de zaman. Su dimensión de 250 cm x 310 cm garantizan confort, resistencia y estabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "sofa_roma.PNG",
       images: [
