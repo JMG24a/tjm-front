@@ -123,7 +123,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
         <div className="container_main-product">
           <h2 className="title">{producto.name}</h2>
           <p className="description">{producto.description}</p>
-          <p className="price">{onChangeDollar(producto.price)}</p>
+          {/* <p className="price">{onChangeDollar(producto.price)}</p> */}
 
           <p className="caracteristicas">Caracteristicas</p>
 
@@ -137,7 +137,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
 
           <div className="whatsapp-link">
             <Link
-              href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)} ${producto.name}-${producto.price}`}
+              href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)} ${producto.name}`}
               target="_blank"
               rel="noopener noreferrer"
             >
