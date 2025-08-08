@@ -26,9 +26,9 @@ export const db: Record<string, Product[]> = {
       name: "Zultan",
       price: 0,
       description: "El mueble está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, garantizando resistencia y comodidad.",
-      image: "sofa_zultan_3.PNG",
+      image: "sofa_zultan_3.jpg",
       images: [
-        "sofa_zultan_3.PNG",
+        "sofa_zultan_3.jpg",
         "zultan_1.PNG",
         "zultan_4.PNG",
         "zultan_5.PNG",
@@ -50,9 +50,9 @@ export const db: Record<string, Product[]> = {
         name: "Mueble L",
         price: 0,
         description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, resistencia y estabilidad. Además, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
-        image: "mueblel.PNG",
+        image: "sofa_mueblel2.jpg",
         images: [
-          "mueblel.PNG",
+          "sofa_mueblel2.jpg",
           "sofa_muebleL_2.PNG"
         ],
         associations: [
@@ -495,7 +495,7 @@ export const db: Record<string, Product[]> = {
       description: "El mueble Suiza posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_zuisa.jpg",
       images: [
-          "sofa_zuisa.jpg",
+          "sofa_zuisa2.jpg",
         ],
         associations: [
 
