@@ -129,7 +129,7 @@ html, body {
   margin-top: 2rem;
 }
 
-.whatsapp-link a {
+.whatsapp-link div {
   background-color: #22c55e; /* green-500 */
   color: white;
   font-weight: bold;

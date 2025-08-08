@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Children, useEffect, useState } from "react";
 //styles
 import "./randomOptionsWs.css";
 
@@ -11,10 +11,11 @@ const options = [
   "https://wa.me/584129108584"
 ];
 
-export function RandomOptionsWs() {
+export function RandomOptionsWs(props: { children: React.ReactNode, message?: string }) {
   const [status, setStatus] = useState({
     state: false,
-    randomOption: ""
+    randomOption: "",
+    message: props.message || ""
   });
 
   useEffect(() => {
@@ -40,14 +41,14 @@ export function RandomOptionsWs() {
           </div>
 
           <div className="optionRandomWs">
-            <a className="anchorRandomWs" href={"https://wa.me/584120213946"} target="_blank" rel="noopener noreferrer">
+            <a className="anchorRandomWs" href={`https://wa.me/584120213946?text=${status.message}`} target="_blank" rel="noopener noreferrer">
               <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
               <p>WhatsApp Barquisimeto</p>
             </a>
           </div>
 
           <div className="optionRandomWs">
-            <a className="anchorRandomWs" href={status.randomOption} target="_blank" rel="noopener noreferrer">
+            <a className="anchorRandomWs" href={`${status.randomOption}?text=${status.message}`} target="_blank" rel="noopener noreferrer">
               <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
               <p>WhatsApp San Felipe</p>
             </a>
@@ -58,7 +59,7 @@ export function RandomOptionsWs() {
   } else {
     return (
       <div onClick={() => setStatus({ ...status, state: !status.state })}>
-        <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
+        {props.children}
       </div>
     );
   }

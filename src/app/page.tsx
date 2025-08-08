@@ -34,7 +34,10 @@ export default function HomePage({ searchParams }: any) {
           </Link>
         </div>
         <div>
-          <RandomOptionsWs/>
+          <RandomOptionsWs>
+            <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
+          </RandomOptionsWs>
+
           {/* <Link href={"https://wa.me/584120213946"} target='_blank'>
           </Link> */}
         </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./styles.css";
 import {db, Product, suggest} from "../../db";
 import Banner from "../../../component/Banner";
+import { RandomOptionsWs } from "app/component/RandomOptionsWs";
 
 type Producto = {
   id: number;
@@ -137,21 +138,21 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
             })}
           </div>
 
-          <div className="whatsapp-link">
-            <Link
-              href={`https://wa.me/584120213946?text=${encodeURIComponent(mensaje)} ${producto.name}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Whatsapp
-              <Image
-                src="/WhatsApp.svg.webp"
-                alt="WhatsApp"
-                width={25}
-                height={25}
-              />
-            </Link>
-          </div>
+          <RandomOptionsWs
+            message={`${encodeURIComponent(mensaje)} ${producto.name}`}
+          >
+            <div className="whatsapp-link">
+              <div>
+                Whatsapp
+                <Image
+                  src="/WhatsApp.svg.webp"
+                  alt="WhatsApp"
+                  width={25}
+                  height={25}
+                />
+              </div>
+            </div>
+          </RandomOptionsWs>
         </div>
       <div>
         {producto.associations.length > 0 ?

@@ -191,15 +191,15 @@ export const db: Record<string, Product[]> = {
     },
     {
       id:  31,
-      name: "Nube",
+      name: "Juego Nube",
       price: 670,
       description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_nube_2_review.png",
       images: [
-          "sofa_nube (1).JPG",
-          "sofa_nube (2).JPG",
-          "sofa_nube (3).JPG",
-        ],
+        "sofa_nube (2).JPG",
+        "sofa_nube (1).JPG",
+        "sofa_nube (3).JPG",
+      ],
         associations: [
 
         ],
@@ -232,7 +232,7 @@ export const db: Record<string, Product[]> = {
       description: `El mueble Invierno posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 175cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_invierno.jpg",
       images: [
-          "sofa_invierno.jpg",
+          "sofa_invierno2.jpg",
         ],
         associations: [
 
@@ -246,12 +246,12 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 10,
-      name: "Charlott",
+      name: "Charlot",
       price: 430,
       description: `El mueble Charlott posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_charlot.jpg",
       images: [
-          "sofa_charlot.jpg",
+          "sofa_charlot2.jpg",
         ],
         associations: [
 
@@ -269,7 +269,7 @@ export const db: Record<string, Product[]> = {
       description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_media_luna.jpg",
       images: [
-          "sofa_media_luna.jpg",
+          "sofa_media_luna2.jpg",
         ],
         associations: [
 
@@ -853,9 +853,9 @@ export const db: Record<string, Product[]> = {
       name: "Poltrona Nube",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
-      image: "sofa_poltrona_nube.png",
+      image: "sofa_poltrona_nube2.png",
       images: [
-          "sofa_poltrona_nube.png",
+          "sofa_poltrona_nube2.png",
         ],
         associations: [
 
