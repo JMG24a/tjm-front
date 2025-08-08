@@ -107,6 +107,7 @@ Hola, @tiojaimemuebleria me gustaría saber más sobre este producto:`
     // console.log("formatted + priceGlobal", formatted, priceGlobal); // "Bs. 2.500,00"
     return formatted;
   }
+  console.log("🚀 ~ onChangeDollar ~ onChangeDollar:", onChangeDollar)
 
 
   return (
