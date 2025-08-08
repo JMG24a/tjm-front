@@ -182,7 +182,7 @@ export const db: Record<string, Product[]> = {
       description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_modern.PNG",
       images: [
-          "sofa_modern.PNG",
+          "sofa_modern2.PNG",
         ],
         associations: [
 
@@ -289,7 +289,7 @@ export const db: Record<string, Product[]> = {
       description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_saman_barnisado-removebg-preview.png",
       images: [
-          "sofa_saman_barnisado-removebg-preview.png",
+          "sofa_saman_barnisado.JPG",
         ],
         associations: [
 
