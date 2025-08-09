@@ -116,10 +116,10 @@ export const db: Record<string, Product[]> = {
       id: 5,
       name: "Damasco",
       price: 0,
-      description: `El mueble Maya posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
-      image: "sofa_maya.PNG",
+      description: `El mueble Damasco posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
+      image: "sofa_maya0.jpg",
       images: [
-          "sofa_maya.PNG"
+          "sofa_maya02.jpg",
         ],
         associations: [
 
