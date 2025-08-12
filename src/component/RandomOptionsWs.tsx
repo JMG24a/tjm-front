@@ -50,7 +50,7 @@ export function RandomOptionsWs(props: { children: React.ReactNode, message?: st
           <div className="optionRandomWs">
             <a className="anchorRandomWs" href={`${status.randomOption}?text=${status.message}`} target="_blank" rel="noopener noreferrer">
               <Image src={"/WhatsApp.svg.webp"} height={30} width={30} alt='redirect' />
-              <p>WhatsApp San Felipe</p>
+              <p>WhatsApp San Pablo</p>
             </a>
           </div>
         </div>

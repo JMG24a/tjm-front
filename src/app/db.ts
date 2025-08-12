@@ -25,7 +25,7 @@ export const db: Record<string, Product[]> = {
       id: 1,
       name: "Zultan",
       price: 0,
-      description: "El mueble está diseñado con una estructura de zaman, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, garantizando resistencia y comodidad.",
+      description: "El mueble está diseñado con una estructura de samán, con dimensiones de 240 m x 240 m. Incorpora un revestimiento de goma de 4 pulgadas, garantizando resistencia y comodidad.",
       image: "sofa_zultan_3.jpg",
       images: [
         "sofa_zultan_3.jpg",
@@ -49,7 +49,7 @@ export const db: Record<string, Product[]> = {
         id: 2,
         name: "Mueble L",
         price: 0,
-        description: "El Mueble L cuenta con una estructura robusta de zaman y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, resistencia y estabilidad. Además, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
+        description: "El Mueble L cuenta con una estructura robusta de samán y un diseño conpacto. Su dimensiones de 160m x 200m garantizan confort y ahorro de espacio, resistencia y estabilidad. Además, ofreciendo un equilibrio ideal entre comodidad y durabilidad.",
         image: "sofa_mueblel2.jpg",
         images: [
           "sofa_mueblel2.jpg",
@@ -69,7 +69,7 @@ export const db: Record<string, Product[]> = {
         id: 3,
         name: "Juego Suiza",
         price: 0,
-        description: "El juego Suiza está compuesto por dos piezas con una estructura de zaman y un diseño tradicional, con capacidad para cinco puestos. La primera pieza tiene una longitud de 150 cm y ofrece dos puestos, mientras que la segunda mide 210 cm, proporcionando un espacio amplio y confortable.",
+        description: "El juego Suiza está compuesto por dos piezas con una estructura de samán y un diseño tradicional, con capacidad para cinco puestos. La primera pieza tiene una longitud de 150 cm y ofrece dos puestos, mientras que la segunda mide 210 cm, proporcionando un espacio amplio y confortable.",
         image: "sofa_juego_suiza.PNG",
         images: [
           "sofa_juego_suiza.PNG",
@@ -89,16 +89,16 @@ export const db: Record<string, Product[]> = {
       id: 4,
       name: "Roma",
       price: 0,
-      description: `El mueble Roma posee una estructura robusta de zaman. Su dimensión de 250 cm x 310 cm garantizan confort, resistencia y estabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
-      image: "sofa_roma.PNG",
+      description: `El mueble Roma posee una estructura robusta de samán. Su dimensión de 250 cm x 310 cm garantizan confort, resistencia y estabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
+      image: "sofa_roma00.jpg",
       images: [
-          "sofa_roma.PNG",
-          "sofa_roma_2.PNG",
-          "sofa_roma_3.PNG",
-          "mueble_roma (1).jpg",
-          "mueble_roma (2).jpg",
-          "mueble_roma (3).jpg",
-          "sofa_roma7.JPG"
+        "sofa_roma00.jpg",
+        "sofa_roma_2.PNG",
+        "sofa_roma_3.PNG",
+        "mueble_roma (1).jpg",
+        "mueble_roma (2).jpg",
+        "mueble_roma (3).jpg",
+        "sofa_roma7.JPG"
         ],
         associations: [
 
@@ -116,10 +116,12 @@ export const db: Record<string, Product[]> = {
       id: 5,
       name: "Damasco",
       price: 0,
-      description: `El mueble Damasco posee una estructura robusta de zaman y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
+      description: `El mueble Damasco posee una estructura robusta de samán y con capacidad para seis puestos. Sus dimensiones de 250 cm x 310 cm garantizan confort, que optimiza la resistencia y estabilidad, ofreciendo el equilibrio ideal entre comodidad y durabilidad. Como complemento, incluye detalles de lujo como portavasos y mecanismos reclinables para mayor comodidad.`,
       image: "sofa_maya0.jpg",
       images: [
           "sofa_maya02.jpg",
+          "sofa_damasco01.jpg",
+          "sofa_damasco02.jpg"
         ],
         associations: [
 
@@ -129,16 +131,17 @@ export const db: Record<string, Product[]> = {
           "4 Piezas",
           'Goma 6"',
           "Cincha 5cm",
+          "Portavasos",
+          "Reclinable",
         ]
     },
     {
       id: 6,
       name: "Mueble L Plus",
       price: 0,
-      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble L plus posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 250cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_mueblel5p(2).jpg",
       images: [
-          // "sofa_mueblel5p(1).jpg",
           "sofa_mueblel5p(2).jpg",
           "sofa_mueblel5p(3).jpg",
         ],
@@ -156,44 +159,48 @@ export const db: Record<string, Product[]> = {
       id: 7,
       name: "Mueble Berlin",
       price: 212,
-      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Berlin posee una estructura robusta de samán, son 3 piezas con capacidad para 4 puestos que garantizan confort que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "mueble_berlin.PNG",
       images: [
         "mueble_berlin.PNG",
         "mueble_berlin (1).jpg",
         "mueble_berlin (2).jpg",
         "mueble_berlin (3).jpg",
-
         ],
         associations: [
 
         ],
         tag: [
-          "5 Puestos",
+          "4 Puestos",
           "3 Piezas",
           'Goma 3.5"',
           "cincha 5cm",
         ]
     },
     {
-      id: 30,
+      id: 8,
       name: "Modern",
       price: 670,
-      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
-      image: "sofa_modern.PNG",
+      description: "El mueble Modern posee una estructura robusta de samán, son 4 piezas con capacidad para 6 puestos que garantizan confort que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.",
+      image: "sofa_modern.jpg",
       images: [
-          "sofa_modern2.PNG",
+          "sofa_modern.jpg",
         ],
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "6 Puestos",
+          "4 Piezas",
+          'Goma 5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id:  31,
+      id:  9,
       name: "Juego Nube",
       price: 670,
-      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El juego de muebles Nube posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 3 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_nube_2_review.png",
       images: [
         "sofa_nube (2).JPG",
@@ -203,13 +210,18 @@ export const db: Record<string, Product[]> = {
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "4 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 8,
+      id: 10,
       name: "David",
       price: 460,
-      description: `El mueble David posee una estructura robusta de zaman, son 4 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble David posee una estructura robusta de samán, son 4 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_david_3.jpg",
       images: [
           "sofa_david_3.jpg",
@@ -226,10 +238,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 9,
+      id: 11,
       name: "Invierno",
       price: 730,
-      description: `El mueble Invierno posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 175cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Invierno posee una estructura robusta de samán, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 175cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_invierno.jpg",
       images: [
           "sofa_invierno2.jpg",
@@ -245,10 +257,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 10,
+      id: 12,
       name: "Charlot",
       price: 430,
-      description: `El mueble Charlott posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Charlott posee una estructura robusta de samán, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_charlot.jpg",
       images: [
           "sofa_charlot2.jpg",
@@ -263,10 +275,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 11,
+      id: 13,
       name: "Media Luna",
       price: 670,
-      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Media Luna posee una estructura robusta de samán, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_media_luna.jpg",
       images: [
           "sofa_media_luna2.jpg",
@@ -283,10 +295,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
    {
-      id: 12,
-      name: "Saman Barnisado",
+      id: 14,
+      name: "Samán Barnizado",
       price: 670,
-      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble de samán barnizado posee una estructura robusta de samán, son 3 piezas con capacidad para 4 puestos que ofrece una gran durabilidad.`,
       image: "sofa_saman_barnisado-removebg-preview.png",
       images: [
           "sofa_saman_barnisado.JPG",
@@ -295,22 +307,17 @@ export const db: Record<string, Product[]> = {
 
         ],
         tag: [
-          "3 Puestos",
-          "2 Piezas",
-          'Goma 3"',
-          "cincha 5cm",
-          "Diseño capitaneado"
+          "4 Puestos",
+          "3 Piezas",
         ]
     },
         {
-      id: 13,
+      id: 15,
       name: "Mueble Palermo",
       price: 212,
-      description: `El mueble Media Luna posee una estructura robusta de zaman, son 3 piezas con capacidad para 3 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Palermo posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "mueble_palermo__2_-removebg-preview.png",
       images: [
-        "mueble_berlin.PNG",
-        "mueble_palermo (1).jpg",
         "mueble_palermo (2).jpg",
         "mueble_palermo (3).jpg",
         "mueble_palermo3.JPG"
@@ -326,10 +333,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
    {
-      id: 14,
+      id: 16,
       name: "Roraima S",
       price: 660,
-      description: `El mueble Roraima s posee una estructura robusta de zaman y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
+      description: `El mueble Roraima s posee una estructura robusta de samán y con capacidad para ocho puestos. Sus dimensiones de 250cm x 250cm garantizan confort, complementado por una cincha de 5cm que optimiza la resistencia y estabilidad, Además, incorpora un revestimiento de goma de 4 pulgadas`,
       image: "sofa_roraima_s.jpg",
       images: [
           "sofa_roraima_s.jpg",
@@ -346,10 +353,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 15,
+      id: 17,
       name: "Rodolfo",
       price: 690,
-      description: `El mueble Rodolfo posee una estructura robusta de zaman, son 4 piezas con capacidad para 6 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Rodolfo posee una estructura robusta de samán, son 4 piezas con capacidad para 6 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_rodolfo.jpg",
       images: [
           "sofa_rodolfo.jpg",
@@ -365,10 +372,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 16,
+      id: 18,
       name: "Enmaly",
       price: 320,
-      description: `El mueble Enmaly posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 190cm x 190cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Enmaly posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 190cm x 190cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_enmaly.jpg",
       images: [
           "sofa_enmaly.jpg",
@@ -385,10 +392,10 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 17,
+      id: 19,
       name: "Europa",
       price: 810,
-      description: `El mueble Europa posee una estructura robusta de zaman, son 4 piezas con capacidad para 6 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece accesorios de lujo como portavasos y patas de lujo`,
+      description: `El mueble Europa posee una estructura robusta de samán, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece accesorios de lujo como portavasos y patas de lujo`,
       image: "sofa_europa.jpg",
       images: [
           "sofa_europa.jpg",
@@ -406,79 +413,104 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 18,
+      id: 20,
       name: "Grecia",
       price: 460,
-      description: `El mueble Grecia posee una estructura robusta de zaman, son 3 piezas con capacidad para 4 puestos. Sus dimensiones de 180cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Grecia posee una estructura robusta de samán, son 3 piezas con capacidad para 4 puestos. Sus dimensiones de 180cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_grecia.jpg",
       images: [
-          "sofa_grecia.jpg",
+          "sofa_grecia2.jpg"
         ],
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "4 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 19,
+      id: 21,
       name: "Ali",
       price: 520,
-      description: `El mueble Ali posee una estructura robusta de zaman, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Ali posee una estructura robusta de samán, son 2 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_ali.jpg",
       images: [
-          "sofa_ali.jpg",
+          "sofa_ali2.jpg",
         ],
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "4 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 20,
+      id: 22,
       name: "Fenix",
       price: 450,
-      description: `El mueble Fenix posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Fenix posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "fenix.PNG",
       images: [
         "fenix.PNG",
         "fenix_2.PNG"
       ],
       associations: [],
-      tag: []
-    },
-    {
-      id: 21,
-      name: "Labros",
-      price: 625,
-      description: `El mueble Labros posee una estructura robusta de zaman, son 2 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
-      image: "sofa_labros.jpg",
-      images: [
-          "sofa_labros.jpg",
-        ],
-        associations: [
-
-        ],
-        tag: []
-    },
-    {
-      id: 22,
-      name: "Richard",
-      price: 460,
-      description: `El mueble Richard posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad`,
-      image: "sofa_richard.jpg",
-      images: [
-          "sofa_richard.jpg",
-        ],
-        associations: [
-
-        ],
-        tag: []
+      tag: [
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 3.5"',
+        "cincha 5cm",
+      ]
     },
     {
       id: 23,
+      name: "Labros",
+      price: 625,
+      description: `El mueble Labros posee una estructura robusta de samán, son 2 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "sofa_labros.jpg",
+      images: [
+        "sofa_labros3.jpg"
+      ],
+      associations: [
+
+      ],
+      tag: [
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 3.5"',
+        "cincha 5cm",
+        ]
+    },
+    {
+      id: 24,
+      name: "Richard",
+      price: 460,
+      description: `El mueble Richard posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad`,
+      image: "sofa_richard2.jpg",
+      images: [
+          "sofa_richard2.jpg",
+        ],
+        associations: [
+
+        ],
+        tag: [
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 3.5"',
+        "cincha 5cm",
+        ]
+    },
+    {
+      id: 25,
       name: "Audi",
       price: 590,
-      description: "El mueble Audi posee una estructura robusta de zaman, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El mueble Audi posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_audi.jpg",
       images: [
           "sofa_audi.jpg",
@@ -486,27 +518,37 @@ export const db: Record<string, Product[]> = {
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 24,
+      id: 26,
       name: "Suiza",
       price: 510,
-      description: "El mueble Suiza posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
-      image: "sofa_zuisa.jpg",
+      description: "El mueble Suiza posee una estructura robusta de samán, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_zuisa2.jpg",
       images: [
           "sofa_zuisa2.jpg",
         ],
         associations: [
 
         ],
-        tag: []
+        tag: [
+        "5 Puestos",
+        "1 Pieza",
+        'Goma 4.5"',
+        "cincha 5cm",
+        ]
     },
     {
-      id: 25,
+      id: 27,
       name: "Anasur",
       price: 440,
-      description: "El mueble Anasur posee una estructura robusta de zaman, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El mueble Anasur posee una estructura robusta de samán, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_anasur.jpg",
       images: [
           "sofa_anasur.jpg",
@@ -514,13 +556,18 @@ export const db: Record<string, Product[]> = {
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 26,
+      id: 28,
       name: "Rosa",
       price: 660,
-      description: "El mueble Rosa posee una estructura robusta de zaman, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El mueble Rosa posee una estructura robusta de samán, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_rosa.jpg",
       images: [
           "sofa_rosa.jpg",
@@ -528,13 +575,18 @@ export const db: Record<string, Product[]> = {
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "5 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 27,
+      id: 29,
       name: "Juego Principe",
       price: 450,
-      description: "El juego de muebles Principe posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El juego de muebles Principe posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_juego_principe.jpg",
       images: [
           "sofa_juego_principe.jpg",
@@ -543,44 +595,59 @@ export const db: Record<string, Product[]> = {
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "4 Puestos",
+          "3 Piezas",
+          'Goma 3.5"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 28,
+      id: 30,
       name: "Juego Barco",
       price: 690,
-      description: "El juego de muebles Barco posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
-      image: "sofa_barco.jpg",
+      description: "El juego de muebles Barco posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_barco3.jpg",
       images: [
-          "sofa_barco.jpg",
+          "sofa_barco3.jpg",
         ],
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "4 Puestos",
+          "2 Piezas",
+          'Goma 4"',
+          "cincha 5cm",
+        ]
     },
     {
-      id: 29,
+      id: 31,
       name: "Juego Mufada",
       price: 670,
-      description: "El juego de muebles Mufada posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
-      image: "sofa_juego_mufada.jpg",
+      description: "El juego de muebles Mufada posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      image: "sofa_juego_mufada2.jpg",
       images: [
-          "sofa_juego_mufada.jpg",
+          "sofa_juego_mufada2.jpg",
         ],
         associations: [
 
         ],
-        tag: []
+        tag: [
+          "4 Puestos",
+          "2 Piezas",
+          'Goma 4"',
+          "cincha 5cm",
+        ]
     },
     {
       id: 32,
       name: "Sofa Cama",
       price: 470,
-      description: "El Sofa Cama tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      description: "El Sofa Cama tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
       image: "sofa_sofacama.jpg",
       images: [
-          "sofa_sofacama.jpg",
+          "sofa_sofacama2.jpg",
         ],
         associations: [
 
@@ -591,10 +658,10 @@ export const db: Record<string, Product[]> = {
       id: 33,
       name: "Sofa Cama Con Mecanismo",
       price: 470,
-      description: "El Sofa Cama tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
-      image: "sofa_cama_mecanismo (1).PNG",
+      description: "El Sofa Cama tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      image: "sofa_cama_mecanismo00.jpg",
       images: [
-          "sofa_cama_mecanismo (1).PNG",
+          "sofa_cama_mecanismo00.jpg",
           "sofa_cama_mecanismo (2).PNG"
         ],
         associations: [
@@ -606,7 +673,7 @@ export const db: Record<string, Product[]> = {
       id: 34,
       name: "Sofa Cama pequeño",
       price: 470,
-      description: "El Sofa Cama 130x100 tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      description: "El Sofa Cama 130x100 tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
       image: "sofa_cama_pequeno (1).PNG",
       images: [
           "sofa_cama_pequeno (1).PNG",
@@ -621,7 +688,7 @@ export const db: Record<string, Product[]> = {
       id: 35,
       name: "Sofa Cama Con Portavasos",
       price: 470,
-      description: "El Sofa Cama 130x100 tiene una estructura robusta de zaman, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
+      description: "El Sofa Cama 130x100 tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
       image: "sofa_cama_posabroPNG.png",
       images: [
           "sofa_cama_posabrazo (1).JPG",
@@ -640,7 +707,7 @@ export const db: Record<string, Product[]> = {
       id: 36,
       name: "Juego Primavera",
       price: 260,
-      description: "El juego de muebles Primavera posee una estructura robusta de zaman, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El juego de muebles Primavera posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_juego_primavera2.jpg",
       images: [
           "sofa_juego_primavera2.jpg",
@@ -655,7 +722,7 @@ export const db: Record<string, Product[]> = {
       id: 37,
       name: "Ariana",
       price: 540,
-      description: "El mueble Ariana posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El mueble Ariana posee una estructura robusta de samán, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_ariana.jpg",
       images: [
           "sofa_ariana.jpg",
@@ -669,7 +736,7 @@ export const db: Record<string, Product[]> = {
       id: 38,
       name: "Curazao",
       price: 680,
-      description: "El mueble Curazao posee una estructura robusta de zaman, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece detalles de lujo como cabeceras reclinables ideal entre comodidad y durabilidad",
+      description: "El mueble Curazao posee una estructura robusta de samán, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece detalles de lujo como cabeceras reclinables ideal entre comodidad y durabilidad",
       image: "sofa_curazao2.jpg",
       images: [
           "sofa_curazao2.jpg",
@@ -683,7 +750,7 @@ export const db: Record<string, Product[]> = {
       id: 39,
       name: "Paris",
       price: 400,
-      description: "El mueble Curazao posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos. Sus dimensiones de 120cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
+      description: "El mueble Curazao posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos. Sus dimensiones de 120cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
       image: "sofa_paris.jpg",
       images: [
           "sofa_paris.jpg",
@@ -697,7 +764,7 @@ export const db: Record<string, Product[]> = {
       id: 40,
       name: "Cleopatra",
       price: 400,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_cleopatra.png",
       images: [
           "mueble_cleopatra.png",
@@ -711,7 +778,7 @@ export const db: Record<string, Product[]> = {
       id: 41,
       name: "Columpio",
       price: 400,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "muble_aereo.png",
       images: [
           "muble_aereo-view.png",
@@ -726,7 +793,7 @@ export const db: Record<string, Product[]> = {
       id: 42,
       name: "Poltrona Rosa",
       price: 180,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_rosa.png",
       images: [
           "mueble_poltrona_rosa.png",
@@ -740,7 +807,7 @@ export const db: Record<string, Product[]> = {
       id: 43,
       name: "Poltrona Rolando",
       price: 95,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_rolando.png",
       images: [
           "mueble_poltrona_rolando.png",
@@ -754,7 +821,7 @@ export const db: Record<string, Product[]> = {
       id: 44,
       name: "Poltrona Roma",
       price: 300,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_roma.jpg",
       images: [
           "mueble_poltrona_roma.jpg",
@@ -768,7 +835,7 @@ export const db: Record<string, Product[]> = {
       id: 45,
       name: "Poltrona Mistic",
       price: 210,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_mistic.jpg",
       images: [
           "mueble_poltrona_mistic.jpg",
@@ -782,7 +849,7 @@ export const db: Record<string, Product[]> = {
       id: 46,
       name: "Poltrona Rudy",
       price: 240,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_rudy.jpg",
       images: [
           "mueble_poltrona_rudy.jpg",
@@ -796,7 +863,7 @@ export const db: Record<string, Product[]> = {
       id: 47,
       name: "Poltrona Petalo",
       price: 240,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_petalo.jpg",
       images: [
           "mueble_poltrona_petalo.jpg",
@@ -810,7 +877,7 @@ export const db: Record<string, Product[]> = {
       id: 48,
       name: "Poltrona Gray",
       price: 200,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_gray.jpg",
       images: [
           "mueble_poltrona_gray.jpg",
@@ -824,7 +891,7 @@ export const db: Record<string, Product[]> = {
       id: 49,
       name: "Poltrona Miss",
       price: 130,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_miss.jpg",
       images: [
           "mueble_poltrona_miss.jpg",
@@ -838,7 +905,7 @@ export const db: Record<string, Product[]> = {
       id: 50,
       name: "Poltrona Presidencial",
       price: 240,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_poltrona_presidencial.jpg",
       images: [
           "mueble_poltrona_presidencial.jpg",
@@ -852,7 +919,7 @@ export const db: Record<string, Product[]> = {
       id: 51,
       name: "Poltrona Nube",
       price: 240,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "sofa_poltrona_nube2.png",
       images: [
           "sofa_poltrona_nube2.png",
@@ -866,7 +933,7 @@ export const db: Record<string, Product[]> = {
       id: 52,
       name: "Peresosa Capitoneada",
       price: 290,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_peresosa_capitoneada.jpg",
       images: [
           "mueble_peresosa_capitoneada.jpg",
@@ -880,7 +947,7 @@ export const db: Record<string, Product[]> = {
       id: 53,
       name: "Divan Sutra",
       price: 250,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_divan_sutra.jpg",
       images: [
           "mueble_divan_sutra.jpg",
@@ -894,7 +961,7 @@ export const db: Record<string, Product[]> = {
       id: 54,
       name: "Divan Barriga",
       price: 290,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "mueble_divan_barriga.jpg",
       images: [
           "mueble_divan_barriga.jpg",
@@ -908,7 +975,7 @@ export const db: Record<string, Product[]> = {
       id: 55,
       name: "Camilla Spa",
       price: 290,
-      description: "El mueble Cleopatra posee una estructura robusta de zaman, 1 piezas con capacidad para 2 puestos.",
+      description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
       image: "sofa_camilla.JPG",
       images: [
           "sofa_camilla.JPG",
@@ -1036,34 +1103,6 @@ export const db: Record<string, Product[]> = {
       images: [
         "cama_isabela21.jpg",
         "cama_isabela3.jpg",
-      ],
-      associations: [],
-      tag: []
-    },
-    {
-      id: 110,
-      name: "Isabel 4 puestos",
-      price: 290,
-      description: "",
-      image: "comedor_isabel_cuatro.PNG",
-      images: [
-        "comedor_isabel_cuatro.PNG",
-        "cama_isabela3.jpg",
-      ],
-      associations: [],
-      tag: []
-    },
-    {
-      id: 111,
-      name: "Media Luna",
-      price: 290,
-      description: "",
-      image: "comedor_media_luna.PNG",
-      images: [
-        "comedor_media_luna.PNG",
-        "comedor_luna_1.JPG",
-        "comedor_luna_2.JPG",
-        "comedor_luna3.JPG"
       ],
       associations: [],
       tag: []
@@ -1911,6 +1950,34 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
+      id: 110,
+      name: "Isabel 4 puestos",
+      price: 290,
+      description: "",
+      image: "comedor_isabel_cuatro.PNG",
+      images: [
+        "comedor_isabel_cuatro.PNG",
+        "cama_isabela3.jpg",
+      ],
+      associations: [],
+      tag: []
+    },
+    {
+      id: 111,
+      name: "Media Luna",
+      price: 290,
+      description: "",
+      image: "comedor_media_luna.PNG",
+      images: [
+        "comedor_media_luna.PNG",
+        "comedor_luna_1.JPG",
+        "comedor_luna_2.JPG",
+        "comedor_luna3.JPG"
+      ],
+      associations: [],
+      tag: []
+    },
+    {
       id: 304,
       name: "Coral",
       price: 500,
@@ -2009,7 +2076,7 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 310,
-      name: "Saman barnizado",
+      name: "Samán barnizado",
       price: 540,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "madera.jpg",
