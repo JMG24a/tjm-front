@@ -1933,23 +1933,7 @@ export const db: Record<string, Product[]> = {
         '8 Puestos',
       ]
     },
-    {
-      id: 303,
-      name: "LiLy",
-      price: 460,
-      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
-      image: "lily.jpg",
-      images: [
-        "lily.jpg"
-      ],
-      associations: [],
-      tag: [
-        "4 Puestos",
-        "6 Puestos",
-        '8 Puestos',
-      ]
-    },
-    {
+        {
       id: 110,
       name: "Isabel 4 puestos",
       price: 290,
@@ -1976,6 +1960,22 @@ export const db: Record<string, Product[]> = {
       ],
       associations: [],
       tag: []
+    },
+    {
+      id: 303,
+      name: "LiLy",
+      price: 460,
+      description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "lily.jpg",
+      images: [
+        "lily.jpg"
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
     },
     {
       id: 304,
