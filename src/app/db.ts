@@ -455,16 +455,16 @@ export const db: Record<string, Product[]> = {
       name: "Toty",
       price: 450,
       description: `El mueble Toty posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 180cm x 180cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
-      image: "toty00.jpg",
+      image: "sofa_toty00.jpg",
       images: [
-        "toty00.jpg",
-        "fenix_2.PNG"
+        "sofa_toty00.jpg",
+        "sofa_toty001.jpeg",
       ],
       associations: [],
       tag: [
         "5 Puestos",
         "3 Piezas",
-        'Goma 3.5"',
+        'Goma 2.5"',
         "cincha 5cm",
       ]
     },
@@ -473,10 +473,9 @@ export const db: Record<string, Product[]> = {
       name: "Nigeria",
       price: 450,
       description: `El mueble Nigeria posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
-      image: "fenix.PNG",
+      image: "sofa_nigeria.jpg",
       images: [
-        "fenix.PNG",
-        "fenix_2.PNG"
+        "sofa_nigeria.jpg",
       ],
       associations: [],
       tag: [
@@ -494,7 +493,8 @@ export const db: Record<string, Product[]> = {
       image: "sofa_fenix0.jpg",
       images: [
         "sofa_fenix02.jpeg",
-        "sofa_fenix2.jpeg"
+        "sofa_fenix2.jpeg",
+        "fenix_2.PNG"
       ],
       associations: [],
       tag: [
