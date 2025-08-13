@@ -2143,7 +2143,7 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 312,
-      name: "Valet",
+      name: "Ramadan PVC",
       price: 900,
       description: "Comedor con estructura de samán, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado barnizado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
       image: "comedor_valet_marmol.png",
