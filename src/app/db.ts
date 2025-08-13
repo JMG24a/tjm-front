@@ -994,12 +994,11 @@ export const db: Record<string, Product[]> = {
       name: "Camilla Spa",
       price: 290,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
-      image: "sofa_camilla.JPG",
+      image: "sofa_camilla00.jpg",
       images: [
-          "sofa_camilla.JPG",
+          "sofa_camilla_001.JPG",
         ],
         associations: [
-
         ],
         tag: []
     }
