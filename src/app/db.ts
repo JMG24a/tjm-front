@@ -451,6 +451,24 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
+      id: 1021,
+      name: "Toty",
+      price: 450,
+      description: `El mueble Toty posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 180cm x 180cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "toty00.jpg",
+      images: [
+        "toty00.jpg",
+        "fenix_2.PNG"
+      ],
+      associations: [],
+      tag: [
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 3.5"',
+        "cincha 5cm",
+      ]
+    },
+    {
       id: 22,
       name: "Nigeria",
       price: 450,
@@ -469,7 +487,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 223,
+      id: 23,
       name: "Fenix",
       price: 450,
       description: `El mueble Fenix posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
