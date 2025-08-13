@@ -452,9 +452,9 @@ export const db: Record<string, Product[]> = {
     },
     {
       id: 22,
-      name: "Fenix",
+      name: "Nigeria",
       price: 450,
-      description: `El mueble Fenix posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      description: `El mueble Nigeria posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "fenix.PNG",
       images: [
         "fenix.PNG",
@@ -469,7 +469,25 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 23,
+      id: 223,
+      name: "Fenix",
+      price: 450,
+      description: `El mueble Fenix posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "sofa_fenix0.jpg",
+      images: [
+        "sofa_fenix02.jpeg",
+        "sofa_fenix2.jpeg"
+      ],
+      associations: [],
+      tag: [
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 3.5"',
+        "cincha 5cm",
+      ]
+    },
+    {
+      id: 24,
       name: "Labros",
       price: 625,
       description: `El mueble Labros posee una estructura robusta de samán, son 2 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -488,7 +506,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 24,
+      id: 25,
       name: "Richard",
       price: 460,
       description: `El mueble Richard posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad`,
@@ -507,7 +525,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 25,
+      id: 26,
       name: "Audi",
       price: 590,
       description: "El mueble Audi posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 160cm x 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -526,7 +544,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 26,
+      id: 27,
       name: "Suiza",
       price: 510,
       description: "El mueble Suiza posee una estructura robusta de samán, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -545,7 +563,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 27,
+      id: 28,
       name: "Anasur",
       price: 440,
       description: "El mueble Anasur posee una estructura robusta de samán, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -564,7 +582,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 28,
+      id: 29,
       name: "Rosa",
       price: 660,
       description: "El mueble Rosa posee una estructura robusta de samán, 3 piezas con capacidad para 5 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -583,7 +601,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 29,
+      id: 30,
       name: "Juego Principe",
       price: 450,
       description: "El juego de muebles Principe posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -603,7 +621,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 30,
+      id: 31,
       name: "Juego Barco",
       price: 690,
       description: "El juego de muebles Barco posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -622,7 +640,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 31,
+      id: 32,
       name: "Juego Mufada",
       price: 670,
       description: "El juego de muebles Mufada posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -641,7 +659,7 @@ export const db: Record<string, Product[]> = {
         ]
     },
     {
-      id: 32,
+      id: 33,
       name: "Sofa Cama",
       price: 470,
       description: "El Sofa Cama tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
@@ -655,7 +673,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 33,
+      id: 34,
       name: "Sofa Cama Con Mecanismo",
       price: 470,
       description: "El Sofa Cama tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
@@ -670,7 +688,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 34,
+      id: 35,
       name: "Sofa Cama pequeño",
       price: 470,
       description: "El Sofa Cama 130x100 tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
@@ -685,7 +703,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 35,
+      id: 36,
       name: "Sofa Cama Con Portavasos",
       price: 470,
       description: "El Sofa Cama 130x100 tiene una estructura robusta de samán, con capacidad para 3 puestos. Este mueble tiene una gran practicidad ya que se puede transformar en una cama matrimonial que garantiza confort, resistencia y estabilidad.",
@@ -704,7 +722,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 36,
+      id: 37,
       name: "Juego Primavera",
       price: 260,
       description: "El juego de muebles Primavera posee una estructura robusta de samán, con capacidad para 4 puestos. Este juego cuenta con 2 piezas individuales y una pieza de 2 puestos garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -719,7 +737,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 37,
+      id: 38,
       name: "Ariana",
       price: 540,
       description: "El mueble Ariana posee una estructura robusta de samán, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -733,7 +751,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 38,
+      id: 39,
       name: "Curazao",
       price: 680,
       description: "El mueble Curazao posee una estructura robusta de samán, 1 piezas con capacidad para 3 puestos. Sus dimensiones de 210cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece detalles de lujo como cabeceras reclinables ideal entre comodidad y durabilidad",
@@ -747,7 +765,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 39,
+      id: 40,
       name: "Paris",
       price: 400,
       description: "El mueble Curazao posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos. Sus dimensiones de 120cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad",
@@ -761,7 +779,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 40,
+      id: 41,
       name: "Cleopatra",
       price: 400,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -775,7 +793,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 41,
+      id: 42,
       name: "Columpio",
       price: 400,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -790,7 +808,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 42,
+      id: 43,
       name: "Poltrona Rosa",
       price: 180,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -804,7 +822,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 43,
+      id: 44,
       name: "Poltrona Rolando",
       price: 95,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -818,7 +836,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 44,
+      id: 45,
       name: "Poltrona Roma",
       price: 300,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -832,7 +850,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 45,
+      id: 46,
       name: "Poltrona Mistic",
       price: 210,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -846,7 +864,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 46,
+      id: 47,
       name: "Poltrona Rudy",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -860,7 +878,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 47,
+      id: 48,
       name: "Poltrona Petalo",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -874,7 +892,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 48,
+      id: 49,
       name: "Poltrona Gray",
       price: 200,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -888,7 +906,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 49,
+      id: 50,
       name: "Poltrona Miss",
       price: 130,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -902,7 +920,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 50,
+      id: 51,
       name: "Poltrona Presidencial",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -916,7 +934,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 51,
+      id: 52,
       name: "Poltrona Nube",
       price: 240,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -930,7 +948,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 52,
+      id: 53,
       name: "Peresosa Capitoneada",
       price: 290,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -944,7 +962,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 53,
+      id: 54,
       name: "Divan Sutra",
       price: 250,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -958,7 +976,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 54,
+      id: 55,
       name: "Divan Barriga",
       price: 290,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
@@ -972,7 +990,7 @@ export const db: Record<string, Product[]> = {
         tag: []
     },
     {
-      id: 55,
+      id: 56,
       name: "Camilla Spa",
       price: 290,
       description: "El mueble Cleopatra posee una estructura robusta de samán, 1 piezas con capacidad para 2 puestos.",
