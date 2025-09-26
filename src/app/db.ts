@@ -1908,7 +1908,7 @@ export const db: Record<string, Product[]> = {
       id: 237,
       name: "Mesa Centro Arteco",
       price: 110,
-      description: "moodelos a consultar",
+      description: "modelos a consultar",
       image: "mesa_centro_vidrio2.png",
       images: [
         "mesa_centro_arteco_3_pisos (1).JPG",
