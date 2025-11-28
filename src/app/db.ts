@@ -1023,6 +1023,35 @@ export const db: Record<string, Product[]> = {
   ],
   dormitorio:[
     {
+      id: 100,
+      name: "Cama Berlin",
+      price: 0,
+      description: "",
+      image: "cama_berlin.png",
+      images: [
+        "cama_berlin.png"
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
+    {
+      id: 130,
+      name: "Cama Hielo",
+      price: 0,
+      description: "",
+      image: "cama_hielo.png",
+      images: [
+        "cama_hielo.jpg",
+        "cama_nube2.png",
+      ],
+      associations: [],
+      tag: [
+        "Matrimonial",
+      ]
+    },
+    {
       id: 101,
       name: "Coquito",
       price: 0,
@@ -1373,21 +1402,6 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 130,
-      name: "Cama Hielo",
-      price: 335,
-      description: "",
-      image: "cama_nube2.png",
-      images: [
-        "cama_nube2.png",
-        "cama_hielo.jpg"
-      ],
-      associations: [],
-      tag: [
-        "Matrimonial",
-      ]
-    },
-    {
       id: 131,
       name: "Cama Nube",
       price: 335,
@@ -1405,6 +1419,34 @@ export const db: Record<string, Product[]> = {
     },
   ],
   multimueble:[
+    {
+      id: 199,
+      name: "Peinadora y Foco",
+      price: 0,
+      description: "",
+      image: "multimueble_peinadora_foco.png",
+      images: [
+        "multimueble_peinadora_foco.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 200,
+      name: "Closet Duo",
+      price: 0,
+      description: "",
+      image: "multimueble_closetDuo_preview.png",
+      images: [
+        "multimueble_closetDuo.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
     {
       id: 201,
       name: "Peinadora S",
@@ -1932,6 +1974,22 @@ export const db: Record<string, Product[]> = {
   ],
     comedor:[
     {
+      id: 300,
+      name: "Comedor Mao",
+      price: 0,
+      description: "Comedor con estructura de samán y tope de vidrio, diseñado para ofrecer resistencia y durabilidad. Fabricado con materiales de alta calidad, cuenta con un acabado pintado impecable y detalles cuidadosamente trabajados. Sus dimensiones de 170 cm x 120 cm lo convierten en una opción versátil y elegante para cualquier espacio",
+      image: "comedor_v_cerrado.png",
+      images: [
+        "comedor_v_cerrado.png",
+      ],
+      associations: [],
+      tag: [
+        "4 Puestos",
+        "6 Puestos",
+        '8 Puestos',
+      ]
+    },
+    {
       id: 301,
       name: "Tipo v",
       price: 0,
@@ -1976,7 +2034,6 @@ export const db: Record<string, Product[]> = {
       image: "comedor_isabel_cuatro.PNG",
       images: [
         "comedor_isabel_cuatro.PNG",
-        "cama_isabela3.jpg",
       ],
       associations: [],
       tag: []
