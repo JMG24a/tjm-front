@@ -1427,9 +1427,7 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multimueble_closetDuo_preview.png",
       images: [
-        "multimueble_closetDuo_preview.png",
-        "multimueble_closetDuo.png",
-        "closedPlus.png"
+        "multimueble_closetDuo_preview(2).png"
       ],
       associations: [
 
