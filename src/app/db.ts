@@ -1023,26 +1023,13 @@ export const db: Record<string, Product[]> = {
   ],
   dormitorio:[
     {
-      id: 100,
-      name: "Cama Berlin",
-      price: 0,
-      description: "",
-      image: "cama_berlin.png",
-      images: [
-        "cama_berlin.png"
-      ],
-      associations: [],
-      tag: [
-        "Matrimonial",
-      ]
-    },
-    {
       id: 130,
       name: "Cama Hielo",
       price: 0,
       description: "",
       image: "cama_hielo.png",
       images: [
+        "cama_berlin.png",
         "cama_hielo.jpg",
         "cama_nube2.png",
       ],
