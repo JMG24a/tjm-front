@@ -1029,7 +1029,7 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "cama_hielo.png",
       images: [
-        "cama_berlin.png",
+        "cama_berlin(2).png",
         "cama_hielo.jpg",
         "cama_nube2.png",
       ],
@@ -1427,7 +1427,9 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multimueble_closetDuo_preview.png",
       images: [
-        "multimueble_closetDuo.png"
+        "multimueble_closetDuo_preview.png",
+        "multimueble_closetDuo.png",
+        "closedPlus.png"
       ],
       associations: [
 
