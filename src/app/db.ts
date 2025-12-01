@@ -1407,6 +1407,48 @@ export const db: Record<string, Product[]> = {
   ],
   multimueble:[
     {
+      id: 198,
+      name: "Peinadora y Foco",
+      price: 0,
+      description: "",
+      image: "multimueble_juego_muebles_peinadora.jpeg",
+      images: [
+        "multimueble_peinadora_foco.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 197,
+      name: "Peinadora b700",
+      price: 0,
+      description: "",
+      image: "multimueble_peinadora_b700.png",
+      images: [
+        "multimueble_peinadora_foco.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 196,
+      name: "Multimueble TV",
+      price: 0,
+      description: "",
+      image: "multimueble_moderno_tv.png",
+      images: [
+        "multimueble_peinadora_foco.png"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
       id: 199,
       name: "Peinadora y Foco",
       price: 0,
@@ -1425,9 +1467,10 @@ export const db: Record<string, Product[]> = {
       name: "Closet Duo",
       price: 0,
       description: "",
-      image: "multimueble_closetDuo_preview.png",
+      image: "multimueble_closetDuo_preview(2).png",
       images: [
-        "multimueble_closetDuo_preview(2).png"
+        "multimueble_dueto.jpeg",
+        "multimueble_closetDuo_preview.png",
       ],
       associations: [
 
@@ -1631,6 +1674,19 @@ export const db: Record<string, Product[]> = {
       ],
       associations: [
 
+      ],
+      tag: []
+    },
+    {
+      id: 2150,
+      name: "Gavetero Vol.2",
+      price: 430,
+      description: "",
+      image: "multimueble_chifonier_vol31.png",
+      images: [
+        "multimueble_chifonier_vol31.png"
+      ],
+      associations: [
       ],
       tag: []
     },
@@ -1927,6 +1983,20 @@ export const db: Record<string, Product[]> = {
       image: "multi_mesa_noche_5.jpg",
       images: [
         "multi_mesa_noche_5.jpg",
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 236,
+      name: "Mesa de Noche Vol 7",
+      price: 110,
+      description: "",
+      image: "multimueble_mesadenoche_024.png",
+      images: [
+        "multimueble_mesadenoche_024.png",
       ],
       associations: [
 
