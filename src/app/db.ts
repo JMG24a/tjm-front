@@ -1407,13 +1407,69 @@ export const db: Record<string, Product[]> = {
   ],
   multimueble:[
     {
-      id: 198,
+      id: 190,
+      name: "Closet Caju",
+      price: 0,
+      description: "",
+      image: "multimueble_caja_6p.jpeg",
+      images: [
+        "multimueble_caja_6p.jpeg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 191,
+      name: "Closet Caju",
+      price: 0,
+      description: "",
+      image: "multimueble_caju.jpeg",
+      images: [
+        "multimueble_caju.jpeg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 192,
+      name: "Closet Acai",
+      price: 0,
+      description: "",
+      image: "multimueble_acai.jpeg",
+      images: [
+        "multimueble_acai.jpeg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 193,
       name: "Peinadora y Foco",
       price: 0,
       description: "",
       image: "multimueble_juego_muebles_peinadora.jpeg",
       images: [
-        "multimueble_peinadora_foco.png"
+        "multimueble_juego_muebles_peinadora.jpeg"
+      ],
+      associations: [
+
+      ],
+      tag: []
+    },
+    {
+      id: 198,
+      name: "closet margarida",
+      price: 0,
+      description: "",
+      image: "multimueble_margarida.jpeg",
+      images: [
+        "multimueble_margarida.jpeg"
       ],
       associations: [
 
@@ -1427,7 +1483,7 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multimueble_peinadora_b700.png",
       images: [
-        "multimueble_peinadora_foco.png"
+        "multimueble_peinadora_b700.png"
       ],
       associations: [
 
@@ -1441,7 +1497,7 @@ export const db: Record<string, Product[]> = {
       description: "",
       image: "multimueble_moderno_tv.png",
       images: [
-        "multimueble_peinadora_foco.png"
+        "multimueble_moderno_tv.png"
       ],
       associations: [
 
@@ -1990,7 +2046,7 @@ export const db: Record<string, Product[]> = {
       tag: []
     },
     {
-      id: 236,
+      id: 250,
       name: "Mesa de Noche Vol 7",
       price: 110,
       description: "",
