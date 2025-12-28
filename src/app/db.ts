@@ -457,8 +457,10 @@ export const db: Record<string, Product[]> = {
       description: `El mueble Toty posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 180cm x 180cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
       image: "sofa_toty00.jpg",
       images: [
-        "sofa_toty00.jpg",
+        // "sofa_toty00.jpg",
         "sofa_toty001.jpeg",
+        "sofa_mueble_toty_ty1.jpeg",
+        "sofa_mueble_toty_ty2.jpeg"
       ],
       associations: [],
       tag: [
@@ -486,7 +488,7 @@ export const db: Record<string, Product[]> = {
       ]
     },
     {
-      id: 23,
+      id: 1222,
       name: "Fenix",
       price: 450,
       description: `El mueble Fenix posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
@@ -495,6 +497,25 @@ export const db: Record<string, Product[]> = {
         "sofa_fenix02.jpeg",
         "sofa_fenix2.jpeg",
         "fenix_2.PNG"
+      ],
+      associations: [],
+      tag: [
+        "5 Puestos",
+        "3 Piezas",
+        'Goma 3.5"',
+        "cincha 5cm",
+      ]
+    },
+    {
+      id: 1223,
+      name: "Hielo",
+      price: 450,
+      description: `El mueble Hielo posee una estructura robusta de samán, son 3 piezas con capacidad para 5 puestos. Sus dimensiones de 200cm x 200cm garantizan confort, que optimiza la resistencia y estabilidad, Además ofrece el equilibrio ideal entre comodidad y durabilidad.`,
+      image: "sofa_hielo_view.png",
+      images: [
+        "sofa_hielo_1.jpeg",
+        "sofa_mueble_hielo2.jpeg",
+        "sofa_mueble_hielo3.jpeg"
       ],
       associations: [],
       tag: [
