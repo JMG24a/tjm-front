@@ -6,10 +6,9 @@ import "./randomOptionsWs.css";
 
 // ✅ Mover options fuera del componente
 const options = [
-  // "https://wa.me/584245289999",
-  // "https://wa.me/584121506497",
-  // "https://wa.me/584146111351"
+  "https://wa.me/584228463448",
   "https://wa.me/584129108584",
+  "https://wa.me/584121506497"
 ];
 
 export function RandomOptionsWs(props: { children: React.ReactNode, message?: string }) {
